@@ -39,7 +39,7 @@ void Stylus::setXmlBrain(std::shared_ptr<XMLBrain> xml_brain)
     xml_brain_ = xml_brain;
     left_panel_->setXmlBrain(xml_brain_);
     right_panel_->setXmlBrain(xml_brain_);
-    xml_brain_->selected_node_->node_selected().emit(true);
+    // xml_brain_->selected_node_->node_selected().emit(true);
     node_selected_.emit(xml_brain);
 }
 

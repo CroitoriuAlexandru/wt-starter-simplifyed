@@ -219,7 +219,7 @@ RightPanel::RightPanel(Stylus *stylus)
                               if (xml_brain_->selected_node_->ToElement())
                               {
                                   xml_brain_->selected_node_->ToElement()->SetAttribute("class", style_classes.c_str());
-                                  xml_brain_->selected_node_->style_class_changed().emit(style_classes);
+                                //   xml_brain_->selected_node_->style_class_changed().emit(style_classes);
                                   xml_brain_->saveXmlToDbo();
                               }else if(xml_brain_->selected_node_->ToText()){
                                 auto temp_text = tempText(xml_brain_->selected_node_);
@@ -228,7 +228,8 @@ RightPanel::RightPanel(Stylus *stylus)
                                     xml_brain_->selected_node_->ToText()->SetValue(new_temp_text.toUTF8().c_str());
                                     xml_brain_->saveXmlToDbo();
                                 }
-                              } });
+                              }
+                                stylus_->setXmlBrain(xml_brain_); });
 
     setPanelsMode(RIGHT_PANEL_MODE::NORMAL);
 }

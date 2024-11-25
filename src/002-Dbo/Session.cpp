@@ -1,8 +1,10 @@
 #include "002-Dbo/Session.h"
+#include "002-Dbo/Tables.h"
+#include <Wt/Dbo/ptr.h>
 
-#include <Wt/Dbo/backend/Sqlite3.h>
 // #include <Wt/Dbo/backend/Postgres.h>
 
+#include <Wt/WString.h>
 #include <iostream>
 
 using namespace Wt;

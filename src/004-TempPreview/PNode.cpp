@@ -1,12 +1,13 @@
 #include "004-TempPreview/PNode.h"
+#include "101-Stylus/XMLBrain.h"
+#include "101-Stylus/Stylus.h"
+
 #include <Wt/WText.h>
 #include <Wt/WTextArea.h>
 #include <Wt/WLineEdit.h>
 #include <Wt/WPushButton.h>
 #include <Wt/WCheckBox.h>
 #include <Wt/WRadioButton.h>
-
-#include "101-Stylus/Stylus.h"
 
 PNode::PNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node)
     : xml_brain_(xml_brain),
@@ -17,9 +18,9 @@ PNode::PNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node)
 
     clicked().connect([=]
                       {
-                        if(xml_brain_->stylus_->xml_brain_){
-                            xml_brain_->stylus_->xml_brain_->selected_node_->node_selected().emit(false);
-                        }
+                        // if(xml_brain_->stylus_->xml_brain_){
+                        //     xml_brain_->stylus_->xml_brain_->selected_node_->node_selected().emit(false);
+                        // }
                         xml_brain_->selected_node_ = node;
                         xml_brain_->stylus_->setXmlBrain(xml_brain_); });
     // setStyleClass("p-4 bg-red-200");
@@ -34,11 +35,11 @@ PNode::PNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node)
     mouseWentOut().connect([=]
                            { toggleStyleClass("??", false); });
 
-    node_->node_selected().connect([=](bool selected)
-                                   { toggleStyleClass("?", selected); });
-    node_->style_class_changed().connect([=](std::string style_class)
-                                         { setStyleClass(style_class);
-                                            toggleStyleClass("?", true); });
+    // node_->node_selected().connect([=](bool selected)
+    //                                { toggleStyleClass("?", selected); });
+    // node_->style_class_changed().connect([=](std::string style_class)
+    //                                      { setStyleClass(style_class);
+    //                                         toggleStyleClass("?", true); });
 
     if (node->ToElement() == xml_brain_->message_node_)
     {

@@ -1,5 +1,5 @@
-.line-edit-style-1 {
-    @apply shadow-sm py-1.5 rounded-md border-0 ring-gray-300 ring-inset ring-1 w-full text-gray-900 block placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-2
+.line-edit-stylus-edditor {
+    @apply  border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500;
 }
 
 .combo-box-style-1 {

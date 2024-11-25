@@ -1,7 +1,9 @@
 #pragma once
 #include <Wt/WContainerWidget.h>
+#include "100-Utils/tinyxml2/tinyxml2.h"
 
-#include "101-Stylus/XMLBrain.h"
+class Stylus;
+class XMLBrain;
 
 class PNode : public Wt::WContainerWidget
 {

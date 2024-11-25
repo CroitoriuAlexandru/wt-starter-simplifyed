@@ -1,16 +1,10 @@
 #pragma once
-#include <Wt/Auth/Login.h>
 #include <Wt/Dbo/Session.h>
-#include <Wt/Dbo/ptr.h>
-#include <Wt/WString.h>
-
-#include "101-Stylus/Tables.h"
+#include <Wt/Dbo/backend/Sqlite3.h>
 
 using namespace Wt;
 
-namespace dbo = Wt::Dbo;
-
-class Session : public dbo::Session
+class Session : public Wt::Dbo::Session
 {
 public:
     explicit Session(const std::string &sqliteDb);

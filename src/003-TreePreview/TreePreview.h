@@ -1,6 +1,8 @@
 #pragma once
 #include <Wt/WContainerWidget.h>
-#include "101-Stylus/XMLBrain.h"
+
+class Stylus;
+class XMLBrain;
 
 class TreePreview : public Wt::WContainerWidget
 {
@@ -10,6 +12,5 @@ public:
     void setXmlBrain(std::shared_ptr<XMLBrain> xml_brain = nullptr);
 
 private:
-    std::shared_ptr<XMLBrain> xml_brain_;
     std::shared_ptr<Stylus> stylus_;
 };

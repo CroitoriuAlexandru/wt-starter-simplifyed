@@ -1,6 +1,7 @@
 #include "101-Stylus/XMLBrain.h"
 
 #include "002-Dbo/Session.h"
+#include "002-Dbo/Tables.h"
 
 XMLBrain::XMLBrain(Session &session, XmlDboRecord dbo_temp_data, Stylus *stylus)
     : session_(session),

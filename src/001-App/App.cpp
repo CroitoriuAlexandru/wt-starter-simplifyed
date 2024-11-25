@@ -1,8 +1,13 @@
 #include "App.h"
-#include <Wt/WText.h>
-#include <Wt/WContainerWidget.h>
+
+#include "101-Stylus/Stylus.h"
+
 #include "003-TreePreview/TreePreview.h"
 #include "004-TempPreview/TempPreview.h"
+#include "005-ClassesEdditor/ClassesEdditor.h"
+
+#include <Wt/WContainerWidget.h>
+#include <Wt/WText.h>
 
 App::App(const Wt::WEnvironment &env)
     : WApplication(env),
@@ -31,7 +36,9 @@ App::App(const Wt::WEnvironment &env)
     // JSs
     require(docRoot() + "/static/js/utils.js");
 
-    root()->setStyleClass("flex");
+    root()->setStyleClass("flex !max-w-[100vw] m-0 p-0");
+    setHtmlClass("dark");
     auto treePreview = root()->addWidget(std::make_unique<TreePreview>(stylus_));
     auto tempPreview = root()->addWidget(std::make_unique<TempPreview>(stylus_));
+    auto classesEdditor = root()->addWidget(std::make_unique<ClassesEdditor>(stylus_));
 }

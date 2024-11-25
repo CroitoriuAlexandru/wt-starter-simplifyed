@@ -5,7 +5,9 @@
 TempPreview::TempPreview(std::shared_ptr<Stylus> stylus)
     : stylus_(stylus)
 {
-    setStyleClass("w-full h-screen relative");
+    // setOffsets(450, Wt::Side::Right);
+    // setOffsets(380, Wt::Side::Left);
+    setStyleClass("h-screen max-h-screen overflow-y-auto overflow-x-none relative grow-[1]");
     setOffsets(0, Wt::Side::Left | Wt::Side::Bottom | Wt::Side::Top);
 
     stylus_->node_selected().connect([=](std::shared_ptr<XMLBrain> xml_brain)

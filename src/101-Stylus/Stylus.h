@@ -1,6 +1,6 @@
 #pragma once
 #include "002-Dbo/Session.h"
-#include "101-Stylus/Tables.h"
+#include "002-Dbo/Tables.h"
 #include "101-Stylus/XMLBrain.h"
 #include "101-Stylus/Tailwind/TailwindConfig.h"
 

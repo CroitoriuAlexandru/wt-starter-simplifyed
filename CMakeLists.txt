@@ -30,7 +30,8 @@ set(SOURCES
     ${SOURCE_DIR}/003-TreePreview/TreePreview.cpp
     ${SOURCE_DIR}/004-TempPreview/PNode.cpp
     ${SOURCE_DIR}/004-TempPreview/TempPreview.cpp
-
+    ${SOURCE_DIR}/005-ClassesEdditor/ClassesEdditor.cpp
+    
     ${SOURCE_DIR}/100-Utils/AwsConnect.cpp
     ${SOURCE_DIR}/100-Utils/tinyxml2/tinyxml2.cpp
     ${SOURCE_DIR}/101-Stylus/Stylus.cpp
