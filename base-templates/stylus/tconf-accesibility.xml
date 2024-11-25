@@ -1,0 +1,16 @@
+<messages active="false">
+    <message id="screenReaders" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/screen-readers</tailwind-docs>
+        <reset-command>screen-readers-res</reset-command>
+        <classes className="" customValue="false" canExtend="false">
+            <class>
+                <name>sr-only</name>
+                <value>sr-only</value>
+            </class>
+            <class>
+                <name>not-sr-only</name>
+                <value>not-sr-only</value>
+            </class>
+        </classes>
+    </message>
+</messages>

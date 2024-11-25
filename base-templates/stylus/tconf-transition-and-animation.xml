@@ -1,0 +1,196 @@
+<messages active="false">
+    <message id="transitionProperty" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/transition-property</tailwind-docs>
+        <reset-command>transition-res</reset-command>
+        <classes className="transition" customValue="true" canExtend="true">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>all</name>
+                <value>all</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter</value>
+            </class>
+            <class>
+                <name>colors</name>
+                <value>color, background-color, border-color, text-decoration-color, fill, stroke</value>
+            </class>
+            <class>
+                <name>opacity</name>
+                <value>opacity</value>
+            </class>
+            <class>
+                <name>shadow</name>
+                <value>box-shadow</value>
+            </class>
+            <class>
+                <name>transform</name>
+                <value>transform</value>
+            </class>
+            <class extends="true">
+                <name>test-spacing</name>
+                <value>margin, padding</value>
+            </class>
+        </classes>
+    </message>
+    <message id="transitionDuration" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/transition-duration</tailwind-docs>
+        <reset-command>duration-res</reset-command>
+        <classes className="duration" customValue="true" canExtend="true">
+            <class>
+                <name>DEFAULT</name>
+                <value>150ms</value>
+            </class>
+            <class>
+                <name>0</name>
+                <value>0s</value>
+            </class>
+            <class>
+                <name>75</name>
+                <value>75ms</value>
+            </class>
+            <class>
+                <name>100</name>
+                <value>100ms</value>
+            </class>
+            <class>
+                <name>150</name>
+                <value>150ms</value>
+            </class>
+            <class>
+                <name>200</name>
+                <value>200ms</value>
+            </class>
+            <class>
+                <name>300</name>
+                <value>300ms</value>
+            </class>
+            <class>
+                <name>500</name>
+                <value>500ms</value>
+            </class>
+            <class>
+                <name>700</name>
+                <value>700ms</value>
+            </class>
+            <class>
+                <name>1000</name>
+                <value>1000ms</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2000ms</value>
+            </class>
+        </classes>
+    </message>
+    <message id="transitionTimingFunction" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/transition-timing-function</tailwind-docs>
+        <reset-command>ease-res</reset-command>
+        <classes className="ease" customValue="true" canExtend="true">
+            <class>
+                <name>DEFAULT</name>
+                <value>cubic-bezier(0.4, 0, 0.2, 1)</value>
+            </class>
+            <class>
+                <name>linear</name>
+                <value>linear</value>
+            </class>
+            <class>
+                <name>in</name>
+                <value>cubic-bezier(0.4, 0, 1, 1)</value>
+            </class>
+            <class>
+                <name>out</name>
+                <value>cubic-bezier(0, 0, 0.2, 1)</value>
+            </class>
+            <class>
+                <name>in-out</name>
+                <value>cubic-bezier(0.4, 0, 0.2, 1)</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>cubic-bezier(0.4, 0, 0.2, 1)</value>
+            </class>
+        </classes>
+    </message>
+    <message id="transitionDelay" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/transition-delay</tailwind-docs>
+        <reset-command>delay-res</reset-command>
+        <classes className="delay" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0s</value>
+            </class>
+            <class>
+                <name>75</name>
+                <value>75ms</value>
+            </class>
+            <class>
+                <name>100</name>
+                <value>100ms</value>
+            </class>
+            <class>
+                <name>150</name>
+                <value>150ms</value>
+            </class>
+            <class>
+                <name>200</name>
+                <value>200ms</value>
+            </class>
+            <class>
+                <name>300</name>
+                <value>300ms</value>
+            </class>
+            <class>
+                <name>500</name>
+                <value>500ms</value>
+            </class>
+            <class>
+                <name>700</name>
+                <value>700ms</value>
+            </class>
+            <class>
+                <name>1000</name>
+                <value>1000ms</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2000ms</value>
+            </class>
+        </classes>
+    </message>
+    <message id="animation" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/animation</tailwind-docs>
+        <reset-command>animation-res</reset-command>
+        <classes className="animate" customValue="true" canExtend="true">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>spin</name>
+                <value>spin 1s linear infinite</value>
+            </class>
+            <class>
+                <name>ping</name>
+                <value>ping 1s cubic-bezier(0, 0, 0.2, 1) infinite</value>
+            </class>
+            <class>
+                <name>pulse</name>
+                <value>pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite</value>
+            </class>
+            <class>
+                <name>bounce</name>
+                <value>bounce 1s infinite</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>test 1s infinite</value>
+            </class>
+        </classes>
+    </message>
+</messages>

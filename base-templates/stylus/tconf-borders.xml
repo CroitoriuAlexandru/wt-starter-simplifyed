@@ -1,0 +1,376 @@
+<messages active="false">
+    <message id="borderRadius" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/border-radius</tailwind-docs>
+        <reset-command>border-radius-res</reset-command>
+        <classes className="rounded" customValue="true" canExtend="true">
+            <class>
+                <name>none</name>
+                <value>0px</value>
+            </class>
+            <class>
+                <name>sm</name>
+                <value>0.125rem</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>0.25rem</value>
+            </class>
+            <class>
+                <name>md</name>
+                <value>0.375rem</value>
+            </class>
+            <class>
+                <name>lg</name>
+                <value>0.5rem</value>
+            </class>
+            <class>
+                <name>xl</name>
+                <value>0.75rem</value>
+            </class>
+            <class>
+                <name>2xl</name>
+                <value>1rem</value>
+            </class>
+            <class>
+                <name>3xl</name>
+                <value>1.5rem</value>
+            </class>
+            <class>
+                <name>full</name>
+                <value>9999px</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2rem</value>
+            </class>
+        </classes>
+    </message>
+    <!-- x|y|t|r|b|l -->
+    <message id="borderWidth" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/border-width</tailwind-docs>
+        <reset-command>border-width-res</reset-command>
+        <classes className="border" customValue="true" canExtend="true">
+            <class>
+                <name>DEFAULT</name>
+                <value>1px</value>
+            </class>
+            <class>
+                <name>0</name>
+                <value>0px</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2px</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>4px</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>8px</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="borderColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/border-color</tailwind-docs>
+        <reset-command>border-color-res</reset-command>
+        <classes className="border" include="colors" customValue="true" canExtend="false"/>
+    </message>
+    <message id="borderStyle" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/border-style</tailwind-docs>
+        <reset-command>border-style-res</reset-command>
+        <classes className="border" customValue="false" canExtend="false">
+            <class>
+                <name>solid</name>
+                <value>solid</value>
+            </class>
+            <class>
+                <name>dashed</name>
+                <value>dashed</value>
+            </class>
+            <class>
+                <name>dotted</name>
+                <value>dotted</value>
+            </class>
+            <class>
+                <name>double</name>
+                <value>double</value>
+            </class>
+            <class>
+                <name>hidden</name>
+                <value>hidden</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>dashed</value>
+            </class>
+        </classes>
+    </message>
+    <!-- x|y -->
+    <message id="divideWidth" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/divide-width</tailwind-docs>
+        <reset-command>divide-width-res</reset-command>
+        <classes className="divide" customValue="true" canExtend="true">
+            <class extends="true">
+                <name>DEFAULT</name>
+                <value>1px</value>
+            </class>
+            <class extends="true">
+                <name>0</name>
+                <value>0px</value>
+            </class>
+            <class extends="true">
+                <name>2</name>
+                <value>2px</value>
+            </class>
+            <class extends="true">
+                <name>4</name>
+                <value>4px</value>
+            </class>
+            <class extends="true">
+                <name>8</name>
+                <value>8px</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="divideXReverse" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/divide</tailwind-docs>
+        <reset-command>divide-x-reverse-res</reset-command>
+        <classes className="divide-x" customValue="false" canExtend="false">
+            <class>
+                <name>reverse</name>
+                <value>reverse</value>
+            </class>
+        </classes>
+    </message>
+    <message id="divideYReverse" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/divide</tailwind-docs>
+        <reset-command>divide-y-reverse-res</reset-command>
+        <classes className="divide-y" customValue="false" canExtend="false">
+            <class>
+                <name>reverse</name>
+                <value>reverse</value>
+            </class>
+        </classes>
+    </message>
+    <message id="divideColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/divide-color</tailwind-docs>
+        <reset-command>divide-color-res</reset-command>
+        <classes className="divide" include="colors" customValue="true" canExtend="false"/>
+    </message>
+    <message id="divideStyle" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/divide-style</tailwind-docs>
+        <reset-command>divide-style-res</reset-command>
+        <classes className="divide" customValue="false" canExtend="false">
+            <class>
+                <name>solid</name>
+                <value>solid</value>
+            </class>
+            <class>
+                <name>dashed</name>
+                <value>dashed</value>
+            </class>
+            <class>
+                <name>dotted</name>
+                <value>dotted</value>
+            </class>
+            <class>
+                <name>double</name>
+                <value>double</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+        </classes>
+    </message>
+    <message id="outlineWidth" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/outline-width</tailwind-docs>
+        <reset-command>outline-width-res</reset-command>
+        <classes className="outline" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0px</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1px</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2px</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>4px</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>8px</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="outlineColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/outline-color</tailwind-docs>
+        <reset-command>outline-color-res</reset-command>
+        <classes className="outline" include="colors" customValue="true" canExtend="false"/>
+    </message>
+    <message id="outlineStyle" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/outline-style</tailwind-docs>
+        <reset-command>outline-style-res</reset-command>
+        <classes className="outline" customValue="false" canExtend="false">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>solid</value>
+            </class>
+            <class>
+                <name>dashed</name>
+                <value>dashed</value>
+            </class>
+            <class>
+                <name>dotted</name>
+                <value>dotted</value>
+            </class>
+            <class>
+                <name>double</name>
+                <value>double</value>
+            </class>
+        </classes>
+    </message>
+    <message id="outlineOffset" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/outline-offset</tailwind-docs>
+        <reset-command>outline-offset-res</reset-command>
+        <classes className="outline-offset" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0px</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1px</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2px</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>4px</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>8px</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="ringWidth" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/ring-width</tailwind-docs>
+        <reset-command>ring-width-res</reset-command>
+        <classes className="ring" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0px</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1px</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2px</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>4px</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>8px</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="ringInset" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/ring-width</tailwind-docs>
+        <reset-command>ring-inset-res</reset-command>
+        <classes className="ring" customValue="false" canExtend="false">
+            <class>
+                <name>inset</name>
+                <value>inset</value>
+            </class>
+        </classes>
+    </message>
+    <message id="ringColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/ring-color</tailwind-docs>
+        <reset-command>ring-color-res</reset-command>
+        <classes className="ring" include="colors" customValue="true" canExtend="false">
+            <class extends="true">
+                <name>ring-color-test</name>
+                <value>#000</value>
+            </class>
+        </classes>
+    </message>
+    <message id="ringOffsetWidth" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/ring-offset-width</tailwind-docs>
+        <reset-command>ring-offset-width-res</reset-command>
+        <classes className="ring-offset" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0px</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1px</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2px</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>4px</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>8px</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="ringOffsetColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/ring-offset-color</tailwind-docs>
+        <reset-command>ring-offset-color-res</reset-command>
+        <classes className="ring-offset" include="colors" customValue="true" canExtend="false"/>
+    </message>
+</messages>

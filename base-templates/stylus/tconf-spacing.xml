@@ -1,0 +1,43 @@
+<messages active="false">
+    <!-- Spacing -->
+    <message id="padding" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/padding</tailwind-docs>
+        <reset-command>p-res</reset-command>
+        <classes className="p" include="spacing" customValue="true" canExtend="false"/>
+    </message>
+    <message id="margin" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/margin</tailwind-docs>
+        <reset-command>m-res</reset-command>
+        <classes className="m" include="spacing" customValue="true" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+        </classes>
+    </message>
+    <message id="space" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/space</tailwind-docs>
+        <reset-command>space-res</reset-command>
+        <classes className="space" include="spacing" customValue="true" canExtend="true"/>
+    </message>
+    <message id="spaceXReverse" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/space</tailwind-docs>
+        <reset-command>space-x-reverse-res</reset-command>
+        <classes className="space-x" customValue="false" canExtend="false">
+            <class>
+                <name>reverse</name>
+                <value>reverse</value>
+            </class>
+        </classes>
+    </message>
+    <message id="spaceYReverse" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/space</tailwind-docs>
+        <reset-command>space-y-reverse-res</reset-command>
+        <classes className="space-y" customValue="false" canExtend="false">
+            <class>
+                <name>reverse</name>
+                <value>reverse</value>
+            </class>
+        </classes>
+    </message>
+</messages>

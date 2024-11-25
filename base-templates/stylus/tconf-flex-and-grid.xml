@@ -1,0 +1,1082 @@
+<messages active="false">
+    <message id="flexBasis" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/flex-basis</tailwind-docs>
+        <reset-command>basis-res</reset-command>
+        <classes className="basis" include="spacing" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>1/2</name>
+                <value>50%</value>
+            </class>
+            <class>
+                <name>1/3</name>
+                <value>33.333333%</value>
+            </class>
+            <class>
+                <name>2/3</name>
+                <value>66.666667%</value>
+            </class>
+            <class>
+                <name>1/4</name>
+                <value>25%</value>
+            </class>
+            <class>
+                <name>2/4</name>
+                <value>50%</value>
+            </class>
+            <class>
+                <name>3/4</name>
+                <value>75%</value>
+            </class>
+            <class>
+                <name>1/5</name>
+                <value>20%</value>
+            </class>
+            <class>
+                <name>2/5</name>
+                <value>40%</value>
+            </class>
+            <class>
+                <name>3/5</name>
+                <value>60%</value>
+            </class>
+            <class>
+                <name>4/5</name>
+                <value>80%</value>
+            </class>
+            <class>
+                <name>1/6</name>
+                <value>16.666667%</value>
+            </class>
+            <class>
+                <name>2/6</name>
+                <value>33.333333%</value>
+            </class>
+            <class>
+                <name>3/6</name>
+                <value>50%</value>
+            </class>
+            <class>
+                <name>4/6</name>
+                <value>66.666667%</value>
+            </class>
+            <class>
+                <name>5/6</name>
+                <value>83.333333%</value>
+            </class>
+            <class>
+                <name>1/12</name>
+                <value>8.333333%</value>
+            </class>
+            <class>
+                <name>2/12</name>
+                <value>16.666667%</value>
+            </class>
+            <class>
+                <name>3/12</name>
+                <value>25%</value>
+            </class>
+            <class>
+                <name>4/12</name>
+                <value>33.333333%</value>
+            </class>
+            <class>
+                <name>5/12</name>
+                <value>41.666667%</value>
+            </class>
+            <class>
+                <name>6/12</name>
+                <value>50%</value>
+            </class>
+            <class>
+                <name>7/12</name>
+                <value>58.333333%</value>
+            </class>
+            <class>
+                <name>8/12</name>
+                <value>66.666667%</value>
+            </class>
+            <class>
+                <name>9/12</name>
+                <value>75%</value>
+            </class>
+            <class>
+                <name>10/12</name>
+                <value>83.333333%</value>
+            </class>
+            <class>
+                <name>11/12</name>
+                <value>91.666667%</value>
+            </class>
+            <class>
+                <name>full</name>
+                <value>100%</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>200px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="flexDirection" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/flex-direction</tailwind-docs>
+        <reset-command>flex-direction-res</reset-command>
+        <classes className="flex" customValue="false" canExtend="false">
+            <class>
+                <name>row</name>
+                <value>row</value>
+            </class>
+            <class>
+                <name>col</name>
+                <value>column</value>
+            </class>
+            <class>
+                <name>row-reverse</name>
+                <value>row-reverse</value>
+            </class>
+            <class>
+                <name>col-reverse</name>
+                <value>column-reverse</value>
+            </class>
+        </classes>
+    </message>
+    <message id="flexWrap" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/flex-wrap</tailwind-docs>
+        <reset-command>flex-wrap-res</reset-command>
+        <classes className="flex" customValue="false" canExtend="false">
+            <class>
+                <name>nowrap</name>
+                <value>nowrap</value>
+            </class>
+            <class>
+                <name>wrap</name>
+                <value>wrap</value>
+            </class>
+            <class>
+                <name>wrap-reverse</name>
+                <value>wrap-reverse</value>
+            </class>
+        </classes>
+    </message>
+    <message id="flex" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/flex</tailwind-docs>
+        <reset-command>flex-res</reset-command>
+        <classes className="flex" customValue="true" canExtend="true">
+            <class>
+                <name>1</name>
+                <value>1 1 0%</value>
+            </class>
+            <class>
+                <name>auto</name>
+                <value>1 1 auto</value>
+            </class>
+            <class>
+                <name>initial</name>
+                <value>0 1 auto</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2 2 0%</value>
+            </class>
+        </classes>
+    </message>
+    <message id="flexGrow" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/flex-grow</tailwind-docs>
+        <reset-command>flex-grow-res</reset-command>
+        <classes className="grow" customValue="true" canExtend="true">
+            <class>
+                <name>DEFAULT</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2</value>
+            </class>
+        </classes>
+    </message>
+    <message id="flexShrink" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/flex-shrink</tailwind-docs>
+        <reset-command>flex-shrink-res</reset-command>
+        <classes className="shrink" customValue="true" canExtend="true">
+            <class>
+                <name>DEFAULT</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>2</value>
+            </class>
+        </classes>
+    </message>
+    <message id="order" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/order</tailwind-docs>
+        <reset-command>order-res</reset-command>
+        <classes className="order" customValue="true" canExtend="true">
+            <class>
+                <name>first</name>
+                <value>-9999</value>
+            </class>
+            <class>
+                <name>last</name>
+                <value>9999</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2</value>
+            </class>
+            <class>
+                <name>3</name>
+                <value>3</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>4</value>
+            </class>
+            <class>
+                <name>5</name>
+                <value>5</value>
+            </class>
+            <class>
+                <name>6</name>
+                <value>6</value>
+            </class>
+            <class>
+                <name>7</name>
+                <value>7</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>8</value>
+            </class>
+            <class>
+                <name>9</name>
+                <value>9</value>
+            </class>
+            <class>
+                <name>10</name>
+                <value>10</value>
+            </class>
+            <class>
+                <name>11</name>
+                <value>11</value>
+            </class>
+            <class>
+                <name>12</name>
+                <value>12</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>13</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridTemplateColumns" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-template-columns</tailwind-docs>
+        <reset-command>grid-cols-res</reset-command>
+        <classes className="grid-cols" customValue="true" canExtend="true">
+            <class>
+                <name>1</name>
+                <value>repeat(1, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>repeat(2, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>3</name>
+                <value>repeat(3, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>repeat(4, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>5</name>
+                <value>repeat(5, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>6</name>
+                <value>repeat(6, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>7</name>
+                <value>repeat(7, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>repeat(8, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>9</name>
+                <value>repeat(9, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>10</name>
+                <value>repeat(10, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>11</name>
+                <value>repeat(11, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>12</name>
+                <value>repeat(12, minmax(0, 1fr))</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>repeat(13, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridColumn" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-column</tailwind-docs>
+        <reset-command>grid-column-res</reset-command>
+        <classes className="col" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>span-1</name>
+                <value>span 1 / span 1</value>
+            </class>
+            <class>
+                <name>span-2</name>
+                <value>span 2 / span 2</value>
+            </class>
+            <class>
+                <name>span-3</name>
+                <value>span 3 / span 3</value>
+            </class>
+            <class>
+                <name>span-4</name>
+                <value>span 4 / span 4</value>
+            </class>
+            <class>
+                <name>span-5</name>
+                <value>span 5 / span 5</value>
+            </class>
+            <class>
+                <name>span-6</name>
+                <value>span 6 / span 6</value>
+            </class>
+            <class>
+                <name>span-7</name>
+                <value>span 7 / span 7</value>
+            </class>
+            <class>
+                <name>span-8</name>
+                <value>span 8 / span 8</value>
+            </class>
+            <class>
+                <name>span-9</name>
+                <value>span 9 / span 9</value>
+            </class>
+            <class>
+                <name>span-10</name>
+                <value>span 10 / span 10</value>
+            </class>
+            <class>
+                <name>span-11</name>
+                <value>span 11 / span 11</value>
+            </class>
+            <class>
+                <name>span-12</name>
+                <value>span 12 / span 12</value>
+            </class>
+            <class extends="true">
+                <name>span-test</name>
+                <value>span 13 / span 13</value>
+            </class>
+            <class>
+                <name>full</name>
+                <value>1 / -1</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridColumnStart" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-column-start</tailwind-docs>
+        <reset-command>col-start-res</reset-command>
+        <classes className="col-start" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2</value>
+            </class>
+            <class>
+                <name>3</name>
+                <value>3</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>4</value>
+            </class>
+            <class>
+                <name>5</name>
+                <value>5</value>
+            </class>
+            <class>
+                <name>6</name>
+                <value>6</value>
+            </class>
+            <class>
+                <name>7</name>
+                <value>7</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>8</value>
+            </class>
+            <class>
+                <name>9</name>
+                <value>9</value>
+            </class>
+            <class>
+                <name>10</name>
+                <value>10</value>
+            </class>
+            <class>
+                <name>11</name>
+                <value>11</value>
+            </class>
+            <class>
+                <name>12</name>
+                <value>12</value>
+            </class>
+            <class>
+                <name>13</name>
+                <value>13</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>14</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridColumnEnd" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-column-end</tailwind-docs>
+        <reset-command>col-end-res</reset-command>
+        <classes className="col-end" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2</value>
+            </class>
+            <class>
+                <name>3</name>
+                <value>3</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>4</value>
+            </class>
+            <class>
+                <name>5</name>
+                <value>5</value>
+            </class>
+            <class>
+                <name>6</name>
+                <value>6</value>
+            </class>
+            <class>
+                <name>7</name>
+                <value>7</value>
+            </class>
+            <class>
+                <name>8</name>
+                <value>8</value>
+            </class>
+            <class>
+                <name>9</name>
+                <value>9</value>
+            </class>
+            <class>
+                <name>10</name>
+                <value>10</value>
+            </class>
+            <class>
+                <name>11</name>
+                <value>11</value>
+            </class>
+            <class>
+                <name>12</name>
+                <value>12</value>
+            </class>
+            <class>
+                <name>13</name>
+                <value>13</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>14</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridTemplateRows" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-template-rows</tailwind-docs>
+        <reset-command>grid-rows-res</reset-command>
+        <classes className="grid-rows" customValue="true" canExtend="true">
+            <class>
+                <name>1</name>
+                <value>repeat(1, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>repeat(2, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>3</name>
+                <value>repeat(3, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>4</name>
+                <value>repeat(4, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>5</name>
+                <value>repeat(5, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>6</name>
+                <value>repeat(6, minmax(0, 1fr))</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>repeat(7, minmax(0, 1fr))</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridRow" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-row</tailwind-docs>
+        <reset-command>grid-row-res</reset-command>
+        <classes className="row" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>span-1</name>
+                <value>span 1 / span 1</value>
+            </class>
+            <class>
+                <name>span-2</name>
+                <value>span 2 / span 2</value>
+            </class>
+            <class>
+                <name>span-3</name>
+                <value>span 3 / span 3</value>
+            </class>
+            <class>
+                <name>span-4</name>
+                <value>span 4 / span 4</value>
+            </class>
+            <class>
+                <name>span-5</name>
+                <value>span 5 / span 5</value>
+            </class>
+            <class>
+                <name>span-6</name>
+                <value>span 6 / span 6</value>
+            </class>
+            <class extends="true">
+                <name>span-test</name>
+                <value>span 7 / span 7</value>
+            </class>
+            <class>
+                <name>span-full</name>
+                <value>1 / -1</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridRowStart" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-row-start</tailwind-docs>
+        <reset-command>row-start-res</reset-command>
+        <classes className="row" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>start-1</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>start-2</name>
+                <value>2</value>
+            </class>
+            <class>
+                <name>start-3</name>
+                <value>3</value>
+            </class>
+            <class>
+                <name>start-4</name>
+                <value>4</value>
+            </class>
+            <class>
+                <name>start-5</name>
+                <value>5</value>
+            </class>
+            <class>
+                <name>start-6</name>
+                <value>6</value>
+            </class>
+            <class>
+                <name>start-7</name>
+                <value>7</value>
+            </class>
+            <class extends="true">
+                <name>start-test</name>
+                <value>8</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridRowEnd" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-row-end</tailwind-docs>
+        <reset-command>row-end-res</reset-command>
+        <classes className="row" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>end-1</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>end-2</name>
+                <value>2</value>
+            </class>
+            <class>
+                <name>end-3</name>
+                <value>3</value>
+            </class>
+            <class>
+                <name>end-4</name>
+                <value>4</value>
+            </class>
+            <class>
+                <name>end-5</name>
+                <value>5</value>
+            </class>
+            <class>
+                <name>end-6</name>
+                <value>6</value>
+            </class>
+            <class>
+                <name>end-7</name>
+                <value>7</value>
+            </class>
+            <class extends="true">
+                <name>end-test</name>
+                <value>8</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridAutoFlow" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-auto-flow</tailwind-docs>
+        <reset-command>grid-flow-res</reset-command>
+        <classes className="grid-flow" customValue="false" canExtend="false">
+            <class>
+                <name>row</name>
+                <value>row</value>
+            </class>
+            <class>
+                <name>col</name>
+                <value>column</value>
+            </class>
+            <class>
+                <name>dense</name>
+                <value>dense</value>
+            </class>
+            <class>
+                <name>row-dense</name>
+                <value>row dense</value>
+            </class>
+            <class>
+                <name>col-dense</name>
+                <value>column dense</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridAutoColumns" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-auto-columns</tailwind-docs>
+        <reset-command>auto-cols-res</reset-command>
+        <classes className="auto-cols" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>min</name>
+                <value>min-content</value>
+            </class>
+            <class>
+                <name>max</name>
+                <value>max-content</value>
+            </class>
+            <class>
+                <name>fr</name>
+                <value>minmax(0, 1fr)</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>minmax(0, 3fr)</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gridAutoRows" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grid-auto-rows</tailwind-docs>
+        <reset-command>auto-rows-res</reset-command>
+        <classes className="auto-rows" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>min</name>
+                <value>min-content</value>
+            </class>
+            <class>
+                <name>max</name>
+                <value>max-content</value>
+            </class>
+            <class>
+                <name>fr</name>
+                <value>minmax(0, 1fr)</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>minmax(0, 2fr)</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gap" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/gap</tailwind-docs>
+        <reset-command>gap-res</reset-command>
+        <classes className="gap" include="spacing" customValue="true" canExtend="true">
+            <class extends="true">
+                <name>test</name>
+                <value>20px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="justifyContent" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/justify-content</tailwind-docs>
+        <reset-command>justify-res</reset-command>
+        <classes className="justify" customValue="false" canExtend="false">
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>start</name>
+                <value>flex-start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>flex-end</value>
+            </class>
+            <class>
+                <name>between</name>
+                <value>space-between</value>
+            </class>
+            <class>
+                <name>around</name>
+                <value>space-around</value>
+            </class>
+            <class>
+                <name>evenly</name>
+                <value>space-evenly</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+            <class>
+                <name>normal</name>
+                <value>normal</value>
+            </class>
+        </classes>
+    </message>
+    <message id="justifyItems" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/justify-items</tailwind-docs>
+        <reset-command>justify-items-res</reset-command>
+        <classes className="justify-items" customValue="false" canExtend="false">
+            <class>
+                <name>start</name>
+                <value>start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>end</value>
+            </class>
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+        </classes>
+    </message>
+    <message id="justifySelf" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/justify-self</tailwind-docs>
+        <reset-command>justify-self-res</reset-command>
+        <classes className="justify-self" customValue="false" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>start</name>
+                <value>start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>end</value>
+            </class>
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+        </classes>
+    </message>
+    <message id="alignContent" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/align-content</tailwind-docs>
+        <reset-command>align-content-res</reset-command>
+        <classes className="content" customValue="false" canExtend="false">
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>start</name>
+                <value>flex-start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>flex-end</value>
+            </class>
+            <class>
+                <name>between</name>
+                <value>space-between</value>
+            </class>
+            <class>
+                <name>around</name>
+                <value>space-around</value>
+            </class>
+            <class>
+                <name>evenly</name>
+                <value>space-evenly</value>
+            </class>
+            <class>
+                <name>normal</name>
+                <value>normal</value>
+            </class>
+            <class>
+                <name>baseline</name>
+                <value>baseline</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+        </classes>
+    </message>
+    <message id="alignItems" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/align-items</tailwind-docs>
+        <reset-command>align-items-res</reset-command>
+        <classes className="items" customValue="false" canExtend="false">
+            <class>
+                <name>start</name>
+                <value>flex-start</value>
+            </class>
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>flex-end</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+            <class>
+                <name>baseline</name>
+                <value>baseline</value>
+            </class>
+        </classes>
+    </message>
+    <message id="alignSelf" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/align-self</tailwind-docs>
+        <reset-command>align-self-res</reset-command>
+        <classes className="self" customValue="false" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>start</name>
+                <value>flex-start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>flex-end</value>
+            </class>
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+            <class>
+                <name>baseline</name>
+                <value>baseline</value>
+            </class>
+        </classes>
+    </message>
+    <message id="placeContent" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/place-content</tailwind-docs>
+        <reset-command>place-content-res</reset-command>
+        <classes className="place-content" customValue="false" canExtend="false">
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>start</name>
+                <value>start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>end</value>
+            </class>
+            <class>
+                <name>between</name>
+                <value>space-between</value>
+            </class>
+            <class>
+                <name>around</name>
+                <value>space-around</value>
+            </class>
+            <class>
+                <name>evenly</name>
+                <value>space-evenly</value>
+            </class>
+            <class>
+                <name>baseline</name>
+                <value>baseline</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+        </classes>
+    </message>
+    <message id="placeItems" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/place-items</tailwind-docs>
+        <reset-command>place-items-res</reset-command>
+        <classes className="place-items" customValue="false" canExtend="false">
+            <class>
+                <name>start</name>
+                <value>start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>end</value>
+            </class>
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>baseline</name>
+                <value>baseline</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+        </classes>
+    </message>
+    <message id="placeSelf" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/place-self</tailwind-docs>
+        <reset-command>place-self-res</reset-command>
+        <classes className="place-self" customValue="false" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>start</name>
+                <value>start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>end</value>
+            </class>
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>stretch</name>
+                <value>stretch</value>
+            </class>
+        </classes>
+    </message>
+</messages>

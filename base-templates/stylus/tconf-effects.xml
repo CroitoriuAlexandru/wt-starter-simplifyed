@@ -1,0 +1,290 @@
+<messages active="false">
+    <message id="boxShadow" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/box-shadow</tailwind-docs>
+        <reset-command>shadow-res</reset-command>
+        <classes className="shadow" customValue="true" canExtend="true">
+            <class>
+                <name>sm</name>
+                <value>0 1px 2px 0 rgb(0 0 0 / 0.05)</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>["0 1px 3px 0 rgb(0 0 0 / 0.1)", "0 1px 2px -1px rgb(0 0 0 / 0.1)"]</value>
+            </class>
+            <class>
+                <name>md</name>
+                <value>["0 4px 6px -1px rgb(0 0 0 / 0.1)", "0 2px 4px -2px rgb(0 0 0 / 0.1)"]</value>
+            </class>
+            <class>
+                <name>lg</name>
+                <value>["0 10px 15px -3px rgb(0 0 0 / 0.1)", "0 4px 6px -4px rgb(0 0 0 / 0.1)"]</value>
+            </class>
+            <class>
+                <name>xl</name>
+                <value>["0 20px 25px -5px rgb(0 0 0 / 0.1)", "0 8px 10px -6px rgb(0 0 0 / 0.1)"]</value>
+            </class>
+            <class>
+                <name>2xl</name>
+                <value>0 25px 50px -12px rgb(0 0 0 / 0.25)</value>
+            </class>
+            <!-- <class><name>inner</name><value>inset 0 2px 4px 0 rgb(0 0 0 / 0.05)</value></class> -->
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>0 0 10px #0000</value>
+            </class>
+        </classes>
+    </message>
+    <message id="boxShadowInner" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/box-shadow</tailwind-docs>
+        <reset-command>shadow-inner-res</reset-command>
+        <classes className="shadow" customValue="false" canExtend="false">
+            <class>
+                <name>inner</name>
+                <value>inset 0 2px 4px 0 rgb(0 0 0 / 0.05)</value>
+            </class>
+        </classes>
+    </message>
+    <message id="boxShadowColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/box-shadow</tailwind-docs>
+        <reset-command>shadow-color-res</reset-command>
+        <classes className="shadow" include="colors" customValue="true" canExtend="false"/>
+    </message>
+    <message id="opacity" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/opacity</tailwind-docs>
+        <reset-command>opacity-res</reset-command>
+        <classes className="opacity" canExtend="true" customValue="true">
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>5</name>
+                <value>0.05</value>
+            </class>
+            <class>
+                <name>10</name>
+                <value>0.1</value>
+            </class>
+            <class extends="true">
+                <name>15</name>
+                <value>0.15</value>
+            </class>
+            <class>
+                <name>20</name>
+                <value>0.2</value>
+            </class>
+            <class>
+                <name>25</name>
+                <value>0.25</value>
+            </class>
+            <class>
+                <name>30</name>
+                <value>0.3</value>
+            </class>
+            <class extends="true">
+                <name>35</name>
+                <value>0.35</value>
+            </class>
+            <class>
+                <name>40</name>
+                <value>0.4</value>
+            </class>
+            <class extends="true">
+                <name>45</name>
+                <value>0.45</value>
+            </class>
+            <class>
+                <name>50</name>
+                <value>0.5</value>
+            </class>
+            <class extends="true">
+                <name>55</name>
+                <value>0.55</value>
+            </class>
+            <class>
+                <name>60</name>
+                <value>0.6</value>
+            </class>
+            <class extends="true">
+                <name>65</name>
+                <value>0.65</value>
+            </class>
+            <class>
+                <name>70</name>
+                <value>0.7</value>
+            </class>
+            <class>
+                <name>75</name>
+                <value>0.75</value>
+            </class>
+            <class>
+                <name>80</name>
+                <value>0.8</value>
+            </class>
+            <class extends="true">
+                <name>85</name>
+                <value>0.85</value>
+            </class>
+            <class>
+                <name>90</name>
+                <value>0.9</value>
+            </class>
+            <class>
+                <name>95</name>
+                <value>0.95</value>
+            </class>
+            <class>
+                <name>100</name>
+                <value>1</value>
+            </class>
+        </classes>
+    </message>
+    <message id="mixBlendMode" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/mix-blend-mode</tailwind-docs>
+        <reset-command>mix-blend-mode-res</reset-command>
+        <classes className="mix-blend" customValue="false" canExtend="false">
+            <class>
+                <name>normal</name>
+                <value>normal</value>
+            </class>
+            <class>
+                <name>multiply</name>
+                <value>multiply</value>
+            </class>
+            <class>
+                <name>screen</name>
+                <value>screen</value>
+            </class>
+            <class>
+                <name>overlay</name>
+                <value>overlay</value>
+            </class>
+            <class>
+                <name>darken</name>
+                <value>darken</value>
+            </class>
+            <class>
+                <name>lighten</name>
+                <value>lighten</value>
+            </class>
+            <class>
+                <name>color-dodge</name>
+                <value>color-dodge</value>
+            </class>
+            <class>
+                <name>color-burn</name>
+                <value>color-burn</value>
+            </class>
+            <class>
+                <name>hard-light</name>
+                <value>hard-light</value>
+            </class>
+            <class>
+                <name>soft-light</name>
+                <value>soft-light</value>
+            </class>
+            <class>
+                <name>difference</name>
+                <value>difference</value>
+            </class>
+            <class>
+                <name>exclusion</name>
+                <value>exclusion</value>
+            </class>
+            <class>
+                <name>hue</name>
+                <value>hue</value>
+            </class>
+            <class>
+                <name>saturation</name>
+                <value>saturation</value>
+            </class>
+            <class>
+                <name>color</name>
+                <value>color</value>
+            </class>
+            <class>
+                <name>luminosity</name>
+                <value>luminosity</value>
+            </class>
+            <class>
+                <name>plus-lighter</name>
+                <value>plus-lighter</value>
+            </class>
+        </classes>
+    </message>
+    <message id="backgroundBlendMode" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-blend-mode</tailwind-docs>
+        <reset-command>background-blend-mode-res</reset-command>
+        <classes className="bg-blend" customValue="false" canExtend="false">
+            <class>
+                <name>normal</name>
+                <value>normal</value>
+            </class>
+            <class>
+                <name>multiply</name>
+                <value>multiply</value>
+            </class>
+            <class>
+                <name>screen</name>
+                <value>screen</value>
+            </class>
+            <class>
+                <name>overlay</name>
+                <value>overlay</value>
+            </class>
+            <class>
+                <name>darken</name>
+                <value>darken</value>
+            </class>
+            <class>
+                <name>lighten</name>
+                <value>lighten</value>
+            </class>
+            <class>
+                <name>color-dodge</name>
+                <value>color-dodge</value>
+            </class>
+            <class>
+                <name>color-burn</name>
+                <value>color-burn</value>
+            </class>
+            <class>
+                <name>hard-light</name>
+                <value>hard-light</value>
+            </class>
+            <class>
+                <name>soft-light</name>
+                <value>soft-light</value>
+            </class>
+            <class>
+                <name>difference</name>
+                <value>difference</value>
+            </class>
+            <class>
+                <name>exclusion</name>
+                <value>exclusion</value>
+            </class>
+            <class>
+                <name>hue</name>
+                <value>hue</value>
+            </class>
+            <class>
+                <name>saturation</name>
+                <value>saturation</value>
+            </class>
+            <class>
+                <name>color</name>
+                <value>color</value>
+            </class>
+            <class>
+                <name>luminosity</name>
+                <value>luminosity</value>
+            </class>
+        </classes>
+    </message>
+</messages>

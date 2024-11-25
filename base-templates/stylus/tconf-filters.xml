@@ -1,0 +1,301 @@
+<messages active="false">
+    <message id="blur" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/blur</tailwind-docs>
+        <reset-command>blur-res</reset-command>
+        <classes className="blur" customValue="true" canExtend="true">
+            <class>
+                <name>none</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>sm</name>
+                <value>4px</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>8px</value>
+            </class>
+            <class>
+                <name>md</name>
+                <value>12px</value>
+            </class>
+            <class>
+                <name>lg</name>
+                <value>16px</value>
+            </class>
+            <class>
+                <name>xl</name>
+                <value>24px</value>
+            </class>
+            <class>
+                <name>2xl</name>
+                <value>40px</value>
+            </class>
+            <class>
+                <name>3xl</name>
+                <value>64px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="brightness" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/brightness</tailwind-docs>
+        <reset-command>brightness-res</reset-command>
+        <classes className="brightness" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>50</name>
+                <value>.5</value>
+            </class>
+            <class>
+                <name>75</name>
+                <value>.75</value>
+            </class>
+            <class>
+                <name>90</name>
+                <value>.9</value>
+            </class>
+            <class>
+                <name>95</name>
+                <value>.95</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>105</name>
+                <value>1.05</value>
+            </class>
+            <class>
+                <name>110</name>
+                <value>1.1</value>
+            </class>
+            <class>
+                <name>125</name>
+                <value>1.25</value>
+            </class>
+            <class>
+                <name>150</name>
+                <value>1.5</value>
+            </class>
+            <class>
+                <name>200</name>
+                <value>2</value>
+            </class>
+        </classes>
+    </message>
+    <message id="contrast" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/contrast</tailwind-docs>
+        <reset-command>contrast-res</reset-command>
+        <classes className="contrast" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>50</name>
+                <value>.5</value>
+            </class>
+            <class>
+                <name>75</name>
+                <value>.75</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>125</name>
+                <value>1.25</value>
+            </class>
+            <class>
+                <name>150</name>
+                <value>1.5</value>
+            </class>
+            <class>
+                <name>200</name>
+                <value>2</value>
+            </class>
+        </classes>
+    </message>
+    <message id="dropShadow" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/drop-shadow</tailwind-docs>
+        <reset-command>drop-shadow-res</reset-command>
+        <classes className="drop-shadow" customValue="true" canExtend="true">
+            <class>
+                <name>sm</name>
+                <value>0 1px 1px rgb(0 0 0 / 0.05)</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>["0 1px 2px rgb(0 0 0 / 0.1)", "0 1px 1px rgb(0 0 0 / 0.06)"]</value>
+            </class>
+            <class>
+                <name>md</name>
+                <value>["0 4px 3px rgb(0 0 0 / 0.07)", "0 2px 2px rgb(0 0 0 / 0.06)"]</value>
+            </class>
+            <class>
+                <name>lg</name>
+                <value>["0 10px 8px rgb(0 0 0 / 0.04)", "0 4px 3px rgb(0 0 0 / 0.1)"</value>
+            </class>
+            <class>
+                <name>xl</name>
+                <value>["0 20px 13px rgb(0 0 0 / 0.03)", "0 8px 5px rgb(0 0 0 / 0.08)"]</value>
+            </class>
+            <class>
+                <name>2xl</name>
+                <value>0 25px 25px rgb(0 0 0 / 0.15)</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>0 0 #0000</value>
+            </class>
+        </classes>
+    </message>
+    <message id="grayscale" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/grayscale</tailwind-docs>
+        <reset-command>grayscale-res</reset-command>
+        <classes className="grayscale" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>100%</value>
+            </class>
+        </classes>
+    </message>
+    <message id="hueRotate" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/hue-rotate</tailwind-docs>
+        <reset-command>hue-rotate-res</reset-command>
+        <classes className="hue-rotate" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0deg</value>
+            </class>
+            <class>
+                <name>15</name>
+                <value>15deg</value>
+            </class>
+            <class>
+                <name>30</name>
+                <value>30deg</value>
+            </class>
+            <class>
+                <name>60</name>
+                <value>60deg</value>
+            </class>
+            <class>
+                <name>90</name>
+                <value>90deg</value>
+            </class>
+            <class>
+                <name>180</name>
+                <value>180deg</value>
+            </class>
+        </classes>
+    </message>
+    <message id="invert" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/invert</tailwind-docs>
+        <reset-command>invert-res</reset-command>
+        <classes className="invert" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>100%</value>
+            </class>
+        </classes>
+    </message>
+    <message id="saturate" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/saturate</tailwind-docs>
+        <reset-command>saturate-res</reset-command>
+        <classes className="saturate" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>50</name>
+                <value>.5</value>
+            </class>
+            <class>
+                <name>100</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>150</name>
+                <value>1.5</value>
+            </class>
+            <class>
+                <name>200</name>
+                <value>2</value>
+            </class>
+        </classes>
+    </message>
+    <message id="sepia" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/sepia</tailwind-docs>
+        <reset-command>sepia-res</reset-command>
+        <classes className="sepia" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>100%</value>
+            </class>
+        </classes>
+    </message>
+    <message id="backdropBlur" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-blur</tailwind-docs>
+        <reset-command>backdrop-blur-res</reset-command>
+        <classes className="backdrop-blur" include="blur" customValue="true" canExtend="true"/>
+    </message>
+    <message id="backdropBrightness" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-brightness</tailwind-docs>
+        <reset-command>backdrop-brightness-res</reset-command>
+        <classes className="backdrop-brightness" include="brightness" customValue="true" canExtend="true"/>
+    </message>
+    <message id="backdropContrast" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-contrast</tailwind-docs>
+        <reset-command>backdrop-contrast-res</reset-command>
+        <classes className="backdrop-contrast" include="contrast" customValue="true" canExtend="true"/>
+    </message>
+    <message id="backdropGrayscale" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-grayscale</tailwind-docs>
+        <reset-command>backdrop-grayscale-res</reset-command>
+        <classes className="backdrop-grayscale" include="grayscale" customValue="true" canExtend="true"/>
+    </message>
+    <message id="backdropHueRotate" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-hue-rotate</tailwind-docs>
+        <reset-command>backdrop-hue-rotate-res</reset-command>
+        <classes className="backdrop-hue-rotate" include="hueRotate" customValue="true" canExtend="true"/>
+    </message>
+    <message id="backdropInvert" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-invert</tailwind-docs>
+        <reset-command>backdrop-invert-res</reset-command>
+        <classes className="backdrop-invert" include="invert" customValue="true" canExtend="true"/>
+    </message>
+    <message id="backdropOpacity" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-opacity</tailwind-docs>
+        <reset-command>backdrop-opacity-res</reset-command>
+        <classes className="backdrop-opacity" include="opacity" customValue="true" canExtend="true"/>
+    </message>
+    <message id="backdropSaturate" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-saturate</tailwind-docs>
+        <reset-command>backdrop-saturate-res</reset-command>
+        <classes className="backdrop-saturate" include="saturate" customValue="true" canExtend="true"/>
+    </message>
+    <message id="backdropSepia" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/backdrop-sepia</tailwind-docs>
+        <reset-command>backdrop-sepia-res</reset-command>
+        <classes className="backdrop-sepia" include="sepia" customValue="true" canExtend="true"/>
+    </message>
+</messages>

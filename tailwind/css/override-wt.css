@@ -1,0 +1,28 @@
+
+.Wt-dialog
+{
+    @apply bg-transparent;
+}
+
+.itemselected a {
+    @apply bg-gray-200;
+}
+
+.Wt-popupmenu {
+    @apply rounded-md border-gray-400 cursor-pointer; 
+}
+.Wt-popupmenu .active {
+    @apply bg-gray-200 text-black;
+}
+
+.dialog-layout {
+    @apply h-full;
+}
+
+/* .Wt-dialog .body, .Wt-dialog .footer {
+    @apply p-0;
+} */
+/* 
+.Wt-outset {
+    @apply rounded-md;
+} */

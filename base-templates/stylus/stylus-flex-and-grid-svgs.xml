@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<messages active="true">
+    <message id="stylus-flex-widget-template" height="300px">
+        <div class="text-sm p-4">
+            <div>
+                <div>Extra Svgs</div>
+                <div>
+                    <div>${stylus-svg-brush class="" implementation="svg:stylus-svg-brush"}</div>
+                    <div>${stylus-svg-refresh class="" implementation="svg:stylus-svg-refresh"}</div>
+                </div>
+            </div>
+            <div>
+                <div class="flex-row-reverse ">flex-direction</div>
+                <div class="flex space-x-1">
+                    <div>${stylus-svg-panels-flex-row class="" implementation="svg:stylus-svg-panels-flex-row"}</div>
+                    <div>${stylus-svg-panels-flex-col class="" implementation="svg:stylus-svg-panels-flex-col"}</div>
+                    <div>${stylus-svg-panels-flex-row-reverse class="" implementation="svg:stylus-svg-panels-flex-row-reverse"}</div>
+                    <div>${stylus-svg-panels-flex-col-reverse class="" implementation="svg:stylus-svg-panels-flex-col-reverse"}</div>
+                </div>
+            </div>
+            <div>
+                <div>flex-wrap</div>
+                <div class="flex space-x-1">
+                    <div>${stylus-svg-panels-flex-nowrap class="" implementation="svg:stylus-svg-panels-flex-nowrap"}</div>
+                    <div>${stylus-svg-panels-flex-wrap class="" implementation="svg:stylus-svg-panels-flex-wrap"}</div>
+                    <div>${stylus-svg-panels-flex-wrap-reverse class="" implementation="svg:stylus-svg-panels-flex-wrap-reverse"}</div>
+                </div>
+            </div>
+            <div>
+                <div>align-content</div>
+                <div class="flex space-x-1">
+                    <div>${stylus-svg-panels-content-center class="" implementation="svg:stylus-svg-panels-content-center"}</div>
+                    <div>${stylus-svg-panels-content-start class="" implementation="svg:stylus-svg-panels-content-start"}</div>
+                    <div>${stylus-svg-panels-content-end class="" implementation="svg:stylus-svg-panels-content-end"}</div>
+                    <div>${stylus-svg-panels-content-around class="" implementation="svg:stylus-svg-panels-content-around"}</div>
+                    <div>${stylus-svg-panels-content-between class="" implementation="svg:stylus-svg-panels-content-between"}</div>
+                    <div>${stylus-svg-panels-content-evenly class="" implementation="svg:stylus-svg-panels-content-evenly"}</div>
+                    <div>${stylus-svg-panels-content-stretch class="" implementation="svg:stylus-svg-panels-content-stretch"}</div>
+                    <div>${stylus-svg-panels-content-baseline class="" implementation="svg:stylus-svg-panels-content-baseline"}</div>
+                    <div>${stylus-svg-panels-content-normal class="" implementation="svg:stylus-svg-panels-content-normal"}</div>
+                </div>
+            </div>
+            <div>
+                <div>justify-content</div>
+                <div class="flex space-x-1">
+                    <div>${stylus-svg-panels-justify-center class="" implementation="svg:stylus-svg-panels-justify-center"}</div>
+                    <div>${stylus-svg-panels-justify-start class="" implementation="svg:stylus-svg-panels-justify-start"}</div>
+                    <div>${stylus-svg-panels-justify-end class="" implementation="svg:stylus-svg-panels-justify-end"}</div>
+                    <div>${stylus-svg-panels-justify-between class="" implementation="svg:stylus-svg-panels-justify-between"}</div>
+                    <div>${stylus-svg-panels-justify-around class="" implementation="svg:stylus-svg-panels-justify-around"}</div>
+                    <div>${stylus-svg-panels-justify-evenly class="" implementation="svg:stylus-svg-panels-justify-evenly"}</div>
+                    <div>${stylus-svg-panels-justify-stretch class="" implementation="svg:stylus-svg-panels-justify-stretch"}</div>
+                    <div>${stylus-svg-panels-justify-normal class="" implementation="svg:stylus-svg-panels-justify-normal"}</div>
+                </div>
+            </div>
+            <div>
+                <div>align-items</div>
+                <div class="flex space-x-1">
+                    <div>${stylus-svg-panels-items-center class="" implementation="svg:stylus-svg-panels-items-center"}</div>
+                    <div>${stylus-svg-panels-items-start class="" implementation="svg:stylus-svg-panels-items-start"}</div>
+                    <div>${stylus-svg-panels-items-end class="" implementation="svg:stylus-svg-panels-items-end"}</div>
+                    <div>${stylus-svg-panels-items-stretch class="" implementation="svg:stylus-svg-panels-items-stretch"}</div>
+                    <div>${stylus-svg-panels-items-baseline class="" implementation="svg:stylus-svg-panels-items-baseline"}</div>
+                </div>
+            </div>
+        </div>
+    </message>
+    <message id="stylus-svg-brush" height="300px">
+        <svg width="50px" height="50px" viewBox="0 0 1024 1024" class="w-8 h-8 " version="1.1">
+            <path d="M733.437727 651.525877c-9.788344-14.855552-21.812853-25.171197-37.373862-31.536692 23.046635-40.497736 27.882445-114.950582 27.351049-218.404978-1.059721-198.539556-25.111811-275.762011-85.888621-275.46918-60.655991 0.35324-83.941191 77.872622-82.882493 276.353816 0.531396 110.646168 12.145328 183.03486 35.783768 220.822372-18.510823 8.133745-33.661254 20.161326-43.386117 36.607996-7.075048 11.789016-9.667525 24.287584-9.667525 36.782057 0 20.985554 7.427264 41.85336 13.37911 58.830403l2.356984 6.721807c6.60406 18.98181 14.444974 62.899323 14.444974 85.417633 0 5.067208-0.41365 9.018382-1.298287 11.435775l3.30203-4.06892c-6.308157 7.840914-8.254563 20.514566-2.477802 28.708721 5.776761 8.251492 14.680468 13.321772 24.169837 10.138512l8.490057-2.88838c27.882445-9.371622 30.182092-10.138512 48.279265-22.871551l15.383877-10.668885c40.144496-27.233302 71.860368-69.559697 80.938135-107.875534 9.078791-38.790919 5.245365-73.629641-10.904379-98.034972z" fill="#27323A"/>
+            <path d="M637.821172 171.387141c6.483242 0 39.143136 10.90745 40.31958 230.432559 0.117747 20.33641 0.235494 51.110308-1.177468 82.939831-23.520694-6.954229-48.634553-6.247748-73.746364 1.828659-1.885997-23.463356-3.123874-50.992561-3.30203-84.35484-1.119107-213.98589 28.709745-230.7858 37.906282-230.846209z" fill="#79CCBF"/>
+            <path d="M674.959541 516.592126c-3.362439 39.439039-10.081175 75.336458-23.463357 88.601916-3.184283 3.123874-6.308157 4.421137-10.729294 4.361752-0.292831 0-22.928888-1.943334-34.364663-91.487226 23.695778-9.021454 47.159134-9.549778 68.557314-1.476442z" fill="#FFFFFF"/>
+            <path d="M700.246436 739.182748c-6.365495 27.00088-31.94727 60.245413-62.25018 80.761002l-16.03302 11.142944c-4.244005 2.945718-7.075048 4.831715-9.845681 6.422833-1.416033-41.204217-15.915273-89.365735-16.211177-90.071192l-2.47473-7.075048c-4.71704-13.321772-10.668885-30.182092-10.668885-43.62161 0-5.245365 0.884637-9.903019 3.123874-13.675012 11.789016-19.808085 36.372502-24.81898 54.879229-25.584847h0.060409c38.140752-1.532756 47.394628 7.662758 54.761483 18.924472 5.423521 8.251492 8.254563 20.040507 8.254564 33.834291 0.002048 8.958997-1.178492 18.804678-3.595886 28.942167z" fill="#F4CE73"/>
+            <path d="M659.455869 681.297391c-8.254563 1.295215-13.853168 9.07572-12.498568 17.269873 5.07028 31.65751 5.776761 45.568016-7.898252 56.473419-6.483242 5.188027-7.545011 14.677396-2.356984 21.16371 5.188027 6.543651 14.677396 7.602349 21.160638 2.417393 28.826467-22.93196 23.759259-54.411314 18.864064-84.828899-1.296239-8.194154-9.076743-13.793783-17.270898-12.495496zM506.129042 851.187611c12.498568 0 22.636057 10.138512 22.636056 22.636057 0 12.495497-10.138512 22.636057-22.636056 22.636057H292.91209c-12.498568 0-22.636057-10.141584-22.636057-22.636057 0-12.498568 10.138512-22.636057 22.636057-22.636057h213.216952z" fill="#27323A"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-refresh" height="300px">
+        <svg height="800px" width="800px" class="w-8 h-8 p-1.5 " version="1.1" viewBox="0 0 392.598 392.598" xml:space="preserve">
+            <g>
+                <path style="fill:#194F82;" d="M382.488,286.384c-3.62-3.62-9.438-4.267-13.77-1.422c-30.19,20.105-65.552,30.707-102.077,30.707
+                c-45.64,0-88.76-16.485-122.634-46.61l23.725-23.725c7.37-8.21,1.487-18.166-7.758-18.618H40.96
+                c-6.012,0-10.925,4.848-10.925,10.925v118.95c0.517,10.279,12.024,14.222,18.618,7.758l24.76-24.76
+                c37.947,34.263,86.626,53.01,138.085,53.01c55.143,0,125.285-23.014,172.154-92.444
+                C386.69,295.822,386.108,290.069,382.488,286.384z M211.692,370.747c-49.325,0-95.741-19.265-130.586-54.109
+                c-4.073-4.073-11.378-4.073-15.451,0L51.95,330.343v-81.842h81.778l-13.059,13.059c-4.202,4.59-4.461,10.99,0,15.451
+                c39.046,39.047,90.893,60.509,146.036,60.509c21.85,0,43.378-3.426,63.806-10.02C297.219,355.426,255.651,370.747,211.692,370.747z
+                "/>
+                <path style="fill:#194F82;" d="M248.605,123.475L224.88,147.2c-7.37,8.21-1.487,18.166,7.758,18.618h119.014
+                c6.012,0,10.925-4.848,10.925-10.925V35.943c-0.517-10.279-12.024-14.222-18.618-7.758l-24.76,24.76
+                C281.122,18.683,232.508,0,180.985,0C125.841,0,55.829,23.014,8.831,92.444c-2.909,4.331-2.327,10.02,1.422,13.77
+                c3.62,3.62,9.438,4.267,13.77,1.422C54.213,87.531,89.575,76.929,126.1,76.929C171.611,76.865,214.795,93.349,248.605,123.475z
+                    M180.92,21.786c49.325,0,95.741,19.265,130.586,54.109c4.073,4.073,11.378,4.073,15.451,0l13.705-13.705v81.778h-81.778
+                l13.059-13.059c4.202-4.59,4.461-10.99,0-15.451c-39.046-39.046-90.893-60.509-146.036-60.509c-21.851,0-43.378,3.426-63.806,10.02
+                C95.393,37.107,136.96,21.786,180.92,21.786z"/>
+            </g>
+            <path style="fill:#FFC10D;" d="M340.661,62.255L326.956,75.96c-4.073,4.073-11.378,4.073-15.451,0
+            c-34.844-34.844-81.261-54.109-130.586-54.109c-43.96,0-85.592,15.192-118.82,43.248c20.428-6.659,41.891-10.02,63.806-10.02
+            c55.143,0,107.055,21.463,146.036,60.509c4.461,4.396,4.202,10.796,0,15.451l-13.059,12.994h81.778L340.661,62.255L340.661,62.255z"/>
+            <path style="fill:#56ACE0;" d="M81.041,316.638c34.844,34.844,81.261,54.109,130.586,54.109c43.96,0,85.592-15.192,118.82-43.249
+            c-20.428,6.659-41.891,10.02-63.806,10.02c-55.143,0-107.055-21.463-146.036-60.509c-4.461-4.396-4.202-10.796,0-15.451
+            l13.059-13.059H51.95v81.778l13.705-13.705C69.728,312.566,76.968,312.566,81.041,316.638z"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-items-baseline" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 32.31972 261.011467)" fill="#ededed" stroke-width="0"/>
+            <line x1="-47.958297" y1="94.61338" x2="47.958297" y2="-94.61338" transform="translate(102.041703 145.699392)" fill="none" stroke="#ededed" stroke-width="8"/>
+            <line x1="-49.261511" y1="-94.61338" x2="49.261512" y2="94.61338" transform="translate(199.261511 145.699392)" fill="none" stroke="#ededed" stroke-width="8"/>
+            <line x1="-48.609904" y1="0" x2="48.609904" y2="0" transform="translate(150.651607 145.699392)" fill="none" stroke="#ededed" stroke-width="8"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-baseline" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 32.31972 261.011467)" fill="#ededed" stroke-width="0"/>
+            <line x1="-47.958297" y1="94.61338" x2="47.958297" y2="-94.61338" transform="translate(102.041703 145.699392)" fill="none" stroke="#ededed" stroke-width="8"/>
+            <line x1="-49.261511" y1="-94.61338" x2="49.261512" y2="94.61338" transform="translate(199.261511 145.699392)" fill="none" stroke="#ededed" stroke-width="8"/>
+            <line x1="-48.609904" y1="0" x2="48.609904" y2="0" transform="translate(150.651607 145.699392)" fill="none" stroke="#ededed" stroke-width="8"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-items-stretch" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0-2.546875 0.221975 0 188.184077 241.24744)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0-2.546875 0.221975 0 118.853061 241.24744)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 39.464986)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 260.490181)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-items-end" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 1.746094-.221975 0 213.987947 124.740038)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0-2.546875 0.221975 0 118.853061 241.24744)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 260.490181)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-items-start" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 1.746094-.221975 0 213.466662 71.308254)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0-2.546875 0.221975 0 118.853061 241.24744)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 26.325044 37.379842)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-items-center" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 1.746094-.221975 0 214.509233 98.024146)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0-2.546875 0.221975 0 118.853061 241.24744)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 143.722153)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-justify-around" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(0 1-1 0 300 0)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 220.038021)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 51.607188)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 263.617896)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 19.134838)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-justify-between" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(0 1-1 0 300 0)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 197.153731)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 84.340403)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 282.905472)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 5.060121)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-justify-evenly" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(0 1-1 0 300 0)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 174.73844)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 107.27698)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 242.245176)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 46.241702)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-justify-normal" height="300px">
+        <svg class=" w-6 h-6  " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.328125 3.539978-.090242 0.059349 62.987472 31.898217)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 3.546875-.108009 0 215.150828 35.117686)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 3.546875-.108009 0 65.052826 31.668113)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-justify-end" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(0-1-1 0 300 300)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 98.057135)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 51.607188)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 19.134838)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-justify-start" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(0-1 1 0 0 300)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 98.057135)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 51.607188)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 19.134838)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-justify-stretch" height="300px">
+        <svg class="w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(0 1-1 0 300 0)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.556052 31.668113 80.14775)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.556052 31.668113 7.689019)" fill="rgba(237,237,237,0.02)" stroke="#ededed" stroke-width="4" stroke-miterlimit="3"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.556052 31.668113 154.691625)" fill="rgba(237,237,237,0.02)" stroke="#ededed" stroke-width="4" stroke-miterlimit="3"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.556052 31.668113 226.629176)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-justify-center" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(0 1-1 0 300 0)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 175.207439)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 99.565485)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 143.722153)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-stretch" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 1.069119 65.030407 158.623872)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 1.069119 65.030407 17.899104)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 282.905472)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 5.060121)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-between" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 257.101602)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 17.615815)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 282.905472)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 5.060121)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-around" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 220.038021)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 51.607188)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 263.617896)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 19.134838)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-end" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(1 0 0-1 0 300)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 98.057135)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 51.607188)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 19.134838)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-start" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 98.057135)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 51.607188)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 19.134838)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-center" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 175.207439)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 99.565485)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 143.722153)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-evenly" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g transform="matrix(-1 0 0-1 300 300)">
+                <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 174.73844)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.546875 0 0 0.221975 65.030407 107.27698)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 242.245176)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(3.546875 0 0 0.108009 31.668113 46.241702)" fill="#ededed" stroke-width="0"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-content-normal" height="300px">
+        <svg class=" w-6 h-6  " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(2.328125 3.539978-.090242 0.059349 62.987472 31.898217)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 3.546875-.108009 0 215.150828 35.117686)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 3.546875-.108009 0 65.052826 31.668113)" fill="#ededed" stroke-width="0"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-flex-wrap" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(198.716639 168.137209)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(33.469029 168.137209)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(115.547962 22.69846)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(116.637706 168.137209)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(198.716639 22.69846)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(33.469029 22.69846)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-flex-wrap-reverse" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <g transform="matrix(.693054 0 0 0.693054 46.458013 47.128859)">
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(116.637706 168.137211)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(202.517681 22.69846)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(33.469029 22.69846)" fill="#ededed" stroke-width="0"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(33.469029 168.137211)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(202.517681 168.137209)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+                <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(116.637706 22.69846)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+            </g>
+            <ellipse rx="127.877932" ry="127.877932" transform="translate(150.416113 156.506021)" fill="rgba(210,219,237,0)" stroke="#ededed" stroke-width="8"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-flex-nowrap" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(116.637706 78.476044)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(199.806383 78.476044)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(34.558773 78.476044)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-flex-col-reverse" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 1-1 0 147.938443 56.401548)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 1-1 0 147.938443 176.873858)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+            <g transform="matrix(0-1 1 0-4.581385 300.051223)">
+                <line x1="-93.598449" y1="0.811103" x2="93.59845" y2="-0.811103" transform="translate(150.051226 234.408796)" fill="none" stroke="#ededed" stroke-width="6"/>
+                <line x1="16.681147" y1="12.977649" x2="-16.681147" y2="-12.97765" transform="translate(226.968528 220.620044)" fill="none" stroke="#ededed" stroke-width="6"/>
+                <line x1="16.681147" y1="-13.248017" x2="-16.681147" y2="13.248017" transform="translate(226.968528 246.84571)" fill="none" stroke="#ededed" stroke-width="6"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-flex-col" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 1-1 0 147.938443 176.873864)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="matrix(0 1-1 0 147.938443 56.401554)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+            <g transform="matrix(0 1 1 0-4.581385-.051223)">
+                <line x1="-93.598449" y1="0.811103" x2="93.59845" y2="-0.811103" transform="translate(150.051226 234.408796)" fill="none" stroke="#ededed" stroke-width="6"/>
+                <line x1="16.681147" y1="12.977649" x2="-16.681147" y2="-12.97765" transform="translate(226.968528 220.620044)" fill="none" stroke="#ededed" stroke-width="6"/>
+                <line x1="16.681147" y1="-13.248017" x2="-16.681147" y2="13.248017" transform="translate(226.968528 246.84571)" fill="none" stroke="#ededed" stroke-width="6"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-flex-row-reverse" height="300px">
+        <svg class=" w-6 h-6 " viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(176.925088 45.635036)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(56.452778 45.635036)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+            <g transform="matrix(-1 0 0 1 300.102447 0)">
+                <line x1="-93.598449" y1="0.811103" x2="93.59845" y2="-0.811103" transform="translate(150.051226 234.408796)" fill="none" stroke="#ededed" stroke-width="6"/>
+                <line x1="16.681147" y1="12.977649" x2="-16.681147" y2="-12.97765" transform="translate(226.968528 220.620044)" fill="none" stroke="#ededed" stroke-width="6"/>
+                <line x1="16.681147" y1="-13.248017" x2="-16.681147" y2="13.248017" transform="translate(226.968528 246.84571)" fill="none" stroke="#ededed" stroke-width="6"/>
+            </g>
+        </svg>
+    </message>
+    <message id="stylus-svg-panels-flex-row" height="300px">
+        <svg viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" class=" w-6 h-6 ">
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(176.925087 45.635036)" fill="#ededed" stroke-width="0"/>
+            <rect width="66.724588" height="116.246742" rx="0" ry="0" transform="translate(56.622079 45.635036)" fill="rgba(237,237,237,0)" fill-rule="evenodd" stroke="#ededed" stroke-width="9" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1"/>
+            <g transform="translate(.000001 0)">
+                <line x1="-93.598449" y1="0.811103" x2="93.59845" y2="-0.811103" transform="translate(150.051226 234.408796)" fill="none" stroke="#ededed" stroke-width="6"/>
+                <line x1="16.681147" y1="12.977649" x2="-16.681147" y2="-12.97765" transform="translate(226.968528 220.620044)" fill="none" stroke="#ededed" stroke-width="6"/>
+                <line x1="16.681147" y1="-13.248017" x2="-16.681147" y2="13.248017" transform="translate(226.968528 246.84571)" fill="none" stroke="#ededed" stroke-width="6"/>
+            </g>
+            <rect width="300" height="300" rx="0" ry="0" fill="rgba(237,237,237,0)" stroke="#ededed" stroke-width="4"/>
+        </svg>
+    </message>
+</messages>

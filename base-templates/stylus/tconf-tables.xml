@@ -1,0 +1,54 @@
+<messages active="false">
+    <message id="borderCollapse" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/border-collapse</tailwind-docs>
+        <reset-command>border-collapse-res</reset-command>
+        <classes className="border" customValue="false" canExtend="false">
+            <class>
+                <name>collapse</name>
+                <value>collapse</value>
+            </class>
+            <class>
+                <name>separate</name>
+                <value>separate</value>
+            </class>
+        </classes>
+    </message>
+    <message id="borderSpacing" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/border-spacing</tailwind-docs>
+        <reset-command>border-spacing-res</reset-command>
+        <classes className="border-spacing" include="spacing" customValue="true" canExtend="true">
+            <class extends="true">
+                <name>test</name>
+                <value>20px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="tableLayout" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/table-layout</tailwind-docs>
+        <reset-command>table-res</reset-command>
+        <classes className="table" customValue="false" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>fixed</name>
+                <value>fixed</value>
+            </class>
+        </classes>
+    </message>
+    <message id="captionSide" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/caption-side</tailwind-docs>
+        <reset-command>caption-res</reset-command>
+        <classes className="caption" customValue="false" canExtend="false">
+            <class>
+                <name>top</name>
+                <value>top</value>
+            </class>
+            <class>
+                <name>bottom</name>
+                <value>bottom</value>
+            </class>
+        </classes>
+    </message>
+</messages>

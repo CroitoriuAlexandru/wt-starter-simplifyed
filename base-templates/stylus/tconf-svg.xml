@@ -1,0 +1,48 @@
+<messages active="false">
+    <message id="fill" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/fill</tailwind-docs>
+        <reset-command>fill-res</reset-command>
+        <classes className="fill" include="colors" customValue="true" canExtend="false">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+        </classes>
+    </message>
+    <message id="stroke" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/stroke</tailwind-docs>
+        <reset-command>stroke-color-res</reset-command>
+        <classes className="stroke" include="colors" customValue="true" canExtend="true">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+        </classes>
+    </message>
+    <message id="strokeWidth" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/stroke-width</tailwind-docs>
+        <reset-command>stroke-width-res</reset-command>
+        <classes className="stroke" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0px</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1px</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2px</value>
+            </class>
+            <class extends="true">
+                <name>3</name>
+                <value>3px</value>
+            </class>
+            <class extends="true">
+                <name>4</name>
+                <value>4px</value>
+            </class>
+        </classes>
+    </message>
+</messages>

@@ -1,0 +1,216 @@
+<messages active="false">
+    <message id="scale" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/scale</tailwind-docs>
+        <reset-command>scale-res</reset-command>
+        <classes className="scale" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0</value>
+            </class>
+            <class>
+                <name>50</name>
+                <value>.5</value>
+            </class>
+            <class>
+                <name>75</name>
+                <value>.75</value>
+            </class>
+            <class>
+                <name>90</name>
+                <value>.9</value>
+            </class>
+            <class>
+                <name>95</name>
+                <value>.95</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>1</value>
+            </class>
+            <class>
+                <name>105</name>
+                <value>1.05</value>
+            </class>
+            <class>
+                <name>110</name>
+                <value>1.1</value>
+            </class>
+            <class>
+                <name>125</name>
+                <value>1.25</value>
+            </class>
+            <class>
+                <name>150</name>
+                <value>1.5</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>3</value>
+            </class>
+        </classes>
+    </message>
+    <message id="rotate" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/rotate</tailwind-docs>
+        <reset-command>rotate-res</reset-command>
+        <classes className="rotate" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0deg</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1deg</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2deg</value>
+            </class>
+            <class>
+                <name>3</name>
+                <value>3deg</value>
+            </class>
+            <class>
+                <name>6</name>
+                <value>6deg</value>
+            </class>
+            <class>
+                <name>12</name>
+                <value>12deg</value>
+            </class>
+            <class>
+                <name>45</name>
+                <value>45deg</value>
+            </class>
+            <class>
+                <name>90</name>
+                <value>90deg</value>
+            </class>
+            <class>
+                <name>180</name>
+                <value>180deg</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>200deg</value>
+            </class>
+        </classes>
+    </message>
+    <message id="translate" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/translate</tailwind-docs>
+        <reset-command>translate-res</reset-command>
+        <classes className="translate" include="spacing" customValue="true" canExtend="true">
+            <class>
+                <name>1/2</name>
+                <value>50%</value>
+            </class>
+            <class>
+                <name>1/3</name>
+                <value>33.333333%</value>
+            </class>
+            <class>
+                <name>2/3</name>
+                <value>66.666667%</value>
+            </class>
+            <class>
+                <name>1/4</name>
+                <value>25%</value>
+            </class>
+            <class>
+                <name>2/4</name>
+                <value>50%</value>
+            </class>
+            <class>
+                <name>3/4</name>
+                <value>75%</value>
+            </class>
+            <class>
+                <name>full</name>
+                <value>100%</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>200px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="skew" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/skew</tailwind-docs>
+        <reset-command>skew-res</reset-command>
+        <classes className="skew" customValue="true" canExtend="true">
+            <class>
+                <name>0</name>
+                <value>0deg</value>
+            </class>
+            <class>
+                <name>1</name>
+                <value>1deg</value>
+            </class>
+            <class>
+                <name>2</name>
+                <value>2deg</value>
+            </class>
+            <class>
+                <name>3</name>
+                <value>3deg</value>
+            </class>
+            <class>
+                <name>6</name>
+                <value>6deg</value>
+            </class>
+            <class>
+                <name>12</name>
+                <value>12deg</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>200deg</value>
+            </class>
+        </classes>
+    </message>
+    <message id="transformOrigin" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/transform-origin</tailwind-docs>
+        <reset-command>origin-res</reset-command>
+        <classes className="origin" customValue="true" canExtend="true">
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>top</name>
+                <value>top</value>
+            </class>
+            <class>
+                <name>top-right</name>
+                <value>top right</value>
+            </class>
+            <class>
+                <name>right</name>
+                <value>right</value>
+            </class>
+            <class>
+                <name>bottom-right</name>
+                <value>bottom right</value>
+            </class>
+            <class>
+                <name>bottom</name>
+                <value>bottom</value>
+            </class>
+            <class>
+                <name>bottom-left</name>
+                <value>bottom left</value>
+            </class>
+            <class>
+                <name>left</name>
+                <value>left</value>
+            </class>
+            <class>
+                <name>top-left</name>
+                <value>top left</value>
+            </class>
+            <class extends="true">
+                <name>test</name>
+                <value>33% 75%</value>
+            </class>
+        </classes>
+    </message>
+</messages>

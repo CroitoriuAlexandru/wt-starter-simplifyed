@@ -1,0 +1,287 @@
+<messages active="false">
+    <message id="backgroundAttachment" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-attachment</tailwind-docs>
+        <reset-command>bg-attachment-res</reset-command>
+        <classes className="bg" customValue="false" canExtend="false">
+            <class>
+                <name>fixed</name>
+                <value>fixed</value>
+            </class>
+            <class>
+                <name>local</name>
+                <value>local</value>
+            </class>
+            <class>
+                <name>scroll</name>
+                <value>scroll</value>
+            </class>
+        </classes>
+    </message>
+    <message id="backgroundClip" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-clip</tailwind-docs>
+        <reset-command>bg-clip-res</reset-command>
+        <classes className="bg-clip" customValue="false" canExtend="false">
+            <class>
+                <name>border</name>
+                <value>border-box</value>
+            </class>
+            <class>
+                <name>padding</name>
+                <value>padding-box</value>
+            </class>
+            <class>
+                <name>content</name>
+                <value>content-box</value>
+            </class>
+            <class>
+                <name>text</name>
+                <value>text</value>
+            </class>
+        </classes>
+    </message>
+    <message id="backgroundColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-color</tailwind-docs>
+        <reset-command>bg-color-res</reset-command>
+        <classes className="bg" include="colors" customValue="true" canExtend="false"/>
+    </message>
+    <message id="backgroundOrigin" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-origin</tailwind-docs>
+        <reset-command>bg-origin-res</reset-command>
+        <classes className="bg-origin" customValue="false" canExtend="false">
+            <class>
+                <name>border</name>
+                <value>border-box</value>
+            </class>
+            <class>
+                <name>padding</name>
+                <value>padding-box</value>
+            </class>
+            <class>
+                <name>content</name>
+                <value>content-box</value>
+            </class>
+        </classes>
+    </message>
+    <message id="backgroundPosition" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-position</tailwind-docs>
+        <reset-command>bg-position-res</reset-command>
+        <classes className="bg" customValue="true" canExtend="true">
+            <class>
+                <name>bottom</name>
+                <value>bottom</value>
+            </class>
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+            <class>
+                <name>left</name>
+                <value>left</value>
+            </class>
+            <class>
+                <name>left-bottom</name>
+                <value>left bottom</value>
+            </class>
+            <class>
+                <name>left-top</name>
+                <value>left top</value>
+            </class>
+            <class>
+                <name>right</name>
+                <value>right</value>
+            </class>
+            <class>
+                <name>right-bottom</name>
+                <value>right bottom</value>
+            </class>
+            <class>
+                <name>right-top</name>
+                <value>right top</value>
+            </class>
+            <class>
+                <name>top</name>
+                <value>top</value>
+            </class>
+        </classes>
+    </message>
+    <message id="backgroundRepeat" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-repeat</tailwind-docs>
+        <reset-command>bg-repeat-res</reset-command>
+        <classes className="bg" customValue="false" canExtend="false">
+            <class>
+                <name>repeat</name>
+                <value>repeat</value>
+            </class>
+            <class>
+                <name>no-repeat</name>
+                <value>no-repeat</value>
+            </class>
+            <class>
+                <name>repeat-x</name>
+                <value>repeat-x</value>
+            </class>
+            <class>
+                <name>repeat-y</name>
+                <value>repeat-y</value>
+            </class>
+            <class>
+                <name>repeat-round</name>
+                <value>round</value>
+            </class>
+            <class>
+                <name>repeat-space</name>
+                <value>space</value>
+            </class>
+        </classes>
+    </message>
+    <message id="backgroundSize" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-size</tailwind-docs>
+        <reset-command>bg-size-res</reset-command>
+        <classes className="bg" customValue="true" canExtend="true">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>cover</name>
+                <value>cover</value>
+            </class>
+            <class>
+                <name>contain</name>
+                <value>contain</value>
+            </class>
+        </classes>
+    </message>
+    <message id="backgroundImage" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/background-image</tailwind-docs>
+        <reset-command>bg-image-res</reset-command>
+        <classes className="bg" customValue="true" canExtend="true">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>gradient-to-t</name>
+                <value>linear-gradient(to top, var(--tw-gradient-stops))</value>
+            </class>
+            <class>
+                <name>gradient-to-tr</name>
+                <value>linear-gradient(to top right, var(--tw-gradient-stops))</value>
+            </class>
+            <class>
+                <name>gradient-to-r</name>
+                <value>linear-gradient(to right, var(--tw-gradient-stops))</value>
+            </class>
+            <class>
+                <name>gradient-to-br</name>
+                <value>linear-gradient(to bottom right, var(--tw-gradient-stops))</value>
+            </class>
+            <class>
+                <name>gradient-to-b</name>
+                <value>linear-gradient(to bottom, var(--tw-gradient-stops))</value>
+            </class>
+            <class>
+                <name>gradient-to-bl</name>
+                <value>linear-gradient(to bottom left, var(--tw-gradient-stops))</value>
+            </class>
+            <class>
+                <name>gradient-to-l</name>
+                <value>linear-gradient(to left, var(--tw-gradient-stops))</value>
+            </class>
+            <class>
+                <name>gradient-to-tl</name>
+                <value>linear-gradient(to top left, var(--tw-gradient-stops))</value>
+            </class>
+        </classes>
+    </message>
+    <message id="gradientColorStep" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/gradient-color-stops</tailwind-docs>
+        <reset-command>from-res/via-res/to-res</reset-command>
+        <classes className="from/via/to" customValue="true" canExtend="true">
+            <class>
+                <name>0%</name>
+                <value>0%</value>
+            </class>
+            <class>
+                <name>5%</name>
+                <value>5%</value>
+            </class>
+            <class>
+                <name>10%</name>
+                <value>10%</value>
+            </class>
+            <class>
+                <name>15%</name>
+                <value>15%</value>
+            </class>
+            <class>
+                <name>20%</name>
+                <value>20%</value>
+            </class>
+            <class>
+                <name>25%</name>
+                <value>25%</value>
+            </class>
+            <class>
+                <name>30%</name>
+                <value>30%</value>
+            </class>
+            <class>
+                <name>35%</name>
+                <value>35%</value>
+            </class>
+            <class>
+                <name>40%</name>
+                <value>40%</value>
+            </class>
+            <class>
+                <name>45%</name>
+                <value>45%</value>
+            </class>
+            <class>
+                <name>50%</name>
+                <value>50%</value>
+            </class>
+            <class>
+                <name>55%</name>
+                <value>55%</value>
+            </class>
+            <class>
+                <name>60%</name>
+                <value>60%</value>
+            </class>
+            <class>
+                <name>65%</name>
+                <value>65%</value>
+            </class>
+            <class>
+                <name>70%</name>
+                <value>70%</value>
+            </class>
+            <class>
+                <name>75%</name>
+                <value>75%</value>
+            </class>
+            <class>
+                <name>80%</name>
+                <value>80%</value>
+            </class>
+            <class>
+                <name>85%</name>
+                <value>85%</value>
+            </class>
+            <class>
+                <name>90%</name>
+                <value>90%</value>
+            </class>
+            <class>
+                <name>95%</name>
+                <value>95%</value>
+            </class>
+            <class>
+                <name>100%</name>
+                <value>100%</value>
+            </class>
+        </classes>
+    </message>
+</messages>

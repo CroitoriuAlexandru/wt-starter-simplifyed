@@ -1,0 +1,405 @@
+<messages active="false">
+    <message id="accentColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/accent-color</tailwind-docs>
+        <reset-command>accent-res</reset-command>
+        <classes className="accent" include="colors" customValue="true" canExtend="false"/>
+    </message>
+    <message id="appearance" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/appearance</tailwind-docs>
+        <reset-command>appearance-res</reset-command>
+        <classes className="appearance" customValue="false" canExtend="false">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+        </classes>
+    </message>
+    <message id="cursor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/cursor</tailwind-docs>
+        <reset-command>cursor-res</reset-command>
+        <classes className="cursor" customValue="false" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>default</name>
+                <value>default</value>
+            </class>
+            <class>
+                <name>pointer</name>
+                <value>pointer</value>
+            </class>
+            <class>
+                <name>wait</name>
+                <value>wait</value>
+            </class>
+            <class>
+                <name>text</name>
+                <value>text</value>
+            </class>
+            <class>
+                <name>move</name>
+                <value>move</value>
+            </class>
+            <class>
+                <name>help</name>
+                <value>help</value>
+            </class>
+            <class>
+                <name>not-allowed</name>
+                <value>not-allowed</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>context-menu</name>
+                <value>context-menu</value>
+            </class>
+            <class>
+                <name>progress</name>
+                <value>progress</value>
+            </class>
+            <class>
+                <name>cell</name>
+                <value>cell</value>
+            </class>
+            <class>
+                <name>crosshair</name>
+                <value>crosshair</value>
+            </class>
+            <class>
+                <name>vertical-text</name>
+                <value>vertical-text</value>
+            </class>
+            <class>
+                <name>alias</name>
+                <value>alias</value>
+            </class>
+            <class>
+                <name>copy</name>
+                <value>copy</value>
+            </class>
+            <class>
+                <name>no-drop</name>
+                <value>no-drop</value>
+            </class>
+            <class>
+                <name>grab</name>
+                <value>grab</value>
+            </class>
+            <class>
+                <name>grabbing</name>
+                <value>grabbing</value>
+            </class>
+            <class>
+                <name>all-scroll</name>
+                <value>all-scroll</value>
+            </class>
+            <class>
+                <name>col-resize</name>
+                <value>col-resize</value>
+            </class>
+            <class>
+                <name>row-resize</name>
+                <value>row-resize</value>
+            </class>
+            <class>
+                <name>n-resize</name>
+                <value>n-resize</value>
+            </class>
+            <class>
+                <name>e-resize</name>
+                <value>e-resize</value>
+            </class>
+            <class>
+                <name>s-resize</name>
+                <value>s-resize</value>
+            </class>
+            <class>
+                <name>w-resize</name>
+                <value>w-resize</value>
+            </class>
+            <class>
+                <name>ne-resize</name>
+                <value>ne-resize</value>
+            </class>
+            <class>
+                <name>nw-resize</name>
+                <value>nw-resize</value>
+            </class>
+            <class>
+                <name>se-resize</name>
+                <value>se-resize</value>
+            </class>
+            <class>
+                <name>sw-resize</name>
+                <value>sw-resize</value>
+            </class>
+            <class>
+                <name>ew-resize</name>
+                <value>ew-resize</value>
+            </class>
+            <class>
+                <name>ns-resize</name>
+                <value>ns-resize</value>
+            </class>
+            <class>
+                <name>nesw-resize</name>
+                <value>nesw-resize</value>
+            </class>
+            <class>
+                <name>nwse-resize</name>
+                <value>nwse-resize</value>
+            </class>
+            <class>
+                <name>zoom-in</name>
+                <value>zoom-in</value>
+            </class>
+            <class>
+                <name>zoom-out</name>
+                <value>zoom-out</value>
+            </class>
+        </classes>
+    </message>
+    <message id="caretColor" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/caret-color</tailwind-docs>
+        <reset-command>caret-res</reset-command>
+        <classes className="caret" include="colors" customValue="true" canExtend="false"/>
+    </message>
+    <message id="pointerEvents" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/pointer-events</tailwind-docs>
+        <reset-command>pointer-events-res</reset-command>
+        <classes className="pointer-events" customValue="false" canExtend="false">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+        </classes>
+    </message>
+    <message id="resize" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/resize</tailwind-docs>
+        <reset-command>resize-res</reset-command>
+        <classes className="resize" customValue="false" canExtend="false">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>DEFAULT</name>
+                <value>both</value>
+            </class>
+            <class>
+                <name>y</name>
+                <value>y</value>
+            </class>
+            <class>
+                <name>x</name>
+                <value>x</value>
+            </class>
+        </classes>
+    </message>
+    <message id="scrollBehavior" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/scroll-behavior</tailwind-docs>
+        <reset-command>scroll-res</reset-command>
+        <classes className="scroll" customValue="false" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>smooth</name>
+                <value>smooth</value>
+            </class>
+        </classes>
+    </message>
+    <message id="scrollMargin" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/scroll-margin</tailwind-docs>
+        <reset-command>scroll-m-res</reset-command>
+        <classes className="scroll-m" include="spacing" customValue="true" canExtend="true">
+            <class extends="true">
+                <name>test</name>
+                <value>20px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="scrollPadding" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/scroll-padding</tailwind-docs>
+        <reset-command>scroll-p-res</reset-command>
+        <classes className="scroll-p" include="spacing" customValue="true" canExtend="true">
+            <class extends="true">
+                <name>test</name>
+                <value>20px</value>
+            </class>
+        </classes>
+    </message>
+    <message id="scrollSnapAlign" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/scroll-snap-align</tailwind-docs>
+        <reset-command>snap-align-res</reset-command>
+        <classes className="snap" customValue="false" canExtend="false">
+            <class>
+                <name>align-none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>start</name>
+                <value>start</value>
+            </class>
+            <class>
+                <name>end</name>
+                <value>end</value>
+            </class>
+            <class>
+                <name>center</name>
+                <value>center</value>
+            </class>
+        </classes>
+    </message>
+    <message id="scrollSnapStop" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/scroll-snap-stop</tailwind-docs>
+        <reset-command>snap-stop-res</reset-command>
+        <classes className="snap" customValue="false" canExtend="false">
+            <class>
+                <name>always</name>
+                <value>always</value>
+            </class>
+            <class>
+                <name>normal</name>
+                <value>normal</value>
+            </class>
+        </classes>
+    </message>
+    <message id="scrollSnapType" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/scroll-snap-type</tailwind-docs>
+        <reset-command>scroll-type-res</reset-command>
+        <classes className="snap" customValue="false" canExtend="false">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>x</name>
+                <value>x var(--tw-scroll-snap-strictness)</value>
+            </class>
+            <class>
+                <name>y</name>
+                <value>y var(--tw-scroll-snap-strictness)</value>
+            </class>
+            <class>
+                <name>both</name>
+                <value>both var(--tw-scroll-snap-strictness)</value>
+            </class>
+        </classes>
+    </message>
+    <!-- scroll snap strictness is in scroll snap type, but it needds to be its own ropriety because it works togather with scroll snap type -->
+    <message id="scrollSnapStrictness" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/scroll-snap-type</tailwind-docs>
+        <reset-command>snap-strictness-res</reset-command>
+        <classes className="snap" customValue="false" canExtend="false">
+            <class>
+                <name>mandatory</name>
+                <value>mandatory</value>
+            </class>
+            <class>
+                <name>proximity</name>
+                <value>proximity</value>
+            </class>
+        </classes>
+    </message>
+    <message id="touchAction" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/touch-action</tailwind-docs>
+        <reset-command>touch-res</reset-command>
+        <classes className="touch" customValue="false" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>pan-x</name>
+                <value>pan-x</value>
+            </class>
+            <class>
+                <name>pan-left</name>
+                <value>pan-left</value>
+            </class>
+            <class>
+                <name>pan-right</name>
+                <value>pan-right</value>
+            </class>
+            <class>
+                <name>pan-y</name>
+                <value>pan-y</value>
+            </class>
+            <class>
+                <name>pan-up</name>
+                <value>pan-up</value>
+            </class>
+            <class>
+                <name>pan-down</name>
+                <value>pan-down</value>
+            </class>
+            <class>
+                <name>pinch-zoom</name>
+                <value>pinch-zoom</value>
+            </class>
+            <class>
+                <name>manipulation</name>
+                <value>manipulation</value>
+            </class>
+        </classes>
+    </message>
+    <message id="userSelect" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/user-select</tailwind-docs>
+        <reset-command>user-res</reset-command>
+        <classes className="select" customValue="false" canExtend="false">
+            <class>
+                <name>none</name>
+                <value>none</value>
+            </class>
+            <class>
+                <name>text</name>
+                <value>text</value>
+            </class>
+            <class>
+                <name>all</name>
+                <value>all</value>
+            </class>
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+        </classes>
+    </message>
+    <message id="willChange" height="300px">
+        <tailwind-docs>https://tailwindcss.com/docs/will-change</tailwind-docs>
+        <reset-command>will-res</reset-command>
+        <classes className="will-change" customValue="false" canExtend="false">
+            <class>
+                <name>auto</name>
+                <value>auto</value>
+            </class>
+            <class>
+                <name>scroll</name>
+                <value>scroll-position</value>
+            </class>
+            <class>
+                <name>contents</name>
+                <value>contents</value>
+            </class>
+            <class>
+                <name>transform</name>
+                <value>transform</value>
+            </class>
+        </classes>
+    </message>
+</messages>
