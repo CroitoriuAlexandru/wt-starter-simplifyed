@@ -2,7 +2,7 @@
 #include "101-Stylus/Stylus.h"
 // #include "002-Dbo/Session.h"
 
-RightPanel::RightPanel(Stylus *stylus)
+RightPanel::RightPanel(std::shared_ptr<Stylus> stylus)
     : BaseDialogPanel(stylus)
 {
     // addStyleClass("w-[450px] relative");
@@ -232,6 +232,13 @@ RightPanel::RightPanel(Stylus *stylus)
                                 stylus_->setXmlBrain(xml_brain_); });
 
     setPanelsMode(RIGHT_PANEL_MODE::NORMAL);
+
+    stylus_->node_selected().connect([=]()
+                                     {
+        if (stylus_->xml_brain_)
+        {
+            setXmlBrain(stylus_->xml_brain_);
+        } });
 }
 
 void RightPanel::setStyleClasses(std::string classes)

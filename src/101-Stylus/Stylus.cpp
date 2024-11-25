@@ -11,22 +11,20 @@
 
 Stylus::Stylus(Session &session, Wt::WString templates_root_path)
     : session_(session),
-      tailwind_config_(new TailwindConfig(this)),
       templates_root_path_(templates_root_path)
 {
-    tailwind_config_->readConfigurationXMLs();
 
-    left_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<LeftPanel>(this));
-    right_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<RightPanel>(this));
-    edditor_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<EdditorPanel>(this));
-    settings_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<SettingsPanel>(this));
-    quick_commands_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<QuickCommandsPanel>(this));
+    // left_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<LeftPanel>(this));
+    // right_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<RightPanel>(this));
+    // edditor_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<EdditorPanel>(this));
+    // settings_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<SettingsPanel>(this));
+    // quick_commands_panel_ = Wt::WApplication::instance()->root()->addChild(std::make_unique<QuickCommandsPanel>(this));
 
-    left_panel_->setHidden(!settings_panel_->stylus_state_.left_active_);
-    right_panel_->setHidden(!settings_panel_->stylus_state_.right_active_);
-    edditor_panel_->setHidden(!settings_panel_->stylus_state_.edditor_active_);
-    settings_panel_->setHidden(!settings_panel_->stylus_state_.settings_active_);
-    quick_commands_panel_->setHidden(!settings_panel_->stylus_state_.quick_commands_active_);
+    // left_panel_->setHidden(!settings_panel_->stylus_state_.left_active_);
+    // right_panel_->setHidden(!settings_panel_->stylus_state_.right_active_);
+    // edditor_panel_->setHidden(!settings_panel_->stylus_state_.edditor_active_);
+    // settings_panel_->setHidden(!settings_panel_->stylus_state_.settings_active_);
+    // quick_commands_panel_->setHidden(!settings_panel_->stylus_state_.quick_commands_active_);
 
     Wt::WApplication::instance()->globalKeyWentDown().connect([=](Wt::WKeyEvent e)
                                                               { std::cout << "\n\n process from stylus brain \n\n"; processKeyEvent(e); });
@@ -37,8 +35,8 @@ void Stylus::setXmlBrain(std::shared_ptr<XMLBrain> xml_brain)
     std::cout << "\n\n setXmlBrain \n\n";
 
     xml_brain_ = xml_brain;
-    left_panel_->setXmlBrain(xml_brain_);
-    right_panel_->setXmlBrain(xml_brain_);
+    // left_panel_->setXmlBrain(xml_brain_);
+    // right_panel_->setXmlBrain(xml_brain_);
     // xml_brain_->selected_node_->node_selected().emit(true);
     node_selected_.emit(xml_brain);
 }

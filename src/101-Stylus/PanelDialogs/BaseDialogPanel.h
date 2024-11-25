@@ -1,14 +1,12 @@
 #pragma once
 #include <Wt/WDialog.h>
-// #include "200-Stylus/StylusBrain.h"
-
-class Stylus;
+#include "101-Stylus/Stylus.h"
 
 class BaseDialogPanel : public Wt::WDialog
 {
 public:
-    BaseDialogPanel(Stylus *stylus_);
-    Stylus *stylus_;
+    BaseDialogPanel(std::shared_ptr<Stylus> stylus_);
+    std::shared_ptr<Stylus> stylus_;
 
 private:
 };

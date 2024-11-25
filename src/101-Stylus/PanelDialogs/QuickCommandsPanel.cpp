@@ -3,7 +3,7 @@
 
 #include <Wt/WApplication.h>
 
-QuickCommandsPanel::QuickCommandsPanel(Stylus *stylus)
+QuickCommandsPanel::QuickCommandsPanel(std::shared_ptr<Stylus> stylus)
     : BaseDialogPanel(stylus)
 {
     // addStyleClass("rounded-md z-[999999]");

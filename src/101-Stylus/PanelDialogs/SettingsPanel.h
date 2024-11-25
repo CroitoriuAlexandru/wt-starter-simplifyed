@@ -2,8 +2,6 @@
 #include "101-Stylus/PanelDialogs/BaseDialogPanel.h"
 #include "100-Utils/tinyxml2/tinyxml2.h"
 
-class Stylus;
-
 struct StylusState
 {
     bool left_active_ = false;
@@ -16,7 +14,7 @@ struct StylusState
 class SettingsPanel : public BaseDialogPanel
 {
 public:
-    SettingsPanel(Stylus *stylus);
+    SettingsPanel(std::shared_ptr<Stylus> stylus);
     std::string radio_checkbox_btn_styles_;
 
     StylusState stylus_state_;

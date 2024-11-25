@@ -12,8 +12,8 @@
 class TailwindConfig
 {
 public:
-    TailwindConfig(Stylus *stylus);
-    Stylus *stylus_;
+    TailwindConfig(std::shared_ptr<Stylus> stylus);
+    std::shared_ptr<Stylus> stylus_;
     std::unordered_map<std::string, std::shared_ptr<XMLBrain>> xml_brains_;
     void readConfigurationXMLs();
 

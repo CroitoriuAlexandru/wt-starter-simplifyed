@@ -1,8 +1,7 @@
 #pragma once
 #include <Wt/WApplication.h>
 #include "002-Dbo/Session.h"
-
-class Stylus;
+#include "101-Stylus/Stylus.h"
 
 class App : public Wt::WApplication
 {

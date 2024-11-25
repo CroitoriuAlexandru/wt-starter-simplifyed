@@ -1,7 +1,7 @@
 #include "101-Stylus/PanelDialogs/BaseDialogPanel.h"
 #include "101-Stylus/Stylus.h"
 
-BaseDialogPanel::BaseDialogPanel(Stylus *stylus)
+BaseDialogPanel::BaseDialogPanel(std::shared_ptr<Stylus> stylus)
     : stylus_(stylus)
 {
     titleBar()->children()[0]->removeFromParent();

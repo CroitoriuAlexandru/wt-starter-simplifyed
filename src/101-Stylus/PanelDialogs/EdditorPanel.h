@@ -10,7 +10,7 @@
 class EdditorPanel : public BaseDialogPanel
 {
 public:
-    EdditorPanel(Stylus *stylus_brain);
+    EdditorPanel(std::shared_ptr<Stylus> stylus);
 
 private:
     std::shared_ptr<Wt::WButtonGroup> display_set_group_;

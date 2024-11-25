@@ -6,7 +6,7 @@
 // #include <jsoncpp/json/json.h>
 #include "002-Dbo/Session.h"
 
-TailwindConfig::TailwindConfig(Stylus *stylus)
+TailwindConfig::TailwindConfig(std::shared_ptr<Stylus> stylus)
     : stylus_(stylus),
       svg(this),
       sizing(this),

@@ -24,7 +24,7 @@
 class RightPanel : public BaseDialogPanel
 {
 public:
-    RightPanel(Stylus *stylus);
+    RightPanel(std::shared_ptr<Stylus> stylus);
 
     void setPanelsMode(RIGHT_PANEL_MODE mode);
     RIGHT_PANEL_MODE panels_mode_;

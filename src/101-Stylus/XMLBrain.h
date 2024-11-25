@@ -3,10 +3,11 @@
 #include <Wt/WString.h>
 #include <boost/regex.hpp>
 
+class Stylus;
+
 #include <Wt/WSignal.h>
 
 class Session;
-class Stylus;
 
 enum TempVarImplementationType
 {
@@ -47,7 +48,7 @@ std::vector<TempVarData> tempTexts(std::string text);
 class XMLBrain
 {
 public:
-    XMLBrain(Session &session, XmlDboRecord dbo_temp_data, Stylus *stylus);
+    XMLBrain(Session &session, XmlDboRecord dbo_temp_data, std::shared_ptr<Stylus> stylus);
     tinyxml2::XMLDocument *xml_doc_;
     tinyxml2::XMLNode *message_node_;
     tinyxml2::XMLNode *selected_node_;
@@ -56,7 +57,7 @@ public:
 
     XmlDboRecord dbo_temp_data_;
 
-    Stylus *stylus_;
+    std::shared_ptr<Stylus> stylus_;
     Wt::Signal<> &node_selected() { return node_selected_; }
 
 private:

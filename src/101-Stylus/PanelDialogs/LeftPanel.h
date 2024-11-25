@@ -6,7 +6,7 @@
 class LeftPanel : public BaseDialogPanel
 {
 public:
-    LeftPanel(Stylus *stylus_brain);
+    LeftPanel(std::shared_ptr<Stylus> stylus);
 
     void setXmlBrain(std::shared_ptr<XMLBrain> xml_brain = nullptr);
 

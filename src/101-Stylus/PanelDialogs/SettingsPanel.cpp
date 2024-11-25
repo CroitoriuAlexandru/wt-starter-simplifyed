@@ -9,7 +9,7 @@
 #include <Wt/WContainerWidget.h>
 #include <Wt/WCheckBox.h>
 
-SettingsPanel::SettingsPanel(Stylus *stylus)
+SettingsPanel::SettingsPanel(std::shared_ptr<Stylus> stylus)
     : BaseDialogPanel(stylus)
 {
     // addStyleClass("!text-black");

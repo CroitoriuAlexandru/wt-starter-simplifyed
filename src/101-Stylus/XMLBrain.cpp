@@ -3,7 +3,7 @@
 #include "002-Dbo/Session.h"
 #include "002-Dbo/Tables.h"
 
-XMLBrain::XMLBrain(Session &session, XmlDboRecord dbo_temp_data, Stylus *stylus)
+XMLBrain::XMLBrain(Session &session, XmlDboRecord dbo_temp_data, std::shared_ptr<Stylus> stylus)
     : session_(session),
       dbo_temp_data_(dbo_temp_data),
       stylus_(stylus)

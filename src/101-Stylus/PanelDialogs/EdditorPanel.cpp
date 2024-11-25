@@ -8,7 +8,7 @@
 #include <Wt/WLabel.h>
 #include <Wt/WLineEdit.h>
 
-EdditorPanel::EdditorPanel(Stylus *stylus)
+EdditorPanel::EdditorPanel(std::shared_ptr<Stylus> stylus)
     : BaseDialogPanel(stylus)
 {
     // contents()->addStyleClass("!text-black flex border-x border-solid border-gray-400");
@@ -224,7 +224,7 @@ void EdditorPanel::createFolderDisplay(int folder_id)
                                             createFileTemplates(file.id());
                                             stylus_->xml_brain_ = nullptr;
                                             stylus_->left_panel_->setXmlBrain();
-                                            stylus_->right_panel_->setXmlBrain();
+                                            // stylus_->right_panel_->setXmlBrain();
                                         } });
     }
     transaction.commit();
