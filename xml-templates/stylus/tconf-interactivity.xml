@@ -1,10 +1,10 @@
 <messages>
-    <message dbo_id="114" id="accentColor">
+    <message dbo_id="120" id="accentColor">
         <tailwind-docs>https://tailwindcss.com/docs/accent-color</tailwind-docs>
         <reset-command>accent-res</reset-command>
         <classes className="accent" include="colors" customValue="true" canExtend="false"/>
     </message>
-    <message dbo_id="115" id="appearance">
+    <message dbo_id="121" id="appearance">
         <tailwind-docs>https://tailwindcss.com/docs/appearance</tailwind-docs>
         <reset-command>appearance-res</reset-command>
         <classes className="appearance" customValue="false" canExtend="false">
@@ -14,7 +14,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="116" id="cursor">
+    <message dbo_id="122" id="cursor">
         <tailwind-docs>https://tailwindcss.com/docs/cursor</tailwind-docs>
         <reset-command>cursor-res</reset-command>
         <classes className="cursor" customValue="false" canExtend="false">
@@ -164,12 +164,12 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="117" id="caretColor">
+    <message dbo_id="123" id="caretColor">
         <tailwind-docs>https://tailwindcss.com/docs/caret-color</tailwind-docs>
         <reset-command>caret-res</reset-command>
         <classes className="caret" include="colors" customValue="true" canExtend="false"/>
     </message>
-    <message dbo_id="118" id="pointerEvents">
+    <message dbo_id="124" id="pointerEvents">
         <tailwind-docs>https://tailwindcss.com/docs/pointer-events</tailwind-docs>
         <reset-command>pointer-events-res</reset-command>
         <classes className="pointer-events" customValue="false" canExtend="false">
@@ -183,7 +183,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="119" id="resize">
+    <message dbo_id="125" id="resize">
         <tailwind-docs>https://tailwindcss.com/docs/resize</tailwind-docs>
         <reset-command>resize-res</reset-command>
         <classes className="resize" customValue="false" canExtend="false">
@@ -205,7 +205,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="120" id="scrollBehavior">
+    <message dbo_id="126" id="scrollBehavior">
         <tailwind-docs>https://tailwindcss.com/docs/scroll-behavior</tailwind-docs>
         <reset-command>scroll-res</reset-command>
         <classes className="scroll" customValue="false" canExtend="false">
@@ -219,7 +219,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="121" id="scrollMargin">
+    <message dbo_id="127" id="scrollMargin">
         <tailwind-docs>https://tailwindcss.com/docs/scroll-margin</tailwind-docs>
         <reset-command>scroll-m-res</reset-command>
         <classes className="scroll-m" include="spacing" customValue="true" canExtend="true">
@@ -229,7 +229,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="122" id="scrollPadding">
+    <message dbo_id="128" id="scrollPadding">
         <tailwind-docs>https://tailwindcss.com/docs/scroll-padding</tailwind-docs>
         <reset-command>scroll-p-res</reset-command>
         <classes className="scroll-p" include="spacing" customValue="true" canExtend="true">
@@ -239,7 +239,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="123" id="scrollSnapAlign">
+    <message dbo_id="129" id="scrollSnapAlign">
         <tailwind-docs>https://tailwindcss.com/docs/scroll-snap-align</tailwind-docs>
         <reset-command>snap-align-res</reset-command>
         <classes className="snap" customValue="false" canExtend="false">
@@ -261,7 +261,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="124" id="scrollSnapStop">
+    <message dbo_id="130" id="scrollSnapStop">
         <tailwind-docs>https://tailwindcss.com/docs/scroll-snap-stop</tailwind-docs>
         <reset-command>snap-stop-res</reset-command>
         <classes className="snap" customValue="false" canExtend="false">
@@ -275,7 +275,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="125" id="scrollSnapType">
+    <message dbo_id="131" id="scrollSnapType">
         <tailwind-docs>https://tailwindcss.com/docs/scroll-snap-type</tailwind-docs>
         <reset-command>scroll-type-res</reset-command>
         <classes className="snap" customValue="false" canExtend="false">
@@ -297,7 +297,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="126" id="scrollSnapStrictness">
+    <message dbo_id="132" id="scrollSnapStrictness">
         <tailwind-docs>https://tailwindcss.com/docs/scroll-snap-type</tailwind-docs>
         <reset-command>snap-strictness-res</reset-command>
         <classes className="snap" customValue="false" canExtend="false">
@@ -311,7 +311,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="127" id="touchAction">
+    <message dbo_id="133" id="touchAction">
         <tailwind-docs>https://tailwindcss.com/docs/touch-action</tailwind-docs>
         <reset-command>touch-res</reset-command>
         <classes className="touch" customValue="false" canExtend="false">
@@ -357,7 +357,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="128" id="userSelect">
+    <message dbo_id="134" id="userSelect">
         <tailwind-docs>https://tailwindcss.com/docs/user-select</tailwind-docs>
         <reset-command>user-res</reset-command>
         <classes className="select" customValue="false" canExtend="false">
@@ -379,7 +379,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="129" id="willChange">
+    <message dbo_id="135" id="willChange">
         <tailwind-docs>https://tailwindcss.com/docs/will-change</tailwind-docs>
         <reset-command>will-res</reset-command>
         <classes className="will-change" customValue="false" canExtend="false">

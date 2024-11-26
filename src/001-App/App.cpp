@@ -21,13 +21,13 @@ App::App(const Wt::WEnvironment &env)
 {
     stylus_ = std::make_shared<Stylus>(session_, appRoot() + "../xml-templates/");
 
-    stylus_->left_panel_ = root()->addChild(std::make_unique<LeftPanel>(stylus_));
+    // stylus_->left_panel_ = root()->addChild(std::make_unique<LeftPanel>(stylus_));
     // stylus_->right_panel_ = root()->addChild(std::make_unique<RightPanel>(stylus_));
     stylus_->edditor_panel_ = root()->addChild(std::make_unique<EdditorPanel>(stylus_));
     stylus_->settings_panel_ = root()->addChild(std::make_unique<SettingsPanel>(stylus_));
     // stylus_->quick_commands_panel_ = root()->addChild(std::make_unique<QuickCommandsPanel>(stylus_));
 
-    stylus_->left_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.left_active_);
+    // stylus_->left_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.left_active_);
     // stylus_->right_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.right_active_);
     stylus_->edditor_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.edditor_active_);
     stylus_->settings_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.settings_active_);

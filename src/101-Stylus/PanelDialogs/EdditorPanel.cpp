@@ -37,6 +37,9 @@ EdditorPanel::EdditorPanel(std::shared_ptr<Stylus> stylus)
                                                 // stylus_->addFileToDbo("default", "../base-templates/default/auth_strings.xml");
                                                 // stylus_->addFileToDbo("default", "../base-templates/default/calendar.xml");
 
+                                                stylus_->addFileToDbo("test", "../base-templates/test/test-1.xml");
+                                                stylus_->addFileToDbo("test", "../base-templates/test/test-2.xml");
+
                                                 stylus_->addFileToDbo("stylus", "../base-templates/stylus/stylus-flex-and-grid-svgs.xml");
                                                 stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-accesibility.xml");
                                                 stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-backgrounds.xml");
@@ -61,6 +64,10 @@ EdditorPanel::EdditorPanel(std::shared_ptr<Stylus> stylus)
                                                 // stylus_->saveFileFromDbo("default", "auth_strings.xml");
                                                 // stylus_->saveFileFromDbo("default", "auth.xml");
                                                 // stylus_->saveFileFromDbo("default", "calendar.xml"); 
+
+                                                stylus_->saveFileFromDbo("test", "test-1.xml");
+                                                stylus_->saveFileFromDbo("test", "test-2.xml");
+                                                
                                                 stylus_->saveFileFromDbo("stylus", "stylus-flex-and-grid-svgs.xml");
                                                 stylus_->saveFileFromDbo("stylus", "tconf-accesibility.xml");
                                                 stylus_->saveFileFromDbo("stylus", "tconf-backgrounds.xml");

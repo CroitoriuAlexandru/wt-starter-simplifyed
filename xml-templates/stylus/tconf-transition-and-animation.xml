@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="173" id="transitionProperty">
+    <message dbo_id="179" id="transitionProperty">
         <tailwind-docs>https://tailwindcss.com/docs/transition-property</tailwind-docs>
         <reset-command>transition-res</reset-command>
         <classes className="transition" customValue="true" canExtend="true">
@@ -37,7 +37,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="174" id="transitionDuration">
+    <message dbo_id="180" id="transitionDuration">
         <tailwind-docs>https://tailwindcss.com/docs/transition-duration</tailwind-docs>
         <reset-command>duration-res</reset-command>
         <classes className="duration" customValue="true" canExtend="true">
@@ -87,7 +87,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="175" id="transitionTimingFunction">
+    <message dbo_id="181" id="transitionTimingFunction">
         <tailwind-docs>https://tailwindcss.com/docs/transition-timing-function</tailwind-docs>
         <reset-command>ease-res</reset-command>
         <classes className="ease" customValue="true" canExtend="true">
@@ -117,7 +117,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="176" id="transitionDelay">
+    <message dbo_id="182" id="transitionDelay">
         <tailwind-docs>https://tailwindcss.com/docs/transition-delay</tailwind-docs>
         <reset-command>delay-res</reset-command>
         <classes className="delay" customValue="true" canExtend="true">
@@ -163,7 +163,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="177" id="animation">
+    <message dbo_id="183" id="animation">
         <tailwind-docs>https://tailwindcss.com/docs/animation</tailwind-docs>
         <reset-command>animation-res</reset-command>
         <classes className="animate" customValue="true" canExtend="true">

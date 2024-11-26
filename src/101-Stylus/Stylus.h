@@ -23,7 +23,7 @@ public:
     void saveFileFromDbo(Wt::WString folder_name, Wt::WString file_name);
 
     LeftPanel *left_panel_;
-    RightPanel *right_panel_;
+    // RightPanel *right_panel_;
     EdditorPanel *edditor_panel_;
     SettingsPanel *settings_panel_;
     QuickCommandsPanel *quick_commands_panel_;

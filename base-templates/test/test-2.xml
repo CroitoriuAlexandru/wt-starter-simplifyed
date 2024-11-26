@@ -1,0 +1,20 @@
+<messages>
+    <message id="test-2.test-template-1">
+        <div class="bg-neutral-100">
+            <div class="bg-neutral-200 p-20">${block-1}</div>
+            <div class="bg-neutral-300 p-20">${block-2}</div>
+        </div>
+    </message>
+    <message id="test-2.test-template-2">
+        <div class="bg-neutral-100">
+            <div class="bg-neutral-200 p-20">${block-1}</div>
+            <div class="bg-neutral-300 p-20">${block-2}</div>
+        </div>
+    </message>
+    <message id="test-2.test-template-3">
+        <div class="bg-neutral-100">
+            <div class="bg-neutral-200 p-20">${block-1}</div>
+            <div class="bg-neutral-300 p-20">${block-2}</div>
+        </div>
+    </message>
+</messages>

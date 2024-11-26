@@ -61,7 +61,7 @@ PTree::PTree(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node)
             title->addStyleClass("text-purple-400");
             // title->setText(node_->ToElement()->Attribute("id"));
             // title->setText(node_->ToElement()->Name());
-            title->setText(node_->ToElement()->Name());
+            title->setText(node_->ToElement()->Attribute("id"));
             addStyleClass("-ml-1");
         }
         else

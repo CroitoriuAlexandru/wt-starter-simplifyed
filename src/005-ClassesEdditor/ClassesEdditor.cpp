@@ -66,11 +66,14 @@ void ClassesEdditor::setXmlBrain(std::shared_ptr<XMLBrain> xml_brain)
     {
         xml_brain_ = xml_brain;
         auto selected_node = xml_brain_->selected_node_;
+        std::cout << "\n\n segfault here\n\n";
         if (!selected_node)
         {
             std::cout << "\n selected node in classes edditor is null\n";
             return;
         }
+        std::cout << "\n\n segfault here\n\n";
+
         if (!selected_node->ToElement())
         {
             std::cout << "\n selected node in classes edditor is not an element\n";

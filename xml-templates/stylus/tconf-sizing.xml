@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="150" id="width">
+    <message dbo_id="156" id="width">
         <tailwind-docs>https://tailwindcss.com/docs/width</tailwind-docs>
         <reset-command>width-res</reset-command>
         <classes className="w" customValue="true" include="spacing" canExtend="true">
@@ -93,7 +93,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="151" id="height">
+    <message dbo_id="157" id="height">
         <tailwind-docs>https://tailwindcss.com/docs/height</tailwind-docs>
         <reset-command>height-res</reset-command>
         <classes className="h" customValue="true" include="spacing" canExtend="true">
@@ -231,7 +231,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="152" id="minWidth">
+    <message dbo_id="158" id="minWidth">
         <tailwind-docs>https://tailwindcss.com/docs/min-width</tailwind-docs>
         <reset-command>min-width-res</reset-command>
         <classes className="min-w" customValue="true" include="spacing" canExtend="true">
@@ -261,7 +261,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="153" id="minHeight">
+    <message dbo_id="159" id="minHeight">
         <tailwind-docs>https://tailwindcss.com/docs/min-height</tailwind-docs>
         <reset-command>min-height-res</reset-command>
         <classes className="min-h" customValue="true" include="spacing" canExtend="true">
@@ -291,7 +291,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="154" id="maxWidth">
+    <message dbo_id="160" id="maxWidth">
         <tailwind-docs>https://tailwindcss.com/docs/max-width</tailwind-docs>
         <reset-command>max-width-res</reset-command>
         <classes className="max-w" customValue="true" include="spacing" canExtend="true">
@@ -373,7 +373,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="155" id="maxHeight">
+    <message dbo_id="161" id="maxHeight">
         <tailwind-docs>https://tailwindcss.com/docs/max-height</tailwind-docs>
         <reset-command>max-height-res</reset-command>
         <classes className="max-h" customValue="true" include="spacing" canExtend="true">

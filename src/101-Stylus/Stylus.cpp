@@ -161,10 +161,10 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
         {
             settings_panel_->toggleLeftDialogActive();
         }
-        else if (e.key() == Wt::Key::Key_3)
-        {
-            settings_panel_->toggleRightDialogActive();
-        }
+        // else if (e.key() == Wt::Key::Key_3)
+        // {
+        //     settings_panel_->toggleRightDialogActive();
+        // }
         else if (e.key() == Wt::Key::Key_5)
         {
             settings_panel_->toggleQuickCommandsDialogActive();

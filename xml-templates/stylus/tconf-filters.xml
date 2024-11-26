@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="68" id="blur">
+    <message dbo_id="74" id="blur">
         <tailwind-docs>https://tailwindcss.com/docs/blur</tailwind-docs>
         <reset-command>blur-res</reset-command>
         <classes className="blur" customValue="true" canExtend="true">
@@ -37,7 +37,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="69" id="brightness">
+    <message dbo_id="75" id="brightness">
         <tailwind-docs>https://tailwindcss.com/docs/brightness</tailwind-docs>
         <reset-command>brightness-res</reset-command>
         <classes className="brightness" customValue="true" canExtend="true">
@@ -87,7 +87,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="70" id="contrast">
+    <message dbo_id="76" id="contrast">
         <tailwind-docs>https://tailwindcss.com/docs/contrast</tailwind-docs>
         <reset-command>contrast-res</reset-command>
         <classes className="contrast" customValue="true" canExtend="true">
@@ -121,7 +121,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="71" id="dropShadow">
+    <message dbo_id="77" id="dropShadow">
         <tailwind-docs>https://tailwindcss.com/docs/drop-shadow</tailwind-docs>
         <reset-command>drop-shadow-res</reset-command>
         <classes className="drop-shadow" customValue="true" canExtend="true">
@@ -155,7 +155,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="72" id="grayscale">
+    <message dbo_id="78" id="grayscale">
         <tailwind-docs>https://tailwindcss.com/docs/grayscale</tailwind-docs>
         <reset-command>grayscale-res</reset-command>
         <classes className="grayscale" customValue="true" canExtend="true">
@@ -169,7 +169,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="73" id="hueRotate">
+    <message dbo_id="79" id="hueRotate">
         <tailwind-docs>https://tailwindcss.com/docs/hue-rotate</tailwind-docs>
         <reset-command>hue-rotate-res</reset-command>
         <classes className="hue-rotate" customValue="true" canExtend="true">
@@ -199,7 +199,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="74" id="invert">
+    <message dbo_id="80" id="invert">
         <tailwind-docs>https://tailwindcss.com/docs/invert</tailwind-docs>
         <reset-command>invert-res</reset-command>
         <classes className="invert" customValue="true" canExtend="true">
@@ -213,7 +213,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="75" id="saturate">
+    <message dbo_id="81" id="saturate">
         <tailwind-docs>https://tailwindcss.com/docs/saturate</tailwind-docs>
         <reset-command>saturate-res</reset-command>
         <classes className="saturate" customValue="true" canExtend="true">
@@ -239,7 +239,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="76" id="sepia">
+    <message dbo_id="82" id="sepia">
         <tailwind-docs>https://tailwindcss.com/docs/sepia</tailwind-docs>
         <reset-command>sepia-res</reset-command>
         <classes className="sepia" customValue="true" canExtend="true">
@@ -253,47 +253,47 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="77" id="backdropBlur">
+    <message dbo_id="83" id="backdropBlur">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-blur</tailwind-docs>
         <reset-command>backdrop-blur-res</reset-command>
         <classes className="backdrop-blur" include="blur" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="78" id="backdropBrightness">
+    <message dbo_id="84" id="backdropBrightness">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-brightness</tailwind-docs>
         <reset-command>backdrop-brightness-res</reset-command>
         <classes className="backdrop-brightness" include="brightness" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="79" id="backdropContrast">
+    <message dbo_id="85" id="backdropContrast">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-contrast</tailwind-docs>
         <reset-command>backdrop-contrast-res</reset-command>
         <classes className="backdrop-contrast" include="contrast" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="80" id="backdropGrayscale">
+    <message dbo_id="86" id="backdropGrayscale">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-grayscale</tailwind-docs>
         <reset-command>backdrop-grayscale-res</reset-command>
         <classes className="backdrop-grayscale" include="grayscale" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="81" id="backdropHueRotate">
+    <message dbo_id="87" id="backdropHueRotate">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-hue-rotate</tailwind-docs>
         <reset-command>backdrop-hue-rotate-res</reset-command>
         <classes className="backdrop-hue-rotate" include="hueRotate" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="82" id="backdropInvert">
+    <message dbo_id="88" id="backdropInvert">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-invert</tailwind-docs>
         <reset-command>backdrop-invert-res</reset-command>
         <classes className="backdrop-invert" include="invert" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="83" id="backdropOpacity">
+    <message dbo_id="89" id="backdropOpacity">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-opacity</tailwind-docs>
         <reset-command>backdrop-opacity-res</reset-command>
         <classes className="backdrop-opacity" include="opacity" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="84" id="backdropSaturate">
+    <message dbo_id="90" id="backdropSaturate">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-saturate</tailwind-docs>
         <reset-command>backdrop-saturate-res</reset-command>
         <classes className="backdrop-saturate" include="saturate" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="85" id="backdropSepia">
+    <message dbo_id="91" id="backdropSepia">
         <tailwind-docs>https://tailwindcss.com/docs/backdrop-sepia</tailwind-docs>
         <reset-command>backdrop-sepia-res</reset-command>
         <classes className="backdrop-sepia" include="sepia" customValue="true" canExtend="true"/>

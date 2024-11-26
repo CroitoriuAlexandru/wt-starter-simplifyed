@@ -9,24 +9,25 @@ TempPreview::TempPreview(std::shared_ptr<Stylus> stylus)
 {
     // setOffsets(450, Wt::Side::Right);
     // setOffsets(380, Wt::Side::Left);
-    setStyleClass("h-screen max-h-screen overflow-y-auto overflow-x-none relative grow-[1]");
+    setStyleClass("min-h-screen h-screen max-h-screen overflow-y-none overflow-x-none relative grow-[1] flex flex-col");
     setOffsets(0, Wt::Side::Left | Wt::Side::Bottom | Wt::Side::Top);
 
     preview_wrapper_ = addWidget(std::make_unique<Wt::WContainerWidget>());
     stylus_->node_selected().connect([=](std::shared_ptr<XMLBrain> xml_brain)
                                      { setXmlBrain(xml_brain); });
+    preview_wrapper_->setStyleClass("h-full overflow-y-auto");
 
     // template selection bottom panel
     auto footer_bar_wrapper = addWidget(std::make_unique<Wt::WContainerWidget>());
-    footer_bar_wrapper->setStyleClass("bg-gray-800 p-2 flex justify-center absolute bottom-0 w-full");
+    footer_bar_wrapper->setStyleClass("bg-gray-800 p-2 flex justify-center sticky bottom-0 w-full");
 
     folder_combo_box_ = footer_bar_wrapper->addWidget(std::make_unique<Wt::WComboBox>());
     file_combo_box_ = footer_bar_wrapper->addWidget(std::make_unique<Wt::WComboBox>());
     template_combo_box_ = footer_bar_wrapper->addWidget(std::make_unique<Wt::WComboBox>());
 
-    folder_combo_box_->setStyleClass("combo-box-style-1");
-    file_combo_box_->setStyleClass("combo-box-style-1");
-    template_combo_box_->setStyleClass("combo-box-style-1");
+    folder_combo_box_->setStyleClass("line-edit-stylus-edditor");
+    file_combo_box_->setStyleClass("line-edit-stylus-edditor");
+    template_combo_box_->setStyleClass("line-edit-stylus-edditor");
 
     setFolders();
 
@@ -51,8 +52,9 @@ TempPreview::TempPreview(std::shared_ptr<Stylus> stylus)
                                                         xml_temp_obj.folder_name = xml_temp->template_files->template_folder->folder_name;
                                                         xml_temp_obj.temp_id = xml_temp->temp_id;
                                                         xml_temp_obj.xml_temp = xml_temp->xml_temp;
-                                                        stylus_->xml_brain_ = std::make_shared<XMLBrain>(stylus_->session_, xml_temp_obj, stylus_);
-                                                        stylus_->setXmlBrain(stylus_->xml_brain_);
+                                                        auto xml_brain = std::make_shared<XMLBrain>(stylus_->session_, xml_temp_obj, stylus_);
+                                                        xml_brain->selected_node_ = xml_brain->message_node_;
+                                                        stylus_->setXmlBrain(xml_brain);
                                                     }
 
                                                  t.commit(); });

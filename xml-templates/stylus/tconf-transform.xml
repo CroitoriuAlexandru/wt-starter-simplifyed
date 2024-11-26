@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="168" id="scale">
+    <message dbo_id="174" id="scale">
         <tailwind-docs>https://tailwindcss.com/docs/scale</tailwind-docs>
         <reset-command>scale-res</reset-command>
         <classes className="scale" customValue="true" canExtend="true">
@@ -49,7 +49,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="169" id="rotate">
+    <message dbo_id="175" id="rotate">
         <tailwind-docs>https://tailwindcss.com/docs/rotate</tailwind-docs>
         <reset-command>rotate-res</reset-command>
         <classes className="rotate" customValue="true" canExtend="true">
@@ -95,7 +95,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="170" id="translate">
+    <message dbo_id="176" id="translate">
         <tailwind-docs>https://tailwindcss.com/docs/translate</tailwind-docs>
         <reset-command>translate-res</reset-command>
         <classes className="translate" include="spacing" customValue="true" canExtend="true">
@@ -133,7 +133,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="171" id="skew">
+    <message dbo_id="177" id="skew">
         <tailwind-docs>https://tailwindcss.com/docs/skew</tailwind-docs>
         <reset-command>skew-res</reset-command>
         <classes className="skew" customValue="true" canExtend="true">
@@ -167,7 +167,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="172" id="transformOrigin">
+    <message dbo_id="178" id="transformOrigin">
         <tailwind-docs>https://tailwindcss.com/docs/transform-origin</tailwind-docs>
         <reset-command>origin-res</reset-command>
         <classes className="origin" customValue="true" canExtend="true">

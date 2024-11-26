@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="206" id="spacing">
+    <message dbo_id="212" id="spacing">
         <tailwind-docs>https://tailwindcss.com/docs/customizing-spacing</tailwind-docs>
         <reset-command>no-reset-command</reset-command>
         <classes>
@@ -145,7 +145,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="207" id="screens">
+    <message dbo_id="213" id="screens">
         <tailwind-docs>https://tailwindcss.com/docs/responsive-design</tailwind-docs>
         <reset-command>no-reset-command</reset-command>
         <classes>
@@ -171,7 +171,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="208" id="colors">
+    <message dbo_id="214" id="colors">
         <tailwind-docs>https://tailwindcss.com/docs/customizing-colors</tailwind-docs>
         <reset-command>no-reset-command</reset-command>
         <classes className="">

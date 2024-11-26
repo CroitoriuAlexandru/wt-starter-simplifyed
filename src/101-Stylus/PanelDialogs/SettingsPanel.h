@@ -20,7 +20,7 @@ public:
     StylusState stylus_state_;
 
     Wt::WCheckBox *left_toggler_;
-    Wt::WCheckBox *right_toggler_;
+    // Wt::WCheckBox *right_toggler_;
     Wt::WCheckBox *quick_commands_toggler_;
     Wt::WCheckBox *edditor_toggler_;
 
@@ -28,7 +28,7 @@ public:
 
     // void createRefreshSessionsWidget();
 
-    void createRightPanelSettings(Wt::WContainerWidget *wrapper);
+    // void createRightPanelSettings(Wt::WContainerWidget *wrapper);
     void createLeftPanelSettings(Wt::WContainerWidget *wrapper);
     void createEdditorPanelSettings(Wt::WContainerWidget *wrapper);
     void createQuickCommandsPanelSettings(Wt::WContainerWidget *wrapper);
@@ -37,7 +37,7 @@ public:
 
     // void toggleStylusActive();
 
-    void toggleRightDialogActive();
+    // void toggleRightDialogActive();
     void toggleLeftDialogActive();
     void toggleEdditorDialogActive();
     void toggleQuickCommandsDialogActive();
@@ -53,7 +53,7 @@ private:
 
     tinyxml2::XMLDocument *settings_xml_doc_;
     tinyxml2::XMLElement *left_xml_node_;
-    tinyxml2::XMLElement *right_xml_node_;
+    // tinyxml2::XMLElement *right_xml_node_;
     tinyxml2::XMLElement *edditor_xml_node_;
     tinyxml2::XMLElement *quick_commands_xml_node_;
     tinyxml2::XMLElement *settings_xml_node_;

@@ -44,7 +44,7 @@ SettingsPanel::SettingsPanel(std::shared_ptr<Stylus> stylus)
     readStateFromXmlFile();
 
     createLeftPanelSettings(left_right_panels_wrapper);
-    createRightPanelSettings(left_right_panels_wrapper);
+    // createRightPanelSettings(left_right_panels_wrapper);
     createEdditorPanelSettings(rest_of_panels_wrapper);
     createQuickCommandsPanelSettings(rest_of_panels_wrapper);
 }
@@ -52,9 +52,7 @@ SettingsPanel::SettingsPanel(std::shared_ptr<Stylus> stylus)
 // void SettingsPanel::createRefreshSessionsWidget()
 // {
 //     auto refresh_sessions_btn = titleBar()->addWidget(std::make_unique<Wt::WText>("refresh all sessions"));
-
 //     refresh_sessions_btn->setStyleClass("text-white h-fit bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-1 text-center inline-flex items-center me-2 m-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800");
-
 //     refresh_sessions_btn->clicked().connect([=]
 //                                             { Wt::WServer::instance()->postAll([=]
 //                                                                                {
@@ -63,22 +61,21 @@ SettingsPanel::SettingsPanel(std::shared_ptr<Stylus> stylus)
 //             Wt::WApplication::instance()->triggerUpdate(); }); });
 // }
 
-void SettingsPanel::createRightPanelSettings(Wt::WContainerWidget *wrapper)
-{
-    auto panel_wrapper = wrapper->addWidget(std::make_unique<Wt::WContainerWidget>());
-    panel_wrapper->setStyleClass("border-2 border-solid border-gray-700 m-4 w-1/2 h-fit bg-gray-800 rounded-md");
-    auto header = panel_wrapper->addWidget(std::make_unique<Wt::WContainerWidget>());
-    header->setStyleClass("flex items-center justify-between mb-2 border-b-2 border-solid border-gray-900");
-    auto content = panel_wrapper->addWidget(std::make_unique<Wt::WContainerWidget>());
-    content->setStyleClass("p-2");
-    header->addWidget(std::make_unique<Wt::WText>("Right Panel"))->setStyleClass("text-lg font-semibold text-gray-200 mr-6 ml-2 p-0.5");
-
-    right_toggler_ = header->addWidget(std::make_unique<Wt::WCheckBox>("Tgg Vis"));
-    right_toggler_->setStyleClass(radio_checkbox_btn_styles_);
-    right_toggler_->setChecked(stylus_state_.right_active_);
-    right_toggler_->changed().connect([=]()
-                                      { toggleRightDialogActive(); });
-}
+// void SettingsPanel::createRightPanelSettings(Wt::WContainerWidget *wrapper)
+// {
+//     auto panel_wrapper = wrapper->addWidget(std::make_unique<Wt::WContainerWidget>());
+//     panel_wrapper->setStyleClass("border-2 border-solid border-gray-700 m-4 w-1/2 h-fit bg-gray-800 rounded-md");
+//     auto header = panel_wrapper->addWidget(std::make_unique<Wt::WContainerWidget>());
+//     header->setStyleClass("flex items-center justify-between mb-2 border-b-2 border-solid border-gray-900");
+//     auto content = panel_wrapper->addWidget(std::make_unique<Wt::WContainerWidget>());
+//     content->setStyleClass("p-2");
+//     header->addWidget(std::make_unique<Wt::WText>("Right Panel"))->setStyleClass("text-lg font-semibold text-gray-200 mr-6 ml-2 p-0.5");
+//     right_toggler_ = header->addWidget(std::make_unique<Wt::WCheckBox>("Tgg Vis"));
+//     right_toggler_->setStyleClass(radio_checkbox_btn_styles_);
+//     right_toggler_->setChecked(stylus_state_.right_active_);
+//     right_toggler_->changed().connect([=]()
+//                                       { toggleRightDialogActive(); });
+// }
 void SettingsPanel::createLeftPanelSettings(Wt::WContainerWidget *wrapper)
 {
     auto panel_wrapper = wrapper->addWidget(std::make_unique<Wt::WContainerWidget>());
@@ -180,25 +177,25 @@ void SettingsPanel::readStateFromXmlFile()
         }
     }
     // get or set right panel node
-    right_xml_node_ = message_node->FirstChildElement("rightPanel");
-    if (!right_xml_node_)
-    {
-        right_xml_node_ = settings_xml_doc_->NewElement("rightPanel");
-        right_xml_node_->SetAttribute("active", "false");
-        message_node->InsertEndChild(right_xml_node_);
-        settings_xml_doc_->SaveFile(xml_file_path);
-    }
-    else
-    {
-        if (std::string(right_xml_node_->Attribute("active")).compare("true") == 0)
-        {
-            stylus_state_.right_active_ = true;
-        }
-        else
-        {
-            stylus_state_.right_active_ = false;
-        }
-    }
+    // right_xml_node_ = message_node->FirstChildElement("rightPanel");
+    // if (!right_xml_node_)
+    // {
+    //     right_xml_node_ = settings_xml_doc_->NewElement("rightPanel");
+    //     right_xml_node_->SetAttribute("active", "false");
+    //     message_node->InsertEndChild(right_xml_node_);
+    //     settings_xml_doc_->SaveFile(xml_file_path);
+    // }
+    // else
+    // {
+    //     if (std::string(right_xml_node_->Attribute("active")).compare("true") == 0)
+    //     {
+    //         stylus_state_.right_active_ = true;
+    //     }
+    //     else
+    //     {
+    //         stylus_state_.right_active_ = false;
+    //     }
+    // }
     // get or set edditor panel node
     edditor_xml_node_ = message_node->FirstChildElement("edditorPanel");
     if (!edditor_xml_node_)
@@ -262,61 +259,14 @@ void SettingsPanel::readStateFromXmlFile()
     }
 }
 
-// void SettingsPanel::toggleStylusActive()
+// void SettingsPanel::toggleRightDialogActive()
 // {
-//     auto stylus_active_node = xml_brain_config_->message_node_->FirstChildElement("stylus-active");
-//     if (stylus_active_node)
-//     {
-//         if (!stylus_state_.stylus_active_)
-//         {
-//             stylus_active_node->FirstChildElement("active")->SetText("true");
-//             stylus_state_.stylus_active_ = true;
-//         }
-//         else
-//         {
-//             stylus_active_node->FirstChildElement("active")->SetText("false");
-//             stylus_state_.stylus_active_ = false;
-//         }
-//         xml_brain_config_->file_->doc_->SaveFile(xml_brain_config_->file_->path_.c_str());
-//         xml_brain_config_->templateChanged_.emit();
-//     }
-//     Wt::WApplication::instance()->messageResourceBundle().keys("");
-//     Wt::WApplication::instance()->refresh();
+//     stylus_state_.right_active_ = !stylus_state_.right_active_;
+//     right_toggler_->setChecked(stylus_state_.right_active_);
+//     stylus_->right_panel_->setHidden(!stylus_state_.right_active_);
+//     right_xml_node_->SetAttribute("active", stylus_state_.right_active_ ? "true" : "false");
+//     settings_xml_doc_->SaveFile(xml_file_path);
 // }
-
-// void SettingsPanel::toggleSettingsPanelActive()
-// {
-//     std::cout << "\n\n toggle brain dialog \n\n";
-//     auto brain_dialog_node = xml_brain_config_->message_node_->FirstChildElement("brain-dialog");
-//     if (brain_dialog_node)
-//     {
-//         std::cout << "\n " << brain_dialog_node->GetText() << "\n";
-//         if (std::string(brain_dialog_node->FirstChildElement("active")->GetText()) == "false")
-//         {
-//             brain_dialog_node->FirstChildElement("active")->SetText("true");
-//             if (stylus_state_.stylus_active_)
-//                 stylus_brain_->m_brain_d_->show();
-//             stylus_state_.brain_active_ = true;
-//         }
-//         else
-//         {
-//             brain_dialog_node->FirstChildElement("active")->SetText("false");
-//             stylus_brain_->m_brain_d_->hide();
-//             stylus_state_.brain_active_ = false;
-//         }
-//         xml_brain_config_->file_->doc_->SaveFile(xml_brain_config_->file_->path_.c_str());
-//         xml_brain_config_->templateChanged_.emit();
-//     }
-// }
-
-void SettingsPanel::toggleRightDialogActive()
-{
-    stylus_state_.right_active_ = !stylus_state_.right_active_;
-    right_toggler_->setChecked(stylus_state_.right_active_);
-    stylus_->right_panel_->setHidden(!stylus_state_.right_active_);
-    right_xml_node_->SetAttribute("active", stylus_state_.right_active_ ? "true" : "false");
-    settings_xml_doc_->SaveFile(xml_file_path);
-}
 void SettingsPanel::toggleLeftDialogActive()
 {
     std::cout << "\n\n toggle control dialog \n\n";
@@ -352,62 +302,3 @@ void SettingsPanel::toggleSettingsDialogActive()
     settings_xml_node_->SetAttribute("active", stylus_state_.settings_active_ ? "true" : "false");
     settings_xml_doc_->SaveFile(xml_file_path);
 }
-
-// void SettingsPanel::togglefilesManagerLeftMenuActive()
-// {
-//     std::cout << "\n\n toggle files manager dialog \n\n";
-//     auto files_manager_dialog_node = xml_brain_config_->message_node_->FirstChildElement("files-manager-dialog");
-//     if (files_manager_dialog_node)
-//     {
-//         if (std::string(files_manager_dialog_node->FirstChildElement("files-menu-minimized")->GetText()) == "false")
-//         {
-//             std::cout << "\n\n files menu is minimized true \n\n";
-//             files_manager_dialog_node->FirstChildElement("files-menu-minimized")->SetText("true");
-//             stylus_state_.files_manager_files_menu_active_ = true;
-//         }
-//         else
-//         {
-//             std::cout << "\n\n files menu is not minimized false \n\n";
-//             files_manager_dialog_node->FirstChildElement("files-menu-minimized")->SetText("false");
-//             stylus_state_.files_manager_files_menu_active_ = false;
-//         }
-//         xml_brain_config_->file_->doc_->SaveFile(xml_brain_config_->file_->path_.c_str());
-//         xml_brain_config_->templateChanged_.emit();
-//     }
-//     // stylus_brain_->m_files_manager_d_->toggle_left_menu_btn_->setChecked(stylus_state_.files_manager_files_menu_active_);
-//     // stylus_brain_->m_files_manager_d_->toggle_left_menu_btn_->changed().emit();
-// }
-
-// void SettingsPanel::setFileManagerFoldersTreeState()
-// {
-//     std::cout << "\n\n set file manager folders tree state \n\n";
-//     auto files_manager_dialog_node = xml_brain_config_->message_node_->FirstChildElement("files-manager-dialog");
-//     auto open_folders_node = files_manager_dialog_node->FirstChildElement("open-folders");
-//     if (!open_folders_node)
-//     {
-//         open_folders_node = xml_brain_config_->file_->doc_->NewElement("open-folders");
-//         files_manager_dialog_node->InsertEndChild(open_folders_node);
-//     }
-
-//     // remove all child nodes from open_folder_node
-//     open_folders_node->DeleteChildren();
-
-//     for (auto folder : stylus_state_.open_folders_state_)
-//     {
-//         std::cout << "\n folder name is " << folder.first << " and open state is " << folder.second << "\n";
-//         auto folder_node = xml_brain_config_->file_->doc_->NewElement("folder");
-//         auto name_node = xml_brain_config_->file_->doc_->NewElement("name");
-//         name_node->SetText(folder.first.c_str());
-//         folder_node->InsertEndChild(name_node);
-//         open_folders_node->InsertEndChild(folder_node);
-//         if (folder.second)
-//         {
-//             folder_node->SetAttribute("open", "true");
-//         }
-//         else
-//         {
-//             folder_node->SetAttribute("open", "false");
-//         }
-//     }
-//     xml_brain_config_->file_->doc_->SaveFile(xml_brain_config_->file_->path_.c_str());
-// }

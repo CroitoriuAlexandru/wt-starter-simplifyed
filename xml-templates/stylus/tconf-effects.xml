@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="62" id="boxShadow">
+    <message dbo_id="68" id="boxShadow">
         <tailwind-docs>https://tailwindcss.com/docs/box-shadow</tailwind-docs>
         <reset-command>shadow-res</reset-command>
         <classes className="shadow" customValue="true" canExtend="true">
@@ -38,7 +38,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="63" id="boxShadowInner">
+    <message dbo_id="69" id="boxShadowInner">
         <tailwind-docs>https://tailwindcss.com/docs/box-shadow</tailwind-docs>
         <reset-command>shadow-inner-res</reset-command>
         <classes className="shadow" customValue="false" canExtend="false">
@@ -48,12 +48,12 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="64" id="boxShadowColor">
+    <message dbo_id="70" id="boxShadowColor">
         <tailwind-docs>https://tailwindcss.com/docs/box-shadow</tailwind-docs>
         <reset-command>shadow-color-res</reset-command>
         <classes className="shadow" include="colors" customValue="true" canExtend="false"/>
     </message>
-    <message dbo_id="65" id="opacity">
+    <message dbo_id="71" id="opacity">
         <tailwind-docs>https://tailwindcss.com/docs/opacity</tailwind-docs>
         <reset-command>opacity-res</reset-command>
         <classes className="opacity" canExtend="true" customValue="true">
@@ -143,7 +143,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="66" id="mixBlendMode">
+    <message dbo_id="72" id="mixBlendMode">
         <tailwind-docs>https://tailwindcss.com/docs/mix-blend-mode</tailwind-docs>
         <reset-command>mix-blend-mode-res</reset-command>
         <classes className="mix-blend" customValue="false" canExtend="false">
@@ -217,7 +217,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="67" id="backgroundBlendMode">
+    <message dbo_id="73" id="backgroundBlendMode">
         <tailwind-docs>https://tailwindcss.com/docs/background-blend-mode</tailwind-docs>
         <reset-command>background-blend-mode-res</reset-command>
         <classes className="bg-blend" customValue="false" canExtend="false">

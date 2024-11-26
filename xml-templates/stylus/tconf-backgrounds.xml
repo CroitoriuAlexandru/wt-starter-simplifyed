@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="35" id="backgroundAttachment">
+    <message dbo_id="41" id="backgroundAttachment">
         <tailwind-docs>https://tailwindcss.com/docs/background-attachment</tailwind-docs>
         <reset-command>bg-attachment-res</reset-command>
         <classes className="bg" customValue="false" canExtend="false">
@@ -17,7 +17,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="36" id="backgroundClip">
+    <message dbo_id="42" id="backgroundClip">
         <tailwind-docs>https://tailwindcss.com/docs/background-clip</tailwind-docs>
         <reset-command>bg-clip-res</reset-command>
         <classes className="bg-clip" customValue="false" canExtend="false">
@@ -39,12 +39,12 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="37" id="backgroundColor">
+    <message dbo_id="43" id="backgroundColor">
         <tailwind-docs>https://tailwindcss.com/docs/background-color</tailwind-docs>
         <reset-command>bg-color-res</reset-command>
         <classes className="bg" include="colors" customValue="true" canExtend="false"/>
     </message>
-    <message dbo_id="38" id="backgroundOrigin">
+    <message dbo_id="44" id="backgroundOrigin">
         <tailwind-docs>https://tailwindcss.com/docs/background-origin</tailwind-docs>
         <reset-command>bg-origin-res</reset-command>
         <classes className="bg-origin" customValue="false" canExtend="false">
@@ -62,7 +62,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="39" id="backgroundPosition">
+    <message dbo_id="45" id="backgroundPosition">
         <tailwind-docs>https://tailwindcss.com/docs/background-position</tailwind-docs>
         <reset-command>bg-position-res</reset-command>
         <classes className="bg" customValue="true" canExtend="true">
@@ -104,7 +104,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="40" id="backgroundRepeat">
+    <message dbo_id="46" id="backgroundRepeat">
         <tailwind-docs>https://tailwindcss.com/docs/background-repeat</tailwind-docs>
         <reset-command>bg-repeat-res</reset-command>
         <classes className="bg" customValue="false" canExtend="false">
@@ -134,7 +134,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="41" id="backgroundSize">
+    <message dbo_id="47" id="backgroundSize">
         <tailwind-docs>https://tailwindcss.com/docs/background-size</tailwind-docs>
         <reset-command>bg-size-res</reset-command>
         <classes className="bg" customValue="true" canExtend="true">
@@ -152,7 +152,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="42" id="backgroundImage">
+    <message dbo_id="48" id="backgroundImage">
         <tailwind-docs>https://tailwindcss.com/docs/background-image</tailwind-docs>
         <reset-command>bg-image-res</reset-command>
         <classes className="bg" customValue="true" canExtend="true">
@@ -194,7 +194,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="43" id="gradientColorStep">
+    <message dbo_id="49" id="gradientColorStep">
         <tailwind-docs>https://tailwindcss.com/docs/gradient-color-stops</tailwind-docs>
         <reset-command>from-res/via-res/to-res</reset-command>
         <classes className="from/via/to" customValue="true" canExtend="true">
