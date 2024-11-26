@@ -25,13 +25,13 @@ App::App(const Wt::WEnvironment &env)
     // stylus_->right_panel_ = root()->addChild(std::make_unique<RightPanel>(stylus_));
     stylus_->edditor_panel_ = root()->addChild(std::make_unique<EdditorPanel>(stylus_));
     stylus_->settings_panel_ = root()->addChild(std::make_unique<SettingsPanel>(stylus_));
-    // stylus_->quick_commands_panel_ = root()->addChild(std::make_unique<QuickCommandsPanel>(stylus_));
+    stylus_->quick_commands_panel_ = root()->addChild(std::make_unique<QuickCommandsPanel>(stylus_));
 
     // stylus_->left_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.left_active_);
     // stylus_->right_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.right_active_);
     stylus_->edditor_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.edditor_active_);
     stylus_->settings_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.settings_active_);
-    // stylus_->quick_commands_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.quick_commands_active_);
+    stylus_->quick_commands_panel_->setHidden(!stylus_->settings_panel_->stylus_state_.quick_commands_active_);
 
     // stylus_->tailwind_config_ = new TailwindConfig(stylus_);
     // stylus_->tailwind_config_->readConfigurationXMLs();
