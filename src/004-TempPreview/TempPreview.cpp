@@ -19,7 +19,7 @@ TempPreview::TempPreview(std::shared_ptr<Stylus> stylus)
 
     // template selection bottom panel
     auto footer_bar_wrapper = addWidget(std::make_unique<Wt::WContainerWidget>());
-    footer_bar_wrapper->setStyleClass("bg-gray-800 p-2 flex justify-center sticky bottom-0 w-full");
+    footer_bar_wrapper->setStyleClass("bg-gray-800 p-2 flex justify-center sticky bottom-0 w-full space-x-2");
 
     folder_combo_box_ = footer_bar_wrapper->addWidget(std::make_unique<Wt::WComboBox>());
     file_combo_box_ = footer_bar_wrapper->addWidget(std::make_unique<Wt::WComboBox>());
@@ -28,8 +28,6 @@ TempPreview::TempPreview(std::shared_ptr<Stylus> stylus)
     folder_combo_box_->setStyleClass("line-edit-stylus-edditor");
     file_combo_box_->setStyleClass("line-edit-stylus-edditor");
     template_combo_box_->setStyleClass("line-edit-stylus-edditor");
-
-    setFolders();
 
     folder_combo_box_->activated().connect([=]
                                            { setFiles(folder_combo_box_->currentText().toUTF8()); });
@@ -58,6 +56,9 @@ TempPreview::TempPreview(std::shared_ptr<Stylus> stylus)
                                                     }
 
                                                  t.commit(); });
+    template_combo_box_->clicked().connect([=]
+                                           { template_combo_box_->activated().emit(template_combo_box_->currentIndex()); });
+    setFolders();
 }
 
 void TempPreview::setXmlBrain(std::shared_ptr<XMLBrain> xml_brain)
@@ -114,4 +115,5 @@ void TempPreview::setTemplates(std::string file_name)
         }
     }
     t.commit();
+    template_combo_box_->activated().emit(template_combo_box_->currentIndex());
 }

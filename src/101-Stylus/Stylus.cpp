@@ -177,5 +177,116 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
         {
             settings_panel_->toggleSettingsDialogActive();
         }
+
+        else if (e.key() == Wt::Key::Left)
+        {
+            if (!xml_brain_->selected_node_)
+                return;
+            if (xml_brain_->selected_node_ == xml_brain_->message_node_)
+                return;
+            xml_brain_->selected_node_ = xml_brain_->selected_node_->Parent();
+            setXmlBrain(xml_brain_);
+        }
+        else if (e.key() == Wt::Key::Right)
+        {
+            if (!xml_brain_->selected_node_)
+                return;
+            if (!xml_brain_->selected_node_->FirstChild())
+                return;
+            xml_brain_->selected_node_ = xml_brain_->selected_node_->FirstChild();
+            setXmlBrain(xml_brain_);
+        }
+        else if (e.key() == Wt::Key::Down)
+        {
+            if (!xml_brain_->selected_node_)
+                return;
+            if (!xml_brain_->selected_node_->NextSibling())
+                return;
+            xml_brain_->selected_node_ = xml_brain_->selected_node_->NextSibling();
+            setXmlBrain(xml_brain_);
+        }
+        else if (e.key() == Wt::Key::Up)
+        {
+            if (!xml_brain_->selected_node_)
+                return;
+            if (!xml_brain_->selected_node_->PreviousSibling())
+                return;
+            xml_brain_->selected_node_ = xml_brain_->selected_node_->PreviousSibling();
+            setXmlBrain(xml_brain_);
+        }
+    }
+    else if (e.modifiers().test(Wt::KeyboardModifier::Shift))
+    {
+        if (!xml_brain_->selected_node_)
+            return;
+        if (!xml_brain_->selected_node_->ToElement())
+            return;
+
+        if (e.key() == Wt::Key::Up)
+        {
+            if (xml_brain_->selected_node_->PreviousSibling())
+            {
+                auto prev = xml_brain_->selected_node_->PreviousSibling();
+                if (prev->PreviousSibling())
+                {
+                    xml_brain_->selected_node_->Parent()->InsertAfterChild(prev->PreviousSibling(), xml_brain_->selected_node_);
+                }
+                else
+                {
+                    xml_brain_->selected_node_->Parent()->InsertFirstChild(xml_brain_->selected_node_);
+                }
+            }
+            else if (xml_brain_->selected_node_->NextSibling())
+            {
+                xml_brain_->selected_node_->Parent()->InsertEndChild(xml_brain_->selected_node_);
+            }
+            setXmlBrain(xml_brain_);
+            xml_brain_->saveXmlToDbo();
+        }
+        else if (e.key() == Wt::Key::Down)
+        {
+            if (xml_brain_->selected_node_->NextSibling())
+            {
+                auto next = xml_brain_->selected_node_->NextSibling();
+                xml_brain_->selected_node_->Parent()->InsertAfterChild(next, xml_brain_->selected_node_);
+            }
+            else if (xml_brain_->selected_node_->PreviousSibling())
+            {
+                xml_brain_->selected_node_->Parent()->InsertFirstChild(xml_brain_->selected_node_);
+            }
+            setXmlBrain(xml_brain_);
+            xml_brain_->saveXmlToDbo();
+        }
+        else if (e.key() == Wt::Key::Left)
+        {
+            if (!xml_brain_->selected_node_->Parent() || xml_brain_->selected_node_->Parent() == xml_brain_->message_node_)
+                return;
+
+            auto parent = xml_brain_->selected_node_->Parent();
+            auto grand_parent = parent->Parent();
+            if (parent->PreviousSibling())
+            {
+                grand_parent->InsertAfterChild(parent->PreviousSibling(), xml_brain_->selected_node_);
+            }
+            else
+            {
+                grand_parent->InsertFirstChild(xml_brain_->selected_node_);
+            }
+            setXmlBrain(xml_brain_);
+            xml_brain_->saveXmlToDbo();
+        }
+        else if (e.key() == Wt::Key::Right)
+        {
+            if (!xml_brain_->selected_node_->ToElement() ||
+                !xml_brain_->selected_node_->NextSiblingElement() ||
+                xml_brain_->selected_node_->NextSiblingElement()->FirstChild()->ToText())
+                return;
+
+            auto selected_node = xml_brain_->selected_node_;
+            auto next_sibling = selected_node->NextSiblingElement();
+            next_sibling->InsertFirstChild(selected_node);
+            setXmlBrain(xml_brain_);
+            xml_brain_->saveXmlToDbo();
+        }
     }
 }
