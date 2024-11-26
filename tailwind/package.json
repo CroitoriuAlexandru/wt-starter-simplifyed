@@ -9,6 +9,5 @@
   "scripts": {
     "watch": "npx tailwindcss -i ./tailwind-in.css -o ../static/css/tailwind-out.css --watch",
     "build": "npx tailwindcss -i ./tailwind-in.css -o ../static/css/tailwind-out.css"
-
   }
 }

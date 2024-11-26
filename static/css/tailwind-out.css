@@ -647,28 +647,6 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
-.\?\? {
-  outline-style: solid;
-  outline-color: #024a1b;
-}
-
-@media (prefers-color-scheme: dark) {
-  .\?\? {
-    outline-color: #6bf199;
-  }
-}
-
-.\? {
-  outline-style: solid;
-  outline-color: #b3007d;
-}
-
-@media (prefers-color-scheme: dark) {
-  .\? {
-    outline-color: #f16bc9;
-  }
-}
-
 .Wt-dialog {
   background-color: transparent;
 }
@@ -3542,6 +3520,50 @@ video {
 .content-none {
   --tw-content: none;
   content: var(--tw-content);
+}
+
+.\?\? {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #6BF193;
+  box-shadow: inset 2px 2px #6BF193, inset -2px -2px #6BF193;
+  animation: \?\?wobble 0.6s ease-in-out alternate infinite;
+}
+
+@keyframes \?\?wobble {
+  0% {
+    outline-width: 2px;
+    outline-color: #6BF193;
+    box-shadow: inset 2px 2px #6BF193, inset -2px -2px #6BF193;
+  }
+
+  100% {
+    outline-width: 3px;
+    outline-color: #1FF760;
+    box-shadow: inset 3px 3px #1FF760, inset -3px -3px #1FF760;
+  }
+}
+
+.\? {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #f16bc9;
+  box-shadow: inset 2px 2px #f16bc9, inset -2px -2px #f16bc9;
+  animation: \?wobble 0.6s ease-in-out alternate infinite;
+}
+
+@keyframes \?wobble {
+  0% {
+    outline-width: 2px;
+    outline-color: #f16bc9;
+    box-shadow: inset 2px 2px #f16bc9, inset -2px -2px #f16bc9;
+  }
+
+  100% {
+    outline-width: 3px;
+    outline-color: #f71fb6;
+    box-shadow: inset 3px 3px #f71fb6, inset -3px -3px #f71fb6;
+  }
 }
 
 .before\:absolute::before {
