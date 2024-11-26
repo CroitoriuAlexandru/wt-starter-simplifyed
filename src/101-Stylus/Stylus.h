@@ -38,8 +38,8 @@ public:
 
     Wt::Signal<std::shared_ptr<XMLBrain>> &node_selected() { return node_selected_; }
 
-private:
     void processKeyEvent(Wt::WKeyEvent e);
 
+private:
     Wt::Signal<std::shared_ptr<XMLBrain>> node_selected_;
 };

@@ -621,13 +621,13 @@
 ::-webkit-scrollbar-track {
   /* Customize the scrollbar track */
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 ::-webkit-scrollbar-thumb {
   /* Customize the scrollbar thumb */
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 body::-webkit-scrollbar {
@@ -1370,6 +1370,10 @@ video {
   top: -1rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .bottom-12 {
   bottom: 3rem;
 }
@@ -1559,6 +1563,11 @@ video {
   margin-right: auto;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1572,11 +1581,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
 .\!ml-auto {
@@ -1811,6 +1815,10 @@ video {
   min-height: 90px;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .\!w-fit {
   width: -moz-fit-content !important;
   width: fit-content !important;
@@ -1858,6 +1866,10 @@ video {
 
 .w-\[60px\] {
   width: 60px;
+}
+
+.w-\[calc\(100vw-380px-450px\)\] {
+  width: calc(100vw - 380px - 450px);
 }
 
 .w-fit {
@@ -1935,10 +1947,6 @@ video {
 }
 
 .grow {
-  flex-grow: 1;
-}
-
-.grow-\[1\] {
   flex-grow: 1;
 }
 
@@ -2378,6 +2386,10 @@ video {
   overflow-y: auto;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .overflow-x-visible {
   overflow-x: visible;
 }
@@ -2795,6 +2807,11 @@ video {
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-sky-500\/65 {
   background-color: rgb(14 165 233 / 0.65);
 }
@@ -2802,11 +2819,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(resources\/icons\/hamburger\.svg\)\] {

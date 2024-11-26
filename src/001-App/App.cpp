@@ -56,7 +56,7 @@ App::App(const Wt::WEnvironment &env)
     // JSs
     require(docRoot() + "/static/js/utils.js");
 
-    root()->setStyleClass("flex !max-w-[100vw] m-0 p-0");
+    root()->setStyleClass("flex !max-w-[100vw] m-0 p-0 flex");
     auto treePreview = root()->addWidget(std::make_unique<TreePreview>(stylus_));
     auto tempPreview = root()->addWidget(std::make_unique<TempPreview>(stylus_));
     auto classesEdditor = root()->addWidget(std::make_unique<ClassesEdditor>(stylus_));

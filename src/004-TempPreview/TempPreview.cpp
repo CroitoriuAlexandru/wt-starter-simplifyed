@@ -9,13 +9,13 @@ TempPreview::TempPreview(std::shared_ptr<Stylus> stylus)
 {
     // setOffsets(450, Wt::Side::Right);
     // setOffsets(380, Wt::Side::Left);
-    setStyleClass("min-h-screen h-screen max-h-screen overflow-y-none overflow-x-none relative grow-[1] flex flex-col");
+    setStyleClass("min-h-screen h-screen max-h-screen relative w-[calc(100vw-380px-450px)] flex flex-col");
     setOffsets(0, Wt::Side::Left | Wt::Side::Bottom | Wt::Side::Top);
 
     preview_wrapper_ = addWidget(std::make_unique<Wt::WContainerWidget>());
     stylus_->node_selected().connect([=](std::shared_ptr<XMLBrain> xml_brain)
                                      { setXmlBrain(xml_brain); });
-    preview_wrapper_->setStyleClass("h-full overflow-y-auto");
+    preview_wrapper_->setStyleClass("h-full overflow-y-auto overflow-x-hidden");
 
     // template selection bottom panel
     auto footer_bar_wrapper = addWidget(std::make_unique<Wt::WContainerWidget>());

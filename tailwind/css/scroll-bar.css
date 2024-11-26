@@ -6,12 +6,12 @@
 
 ::-webkit-scrollbar-track {
     /* Customize the scrollbar track */
-    @apply bg-gray-200;
+    @apply bg-gray-900;
 }
 
 ::-webkit-scrollbar-thumb {
     /* Customize the scrollbar thumb */
-    @apply bg-gray-400;
+    @apply bg-gray-600;
 }
 
 
