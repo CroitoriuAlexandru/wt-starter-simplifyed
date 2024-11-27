@@ -29,6 +29,11 @@ TempPreview::TempPreview(std::shared_ptr<Stylus> stylus)
     file_combo_box_->setStyleClass("line-edit-stylus-edditor");
     template_combo_box_->setStyleClass("line-edit-stylus-edditor");
 
+    // disable focus on the combo boxes
+    folder_combo_box_->setAttributeValue("tabindex", "-1");
+    file_combo_box_->setAttributeValue("tabindex", "-1");
+    template_combo_box_->setAttributeValue("tabindex", "-1");
+
     folder_combo_box_->activated().connect([=]
                                            { setFiles(folder_combo_box_->currentText().toUTF8()); });
 

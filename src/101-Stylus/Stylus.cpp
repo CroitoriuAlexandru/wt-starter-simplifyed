@@ -219,11 +219,11 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
     {
         if (!xml_brain_->selected_node_)
             return;
-        if (!xml_brain_->selected_node_->ToElement())
-            return;
 
         if (e.key() == Wt::Key::Up)
         {
+            if (!xml_brain_->selected_node_->ToElement())
+                return;
             if (xml_brain_->selected_node_->PreviousSibling())
             {
                 auto prev = xml_brain_->selected_node_->PreviousSibling();
@@ -245,6 +245,8 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
         }
         else if (e.key() == Wt::Key::Down)
         {
+            if (!xml_brain_->selected_node_->ToElement())
+                return;
             if (xml_brain_->selected_node_->NextSibling())
             {
                 auto next = xml_brain_->selected_node_->NextSibling();
@@ -259,7 +261,9 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
         }
         else if (e.key() == Wt::Key::Left)
         {
-            if (!xml_brain_->selected_node_->Parent() || xml_brain_->selected_node_->Parent() == xml_brain_->message_node_)
+            if (!xml_brain_->selected_node_->ToElement() ||
+                !xml_brain_->selected_node_->Parent() ||
+                xml_brain_->selected_node_->Parent() == xml_brain_->message_node_)
                 return;
 
             auto parent = xml_brain_->selected_node_->Parent();
@@ -277,14 +281,40 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
         }
         else if (e.key() == Wt::Key::Right)
         {
+            std::cout << "\n\n inserted \n\n";
+
             if (!xml_brain_->selected_node_->ToElement() ||
                 !xml_brain_->selected_node_->NextSiblingElement() ||
-                xml_brain_->selected_node_->NextSiblingElement()->FirstChild()->ToText())
+                (xml_brain_->selected_node_->NextSiblingElement()->FirstChild() && xml_brain_->selected_node_->NextSiblingElement()->FirstChild()->ToText()))
                 return;
+            std::cout << "\n\n inserted \n\n";
 
             auto selected_node = xml_brain_->selected_node_;
+            std::cout << "\n\n inserted \n\n";
             auto next_sibling = selected_node->NextSiblingElement();
-            next_sibling->InsertFirstChild(selected_node);
+            std::cout << "\n\n inserted \n\n";
+            xml_brain_->selected_node_ = next_sibling->InsertFirstChild(selected_node);
+            std::cout << "\n\n inserted \n\n";
+            xml_brain_->saveXmlToDbo();
+            std::cout << "\n\n inserted \n\n";
+            setXmlBrain(xml_brain_);
+        }
+        else if (e.key() == Wt::Key::Delete)
+        {
+            if (xml_brain_->selected_node_ == xml_brain_->message_node_)
+                return;
+            auto parent = xml_brain_->selected_node_->Parent();
+            auto prev_sibling = xml_brain_->selected_node_->PreviousSibling();
+            auto next_sibling = xml_brain_->selected_node_->NextSibling();
+            parent->DeleteChild(xml_brain_->selected_node_);
+            std::cout << "\n\n deleted \n\n";
+            if (prev_sibling)
+                xml_brain_->selected_node_ = prev_sibling;
+            else if (next_sibling)
+                xml_brain_->selected_node_ = next_sibling;
+            else
+                xml_brain_->selected_node_ = parent;
+
             setXmlBrain(xml_brain_);
             xml_brain_->saveXmlToDbo();
         }

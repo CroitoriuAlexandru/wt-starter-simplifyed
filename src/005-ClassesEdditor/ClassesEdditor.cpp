@@ -22,6 +22,9 @@ ClassesEdditor::ClassesEdditor(std::shared_ptr<Stylus> stylus)
     class_input->setStyleClass("line-edit-stylus-edditor");
     class_input->setPlaceholderText("Add class");
 
+    class_input->keyWentDown().connect([=](Wt::WKeyEvent e)
+                                       { stylus_->processKeyEvent(e); });
+
     class_input->enterPressed().connect([=]
                                         {
                             if (class_input->text().empty())

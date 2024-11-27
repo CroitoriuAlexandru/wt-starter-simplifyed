@@ -57,7 +57,7 @@ void XMLBrain::saveXmlToDbo()
 
         xml_template.modify()->temp_id = dbo_temp_data_.temp_id;
         xml_template.modify()->xml_temp = dbo_temp_data_.xml_temp;
-        std::cout << "\n\n xml_template->xml_temp: " << xml_template->xml_temp.toUTF8() << "\n\n";
+        // std::cout << "\n\n xml_template->xml_temp: " << xml_template->xml_temp.toUTF8() << "\n\n";
     }
 
     transaction.commit();
