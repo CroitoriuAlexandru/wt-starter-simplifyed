@@ -31,7 +31,7 @@ public:
 
     // void createRefreshSessionsWidget();
 
-    // void createRightPanelSettings(Wt::WContainerWidget *wrapper);
+    void createHeaderButtons(Wt::WContainerWidget *wrapper);
     void createLeftPanelSettings(Wt::WContainerWidget *wrapper);
     void createEdditorPanelSettings(Wt::WContainerWidget *wrapper);
     void createQuickCommandsPanelSettings(Wt::WContainerWidget *wrapper);

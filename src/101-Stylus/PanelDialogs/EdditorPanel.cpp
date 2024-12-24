@@ -28,68 +28,68 @@ EdditorPanel::EdditorPanel(std::shared_ptr<Stylus> stylus)
     header_wrapper_->setStyleClass("flex items-center border-solid border-b border-gray-600");
     button_btn_group_wrapper_ = header_wrapper_->addWidget(std::make_unique<Wt::WContainerWidget>());
     auto utility_btns_wrapper = header_wrapper_->addWidget(std::make_unique<Wt::WContainerWidget>());
-    auto test_btns_wrapper = header_wrapper_->addWidget(std::make_unique<Wt::WContainerWidget>());
-    auto add_temps_to_dbo_btn = test_btns_wrapper->addWidget(std::make_unique<Wt::WPushButton>("Add Temps"));
-    add_temps_to_dbo_btn->clicked().connect([=]()
-                                            {
-                                                stylus_->addFileToDbo("default", "../base-templates/default/ui.xml");
-                                                // stylus_->addFileToDbo("default", "../base-templates/default/auth.xml");
-                                                // stylus_->addFileToDbo("default", "../base-templates/default/auth_strings.xml");
-                                                // stylus_->addFileToDbo("default", "../base-templates/default/calendar.xml");
+    // auto test_btns_wrapper = header_wrapper_->addWidget(std::make_unique<Wt::WContainerWidget>());
+    // auto add_temps_to_dbo_btn = test_btns_wrapper->addWidget(std::make_unique<Wt::WPushButton>("Add Temps"));
+    // add_temps_to_dbo_btn->clicked().connect([=]()
+    //                                         {
+    //                                             stylus_->addFileToDbo("default", "../base-templates/default/ui.xml");
+    //                                             // stylus_->addFileToDbo("default", "../base-templates/default/auth.xml");
+    //                                             // stylus_->addFileToDbo("default", "../base-templates/default/auth_strings.xml");
+    //                                             // stylus_->addFileToDbo("default", "../base-templates/default/calendar.xml");
 
-                                                stylus_->addFileToDbo("test", "../base-templates/test/test-1.xml");
-                                                stylus_->addFileToDbo("test", "../base-templates/test/test-2.xml");
+    //                                             stylus_->addFileToDbo("test", "../base-templates/test/test-1.xml");
+    //                                             stylus_->addFileToDbo("test", "../base-templates/test/test-2.xml");
 
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/stylus-flex-and-grid-svgs.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-accesibility.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-backgrounds.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-borders.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-effects.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-filters.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-flex-and-grid.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-interactivity.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-Layout.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-sizing.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-spacing.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-svg.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-tables.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-transform.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-transition-and-animation.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-typography.xml");
-                                                stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-variants.xml"); });
-    auto get_temps_from_dbo_btn = test_btns_wrapper->addWidget(std::make_unique<Wt::WPushButton>("Get Temps"));
-    get_temps_from_dbo_btn->clicked().connect([=]()
-                                              {
-                                                stylus_->saveFileFromDbo("default", "ui.xml");
-                                                // stylus_->saveFileFromDbo("default", "auth_strings.xml");
-                                                // stylus_->saveFileFromDbo("default", "auth.xml");
-                                                // stylus_->saveFileFromDbo("default", "calendar.xml"); 
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/stylus-flex-and-grid-svgs.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-accesibility.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-backgrounds.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-borders.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-effects.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-filters.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-flex-and-grid.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-interactivity.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-Layout.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-sizing.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-spacing.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-svg.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-tables.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-transform.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-transition-and-animation.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-typography.xml");
+    //                                             stylus_->addFileToDbo("stylus", "../base-templates/stylus/tconf-variants.xml"); });
+    // auto get_temps_from_dbo_btn = test_btns_wrapper->addWidget(std::make_unique<Wt::WPushButton>("Get Temps"));
+    // get_temps_from_dbo_btn->clicked().connect([=]()
+    //                                           {
+    //                                             stylus_->saveFileFromDbo("default", "ui.xml");
+    //                                             // stylus_->saveFileFromDbo("default", "auth_strings.xml");
+    //                                             // stylus_->saveFileFromDbo("default", "auth.xml");
+    //                                             // stylus_->saveFileFromDbo("default", "calendar.xml");
 
-                                                stylus_->saveFileFromDbo("test", "test-1.xml");
-                                                stylus_->saveFileFromDbo("test", "test-2.xml");
-                                                
-                                                stylus_->saveFileFromDbo("stylus", "stylus-flex-and-grid-svgs.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-accesibility.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-backgrounds.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-borders.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-effects.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-filters.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-flex-and-grid.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-interactivity.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-Layout.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-sizing.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-spacing.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-svg.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-tables.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-transform.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-transition-and-animation.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-typography.xml");
-                                                stylus_->saveFileFromDbo("stylus", "tconf-variants.xml"); });
+    //                                             stylus_->saveFileFromDbo("test", "test-1.xml");
+    //                                             stylus_->saveFileFromDbo("test", "test-2.xml");
+
+    //                                             stylus_->saveFileFromDbo("stylus", "stylus-flex-and-grid-svgs.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-accesibility.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-backgrounds.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-borders.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-effects.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-filters.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-flex-and-grid.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-interactivity.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-Layout.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-sizing.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-spacing.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-svg.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-tables.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-transform.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-transition-and-animation.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-typography.xml");
+    //                                             stylus_->saveFileFromDbo("stylus", "tconf-variants.xml"); });
     button_btn_group_wrapper_->setStyleClass("flex");
-    test_btns_wrapper->setStyleClass("flex");
+    // test_btns_wrapper->setStyleClass("flex");
     utility_btns_wrapper->setStyleClass("ml-auto mr-3");
-    add_temps_to_dbo_btn->setStyleClass("btn-style-1 !p-0.5 mr-3");
-    get_temps_from_dbo_btn->setStyleClass("btn-style-1 !p-0.5 mr-3");
+    // add_temps_to_dbo_btn->setStyleClass("btn-style-1 !p-0.5 mr-3");
+    // get_temps_from_dbo_btn->setStyleClass("btn-style-1 !p-0.5 mr-3");
     content_wrapper_->setStyleClass("flex items-start h-[calc(100%-34px)]");
 
     createFoldersMenu();
