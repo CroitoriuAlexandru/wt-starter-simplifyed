@@ -1,10 +1,10 @@
 <messages>
-    <message dbo_id="162" id="padding">
+    <message dbo_id="163" id="padding">
         <tailwind-docs>https://tailwindcss.com/docs/padding</tailwind-docs>
         <reset-command>p-res</reset-command>
         <classes className="p" include="spacing" customValue="true" canExtend="false"/>
     </message>
-    <message dbo_id="163" id="margin">
+    <message dbo_id="164" id="margin">
         <tailwind-docs>https://tailwindcss.com/docs/margin</tailwind-docs>
         <reset-command>m-res</reset-command>
         <classes className="m" include="spacing" customValue="true" canExtend="false">
@@ -14,12 +14,12 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="164" id="space">
+    <message dbo_id="165" id="space">
         <tailwind-docs>https://tailwindcss.com/docs/space</tailwind-docs>
         <reset-command>space-res</reset-command>
         <classes className="space" include="spacing" customValue="true" canExtend="true"/>
     </message>
-    <message dbo_id="165" id="spaceXReverse">
+    <message dbo_id="166" id="spaceXReverse">
         <tailwind-docs>https://tailwindcss.com/docs/space</tailwind-docs>
         <reset-command>space-x-reverse-res</reset-command>
         <classes className="space-x" customValue="false" canExtend="false">
@@ -29,7 +29,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="166" id="spaceYReverse">
+    <message dbo_id="167" id="spaceYReverse">
         <tailwind-docs>https://tailwindcss.com/docs/space</tailwind-docs>
         <reset-command>space-y-reverse-res</reset-command>
         <classes className="space-y" customValue="false" canExtend="false">

@@ -26,8 +26,9 @@ PNode::PNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node)
     // setStyleClass("p-4 bg-red-200");
     if (xml_brain_->selected_node_ == node)
     {
-        setStyleClass("?");
+        toggleStyleClass("?", true);
     }
+
     mouseWentOver().preventPropagation();
     mouseWentOver().connect([=]
                             { toggleStyleClass("??", true); });
@@ -50,9 +51,19 @@ PNode::PNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node)
     {
         if (node->ToElement())
         {
+
+            // setAttributeValue(attr->Name(), attr->Value());
             if (node->ToElement()->Attribute("class"))
             {
                 addStyleClass(node->ToElement()->Attribute("class"));
+            }
+            if (std::strcmp(node->ToElement()->Name(), "img") == 0)
+            {
+                setHtmlTagName("img");
+                if (node->ToElement()->Attribute("src"))
+                {
+                    setAttributeValue("src", node->ToElement()->Attribute("src"));
+                }
             }
         }
         else if (node->ToText())

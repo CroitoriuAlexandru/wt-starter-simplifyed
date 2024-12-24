@@ -88,9 +88,6 @@ void SettingsPanel::createLeftPanelSettings(Wt::WContainerWidget *wrapper)
 
     left_toggler_ = header->addWidget(std::make_unique<Wt::WCheckBox>("Tgg Vis"));
     left_toggler_->setStyleClass(radio_checkbox_btn_styles_);
-    left_toggler_->setChecked(stylus_state_.left_active_);
-    left_toggler_->changed().connect([=]()
-                                     { toggleLeftDialogActive(); });
 }
 void SettingsPanel::createEdditorPanelSettings(Wt::WContainerWidget *wrapper)
 {
@@ -127,88 +124,49 @@ void SettingsPanel::createQuickCommandsPanelSettings(Wt::WContainerWidget *wrapp
 
 void SettingsPanel::readStateFromXmlFile()
 {
-    settings_xml_doc_ = new tinyxml2::XMLDocument();
-    settings_xml_doc_->LoadFile(xml_file_path);
+    stylus_state_.settings_xml_doc_ = new tinyxml2::XMLDocument();
+    stylus_state_.settings_xml_doc_->LoadFile(xml_file_path);
     // get or set messages node
-    auto messages_node = settings_xml_doc_->FirstChildElement("messages");
+    auto messages_node = stylus_state_.settings_xml_doc_->FirstChildElement("messages");
     if (!messages_node)
     {
-        messages_node = settings_xml_doc_->NewElement("messages");
-        settings_xml_doc_->InsertFirstChild(messages_node);
-        settings_xml_doc_->SaveFile(xml_file_path);
+        messages_node = stylus_state_.settings_xml_doc_->NewElement("messages");
+        stylus_state_.settings_xml_doc_->InsertFirstChild(messages_node);
+        stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
     }
     // get or set message node
     auto message_node = messages_node->FirstChildElement("message");
     if (!message_node)
     {
-        message_node = settings_xml_doc_->NewElement("message");
+        message_node = stylus_state_.settings_xml_doc_->NewElement("message");
         messages_node->InsertEndChild(message_node);
-        settings_xml_doc_->SaveFile(xml_file_path);
+        stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
     }
     // Set message id attribute
     if (!message_node->Attribute("id"))
     {
         message_node->SetAttribute("id", "stylus.config");
-        settings_xml_doc_->SaveFile(xml_file_path);
+        stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
     }
     else if (std::string(message_node->Attribute("id")).compare("stylus.config") != 0)
     {
         message_node->SetAttribute("id", "stylus.config");
-        settings_xml_doc_->SaveFile(xml_file_path);
+        stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
     }
     // get or set left panel node
-    left_xml_node_ = message_node->FirstChildElement("leftPanel");
-    if (!left_xml_node_)
-    {
-        left_xml_node_ = settings_xml_doc_->NewElement("leftPanel");
-        left_xml_node_->SetAttribute("active", "false");
-        message_node->InsertEndChild(left_xml_node_);
-        settings_xml_doc_->SaveFile(xml_file_path);
-    }
-    else
-    {
-        if (std::string(left_xml_node_->Attribute("active")).compare("true") == 0)
-        {
-            stylus_state_.left_active_ = true;
-        }
-        else
-        {
-            stylus_state_.left_active_ = false;
-        }
-    }
-    // get or set right panel node
-    // right_xml_node_ = message_node->FirstChildElement("rightPanel");
-    // if (!right_xml_node_)
-    // {
-    //     right_xml_node_ = settings_xml_doc_->NewElement("rightPanel");
-    //     right_xml_node_->SetAttribute("active", "false");
-    //     message_node->InsertEndChild(right_xml_node_);
-    //     settings_xml_doc_->SaveFile(xml_file_path);
-    // }
-    // else
-    // {
-    //     if (std::string(right_xml_node_->Attribute("active")).compare("true") == 0)
-    //     {
-    //         stylus_state_.right_active_ = true;
-    //     }
-    //     else
-    //     {
-    //         stylus_state_.right_active_ = false;
-    //     }
-    // }
-    // get or set edditor panel node
-    edditor_xml_node_ = message_node->FirstChildElement("edditorPanel");
-    if (!edditor_xml_node_)
-    {
-        edditor_xml_node_ = settings_xml_doc_->NewElement("edditorPanel");
-        edditor_xml_node_->SetAttribute("active", "false");
-        message_node->InsertEndChild(edditor_xml_node_);
 
-        settings_xml_doc_->SaveFile(xml_file_path);
+    stylus_state_.edditor_xml_node_ = message_node->FirstChildElement("edditorPanel");
+    if (!stylus_state_.edditor_xml_node_)
+    {
+        stylus_state_.edditor_xml_node_ = stylus_state_.settings_xml_doc_->NewElement("edditorPanel");
+        stylus_state_.edditor_xml_node_->SetAttribute("active", "false");
+        message_node->InsertEndChild(stylus_state_.edditor_xml_node_);
+
+        stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
     }
     else
     {
-        if (std::string(edditor_xml_node_->Attribute("active")).compare("true") == 0)
+        if (std::string(stylus_state_.edditor_xml_node_->Attribute("active")).compare("true") == 0)
         {
             stylus_state_.edditor_active_ = true;
         }
@@ -218,17 +176,17 @@ void SettingsPanel::readStateFromXmlFile()
         }
     }
     // get or set quick commands panel node
-    quick_commands_xml_node_ = message_node->FirstChildElement("quickCommandsPanel");
-    if (!quick_commands_xml_node_)
+    stylus_state_.quick_commands_xml_node_ = message_node->FirstChildElement("quickCommandsPanel");
+    if (!stylus_state_.quick_commands_xml_node_)
     {
-        quick_commands_xml_node_ = settings_xml_doc_->NewElement("quickCommandsPanel");
-        quick_commands_xml_node_->SetAttribute("active", "false");
-        message_node->InsertEndChild(quick_commands_xml_node_);
-        settings_xml_doc_->SaveFile(xml_file_path);
+        stylus_state_.quick_commands_xml_node_ = stylus_state_.settings_xml_doc_->NewElement("quickCommandsPanel");
+        stylus_state_.quick_commands_xml_node_->SetAttribute("active", "false");
+        message_node->InsertEndChild(stylus_state_.quick_commands_xml_node_);
+        stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
     }
     else
     {
-        if (std::string(quick_commands_xml_node_->Attribute("active")).compare("true") == 0)
+        if (std::string(stylus_state_.quick_commands_xml_node_->Attribute("active")).compare("true") == 0)
         {
             stylus_state_.quick_commands_active_ = true;
         }
@@ -238,17 +196,17 @@ void SettingsPanel::readStateFromXmlFile()
         }
     }
     // get or set settings panel node
-    settings_xml_node_ = message_node->FirstChildElement("settingsPanel");
-    if (!settings_xml_node_)
+    stylus_state_.settings_xml_node_ = message_node->FirstChildElement("settingsPanel");
+    if (!stylus_state_.settings_xml_node_)
     {
-        settings_xml_node_ = settings_xml_doc_->NewElement("settingsPanel");
-        settings_xml_node_->SetAttribute("active", "false");
-        message_node->InsertEndChild(settings_xml_node_);
-        settings_xml_doc_->SaveFile(xml_file_path);
+        stylus_state_.settings_xml_node_ = stylus_state_.settings_xml_doc_->NewElement("settingsPanel");
+        stylus_state_.settings_xml_node_->SetAttribute("active", "false");
+        message_node->InsertEndChild(stylus_state_.settings_xml_node_);
+        stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
     }
     else
     {
-        if (std::string(settings_xml_node_->Attribute("active")).compare("true") == 0)
+        if (std::string(stylus_state_.settings_xml_node_->Attribute("active")).compare("true") == 0)
         {
             stylus_state_.settings_active_ = true;
         }
@@ -257,33 +215,24 @@ void SettingsPanel::readStateFromXmlFile()
             stylus_state_.settings_active_ = false;
         }
     }
+
+    stylus_state_.copy_node_ = message_node->FirstChildElement("copyNode");
+    if (!stylus_state_.copy_node_)
+    {
+        stylus_state_.copy_node_ = stylus_state_.settings_xml_doc_->NewElement("copyNode");
+        message_node->InsertEndChild(stylus_state_.copy_node_);
+        stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
+    }
 }
 
-// void SettingsPanel::toggleRightDialogActive()
-// {
-//     stylus_state_.right_active_ = !stylus_state_.right_active_;
-//     right_toggler_->setChecked(stylus_state_.right_active_);
-//     stylus_->right_panel_->setHidden(!stylus_state_.right_active_);
-//     right_xml_node_->SetAttribute("active", stylus_state_.right_active_ ? "true" : "false");
-//     settings_xml_doc_->SaveFile(xml_file_path);
-// }
-void SettingsPanel::toggleLeftDialogActive()
-{
-    std::cout << "\n\n toggle control dialog \n\n";
-    stylus_state_.left_active_ = !stylus_state_.left_active_;
-    stylus_->left_panel_->setHidden(!stylus_state_.left_active_);
-    left_toggler_->setChecked(stylus_state_.left_active_);
-    left_xml_node_->SetAttribute("active", stylus_state_.left_active_ ? "true" : "false");
-    settings_xml_doc_->SaveFile(xml_file_path);
-}
 void SettingsPanel::toggleQuickCommandsDialogActive()
 {
     std::cout << "\n\n quick commands dialog \n\n";
     stylus_state_.quick_commands_active_ = !stylus_state_.quick_commands_active_;
     quick_commands_toggler_->setChecked(stylus_state_.quick_commands_active_);
     stylus_->quick_commands_panel_->setHidden(!stylus_state_.quick_commands_active_);
-    quick_commands_xml_node_->SetAttribute("active", stylus_state_.quick_commands_active_ ? "true" : "false");
-    settings_xml_doc_->SaveFile(xml_file_path);
+    stylus_state_.quick_commands_xml_node_->SetAttribute("active", stylus_state_.quick_commands_active_ ? "true" : "false");
+    stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
 }
 void SettingsPanel::toggleEdditorDialogActive()
 {
@@ -291,14 +240,33 @@ void SettingsPanel::toggleEdditorDialogActive()
     stylus_state_.edditor_active_ = !stylus_state_.edditor_active_;
     edditor_toggler_->setChecked(stylus_state_.edditor_active_);
     stylus_->edditor_panel_->setHidden(!stylus_state_.edditor_active_);
-    edditor_xml_node_->SetAttribute("active", stylus_state_.edditor_active_ ? "true" : "false");
-    settings_xml_doc_->SaveFile(xml_file_path);
+    stylus_state_.edditor_xml_node_->SetAttribute("active", stylus_state_.edditor_active_ ? "true" : "false");
+    stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
 }
 void SettingsPanel::toggleSettingsDialogActive()
 {
     std::cout << "\n\n toggle settings dialog \n\n";
     stylus_state_.settings_active_ = !stylus_state_.settings_active_;
     setHidden(!stylus_state_.settings_active_);
-    settings_xml_node_->SetAttribute("active", stylus_state_.settings_active_ ? "true" : "false");
-    settings_xml_doc_->SaveFile(xml_file_path);
+    stylus_state_.settings_xml_node_->SetAttribute("active", stylus_state_.settings_active_ ? "true" : "false");
+    stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
 }
+
+void SettingsPanel::copyNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node)
+{
+    stylus_state_.copy_node_->DeleteChildren();
+    auto new_node = node->DeepClone(stylus_state_.settings_xml_doc_);
+    stylus_state_.copy_node_->InsertEndChild(new_node);
+    stylus_state_.settings_xml_doc_->SaveFile(xml_file_path);
+}
+void SettingsPanel::pasteNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node)
+{
+    if (!stylus_state_.copy_node_)
+        return;
+    auto new_node = stylus_state_.copy_node_->FirstChildElement()->DeepClone(xml_brain->xml_doc_);
+    node->InsertFirstChild(new_node);
+    stylus_->setXmlBrain(xml_brain);
+    xml_brain->saveXmlToDbo();
+}
+
+// stylusState_->copyNode = stylusState_->selectedElement->DeepClone(&stylusState_->doc);

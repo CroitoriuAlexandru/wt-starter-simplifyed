@@ -159,12 +159,12 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
         std::cout << "\n\n Alt key is pressed \n\n";
         if (e.key() == Wt::Key::Key_1)
         {
-            settings_panel_->toggleLeftDialogActive();
+            std::cout << "\n\n Alt + 1 key is pressed but nothing happens \n\n";
         }
-        // else if (e.key() == Wt::Key::Key_3)
-        // {
-        //     settings_panel_->toggleRightDialogActive();
-        // }
+        else if (e.key() == Wt::Key::Key_3)
+        {
+            std::cout << "\n\n Alt + 3 key is pressed but nothing happens \n\n";
+        }
         else if (e.key() == Wt::Key::Key_5)
         {
             settings_panel_->toggleQuickCommandsDialogActive();
@@ -213,6 +213,14 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
                 return;
             xml_brain_->selected_node_ = xml_brain_->selected_node_->PreviousSibling();
             setXmlBrain(xml_brain_);
+        }
+        else if (e.key() == Wt::Key::C)
+        {
+            settings_panel_->copyNode(xml_brain_, xml_brain_->selected_node_);
+        }
+        else if (e.key() == Wt::Key::V)
+        {
+            settings_panel_->pasteNode(xml_brain_, xml_brain_->selected_node_);
         }
     }
     else if (e.modifiers().test(Wt::KeyboardModifier::Shift))
@@ -281,22 +289,16 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
         }
         else if (e.key() == Wt::Key::Right)
         {
-            std::cout << "\n\n inserted \n\n";
 
             if (!xml_brain_->selected_node_->ToElement() ||
                 !xml_brain_->selected_node_->NextSiblingElement() ||
                 (xml_brain_->selected_node_->NextSiblingElement()->FirstChild() && xml_brain_->selected_node_->NextSiblingElement()->FirstChild()->ToText()))
                 return;
-            std::cout << "\n\n inserted \n\n";
 
             auto selected_node = xml_brain_->selected_node_;
-            std::cout << "\n\n inserted \n\n";
             auto next_sibling = selected_node->NextSiblingElement();
-            std::cout << "\n\n inserted \n\n";
             xml_brain_->selected_node_ = next_sibling->InsertFirstChild(selected_node);
-            std::cout << "\n\n inserted \n\n";
             xml_brain_->saveXmlToDbo();
-            std::cout << "\n\n inserted \n\n";
             setXmlBrain(xml_brain_);
         }
         else if (e.key() == Wt::Key::Delete)
@@ -307,7 +309,6 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
             auto prev_sibling = xml_brain_->selected_node_->PreviousSibling();
             auto next_sibling = xml_brain_->selected_node_->NextSibling();
             parent->DeleteChild(xml_brain_->selected_node_);
-            std::cout << "\n\n deleted \n\n";
             if (prev_sibling)
                 xml_brain_->selected_node_ = prev_sibling;
             else if (next_sibling)
@@ -317,6 +318,28 @@ void Stylus::processKeyEvent(Wt::WKeyEvent e)
 
             setXmlBrain(xml_brain_);
             xml_brain_->saveXmlToDbo();
+        }
+        else if (e.key() == Wt::Key::Enter)
+        {
+            std::cout << "\n\n deleted \n\n";
+
+            if (xml_brain_->selected_node_->ToText())
+            {
+                std::cout << "\n\n selected node is text \n\n";
+                return;
+            }
+            else if (xml_brain_->selected_node_->ToElement()->FirstChild() && xml_brain_->selected_node_->ToElement()->FirstChild()->ToText())
+            {
+                std::cout << "\n\n selected node is element but it has a first child text \n\n";
+                return;
+            }
+            std::cout << "\n\n deleted \n\n";
+
+            auto new_child = xml_brain_->xml_doc_->NewElement("div");
+            new_child->SetAttribute("class", "bg-gray-700 p-12");
+            xml_brain_->selected_node_->ToElement()->InsertFirstChild(new_child);
+            xml_brain_->saveXmlToDbo();
+            setXmlBrain(xml_brain_);
         }
     }
 }

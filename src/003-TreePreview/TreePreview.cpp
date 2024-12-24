@@ -28,9 +28,20 @@ TreePreview::TreePreview(std::shared_ptr<Stylus> stylus)
                                             // if selected_node is element and has no children
                                            if (xml_brain_->selected_node_->ToText())
                                            {
-                                               xml_brain_->selected_node_->ToText()->SetValue(text_area_->text().toUTF8().c_str());
-                                               stylus_->setXmlBrain(xml_brain_);
-                                               xml_brain_->saveXmlToDbo();
+                                                std::string text = text_area_->text().toUTF8();
+                                                // remove whitespace and newlines
+                                                text.erase(std::remove(text.begin(), text.end(), ' '), text.end());
+                                                if(text.empty())
+                                                {
+                                                    auto selected_node = xml_brain_->selected_node_;
+                                                    auto parent = selected_node->Parent();
+                                                    parent->DeleteChild(selected_node);
+                                                    xml_brain_->selected_node_ = parent;
+                                                }else {
+                                                    xml_brain_->selected_node_->ToText()->SetValue(text_area_->text().toUTF8().c_str());
+                                                }
+                                                stylus_->setXmlBrain(xml_brain_);
+                                                xml_brain_->saveXmlToDbo();
                                            }
                                            else if (xml_brain_->selected_node_->ToElement() && xml_brain_->selected_node_->ToElement()->FirstChild() && xml_brain_->selected_node_->ToElement()->FirstChild()->ToText())
                                            {

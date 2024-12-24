@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="136" id="aspectRatio">
+    <message dbo_id="137" id="aspectRatio">
         <tailwind-docs>https://tailwindcss.com/docs/aspect-ratio</tailwind-docs>
         <reset-command>aspect-res</reset-command>
         <classes className="aspect" customValue="true" canExtend="true">
@@ -21,7 +21,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="137" id="container">
+    <message dbo_id="138" id="container">
         <tailwind-docs>https://tailwindcss.com/docs/container</tailwind-docs>
         <reset-command>container-res</reset-command>
         <classes className="container" customValue="false" canExtend="true">
@@ -35,7 +35,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="138" id="columns">
+    <message dbo_id="139" id="columns">
         <tailwind-docs>https://tailwindcss.com/docs/columns</tailwind-docs>
         <reset-command>columns-res</reset-command>
         <classes className="columns" customValue="true" canExtend="true">
@@ -149,7 +149,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="139" id="breakAfter">
+    <message dbo_id="140" id="breakAfter">
         <tailwind-docs>https://tailwindcss.com/docs/break-after</tailwind-docs>
         <reset-command>break-after-res</reset-command>
         <classes className="break-after" customValue="false" canExtend="false">
@@ -191,7 +191,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="140" id="breakBefore">
+    <message dbo_id="141" id="breakBefore">
         <tailwind-docs>https://tailwindcss.com/docs/break-before</tailwind-docs>
         <reset-command>break-before-res</reset-command>
         <classes className="break-before" customValue="false" canExtend="false">
@@ -233,7 +233,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="141" id="breakInside">
+    <message dbo_id="142" id="breakInside">
         <tailwind-docs>https://tailwindcss.com/docs/break-inside</tailwind-docs>
         <reset-command>break-inside-res</reset-command>
         <classes className="break-inside" customValue="false" canExtend="false">
@@ -259,7 +259,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="142" id="boxDecorationBreak">
+    <message dbo_id="143" id="boxDecorationBreak">
         <tailwind-docs>https://tailwindcss.com/docs/box-decoration-break</tailwind-docs>
         <reset-command>box-decoration-break-res</reset-command>
         <classes className="box-decoration" customValue="false" canExtend="false">
@@ -273,7 +273,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="143" id="boxSizing">
+    <message dbo_id="144" id="boxSizing">
         <tailwind-docs>https://tailwindcss.com/docs/box-sizing</tailwind-docs>
         <reset-command>box-sizing-res</reset-command>
         <classes className="box" customValue="false" canExtend="false">
@@ -287,7 +287,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="144" id="display">
+    <message dbo_id="145" id="display">
         <tailwind-docs>https://tailwindcss.com/docs/display</tailwind-docs>
         <reset-command>display-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -377,7 +377,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="145" id="floats">
+    <message dbo_id="146" id="floats">
         <tailwind-docs>https://tailwindcss.com/docs/float</tailwind-docs>
         <reset-command>float-res</reset-command>
         <classes className="float" customValue="false" canExtend="false">
@@ -395,7 +395,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="146" id="clear">
+    <message dbo_id="147" id="clear">
         <tailwind-docs>https://tailwindcss.com/docs/clear</tailwind-docs>
         <reset-command>clear-res</reset-command>
         <classes className="clear" customValue="false" canExtend="false">
@@ -417,7 +417,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="147" id="isolation">
+    <message dbo_id="148" id="isolation">
         <tailwind-docs>https://tailwindcss.com/docs/isolation</tailwind-docs>
         <reset-command>isolation-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -431,7 +431,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="148" id="objectFit">
+    <message dbo_id="149" id="objectFit">
         <tailwind-docs>https://tailwindcss.com/docs/object-fit</tailwind-docs>
         <reset-command>object-fit-res</reset-command>
         <classes className="object" customValue="false" canExtend="false">
@@ -457,7 +457,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="149" id="objectPosition">
+    <message dbo_id="150" id="objectPosition">
         <tailwind-docs>https://tailwindcss.com/docs/object-position</tailwind-docs>
         <reset-command>object-position-res</reset-command>
         <classes className="object" customValue="true" canExtend="true">
@@ -503,7 +503,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="150" id="overflow">
+    <message dbo_id="151" id="overflow">
         <tailwind-docs>https://tailwindcss.com/docs/overflow</tailwind-docs>
         <reset-command>overflow-res</reset-command>
         <classes className="overflow" customValue="false" canExtend="false">
@@ -525,7 +525,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="151" id="overscrollBehavior">
+    <message dbo_id="152" id="overscrollBehavior">
         <tailwind-docs>https://tailwindcss.com/docs/overscroll-behavior</tailwind-docs>
         <reset-command>overscroll-res</reset-command>
         <classes className="overscroll" customValue="false" canExtend="false">
@@ -543,7 +543,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="152" id="position">
+    <message dbo_id="153" id="position">
         <tailwind-docs>https://tailwindcss.com/docs/position</tailwind-docs>
         <reset-command>position-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -569,7 +569,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="153" id="inset">
+    <message dbo_id="154" id="inset">
         <tailwind-docs>https://tailwindcss.com/docs/top-right-bottom-left</tailwind-docs>
         <reset-command>inset-res</reset-command>
         <classes className="inset" include="spacing" customValue="true" canExtend="true">
@@ -615,7 +615,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="154" id="visibility">
+    <message dbo_id="155" id="visibility">
         <tailwind-docs>https://tailwindcss.com/docs/visibility</tailwind-docs>
         <reset-command>visibility-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -633,7 +633,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="155" id="zIndex">
+    <message dbo_id="156" id="zIndex">
         <tailwind-docs>https://tailwindcss.com/docs/z-index</tailwind-docs>
         <reset-command>z-index-res</reset-command>
         <classes className="z" customValue="true" canExtend="true">

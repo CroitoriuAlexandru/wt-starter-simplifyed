@@ -1,5 +1,5 @@
 <messages>
-    <message dbo_id="184" id="fontFamily">
+    <message dbo_id="185" id="fontFamily">
         <tailwind-docs>https://tailwindcss.com/docs/font-family</tailwind-docs>
         <reset-command>font-family-res</reset-command>
         <classes className="font" customValue="true" canExtend="true">
@@ -17,7 +17,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="185" id="fontSize">
+    <message dbo_id="186" id="fontSize">
         <tailwind-docs>https://tailwindcss.com/docs/font-size</tailwind-docs>
         <reset-command>font-size-res</reset-command>
         <classes className="text" customValue="true" canExtend="true">
@@ -79,7 +79,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="186" id="fontSmoothing">
+    <message dbo_id="187" id="fontSmoothing">
         <tailwind-docs>https://tailwindcss.com/docs/font-smoothing</tailwind-docs>
         <reset-command>font-smoothing-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -93,7 +93,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="187" id="fontStyle">
+    <message dbo_id="188" id="fontStyle">
         <tailwind-docs>https://tailwindcss.com/docs/font-style</tailwind-docs>
         <reset-command>font-style-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -107,7 +107,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="188" id="fontWeight">
+    <message dbo_id="189" id="fontWeight">
         <tailwind-docs>https://tailwindcss.com/docs/font-weight</tailwind-docs>
         <reset-command>font-weight-res</reset-command>
         <classes className="font" customValue="true" canExtend="true">
@@ -149,7 +149,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="189" id="fontVariantNumeric">
+    <message dbo_id="190" id="fontVariantNumeric">
         <tailwind-docs>https://tailwindcss.com/docs/font-variant-numeric</tailwind-docs>
         <reset-command>font-variant-numeric-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -191,7 +191,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="190" id="letterSpacing">
+    <message dbo_id="191" id="letterSpacing">
         <tailwind-docs>https://tailwindcss.com/docs/letter-spacing</tailwind-docs>
         <reset-command>letter-spacing-res</reset-command>
         <classes className="tracking" customValue="true" canExtend="true">
@@ -221,7 +221,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="191" id="lineClamp">
+    <message dbo_id="192" id="lineClamp">
         <tailwind-docs>https://tailwindcss.com/docs/line-clamp</tailwind-docs>
         <reset-command>line-clamp-res</reset-command>
         <classes className="line-clamp" customValue="true" canExtend="true">
@@ -251,7 +251,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="192" id="lineHeight">
+    <message dbo_id="193" id="lineHeight">
         <tailwind-docs>https://tailwindcss.com/docs/line-height</tailwind-docs>
         <reset-command>line-height-res</reset-command>
         <classes className="leading" customValue="true" canExtend="true">
@@ -313,7 +313,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="193" id="listStyleImage">
+    <message dbo_id="194" id="listStyleImage">
         <tailwind-docs>https://tailwindcss.com/docs/list-style-image</tailwind-docs>
         <reset-command>list-style-image-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -323,7 +323,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="194" id="listStylePosition">
+    <message dbo_id="195" id="listStylePosition">
         <tailwind-docs>https://tailwindcss.com/docs/list-style-position</tailwind-docs>
         <reset-command>list-style-position-res</reset-command>
         <classes className="list" customValue="false" canExtend="false">
@@ -337,7 +337,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="195" id="listStyleType">
+    <message dbo_id="196" id="listStyleType">
         <tailwind-docs>https://tailwindcss.com/docs/list-style-type</tailwind-docs>
         <reset-command>list-style-type-res</reset-command>
         <classes className="list" customValue="true" canExtend="true">
@@ -355,7 +355,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="196" id="textAlign">
+    <message dbo_id="197" id="textAlign">
         <tailwind-docs>https://tailwindcss.com/docs/text-align</tailwind-docs>
         <reset-command>text-align-res</reset-command>
         <classes className="text" customValue="false" canExtend="false">
@@ -385,12 +385,12 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="197" id="textColor">
+    <message dbo_id="198" id="textColor">
         <tailwind-docs>https://tailwindcss.com/docs/texttext-color</tailwind-docs>
         <reset-command>text-color-res</reset-command>
         <classes className="text" include="colors" customValue="true" canExtend="false"/>
     </message>
-    <message dbo_id="198" id="textDecoration">
+    <message dbo_id="199" id="textDecoration">
         <tailwind-docs>https://tailwindcss.com/docs/text-decoration</tailwind-docs>
         <reset-command>text-decoration-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -412,12 +412,12 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="199" id="textDecorationColor">
+    <message dbo_id="200" id="textDecorationColor">
         <tailwind-docs>https://tailwindcss.com/docs/text-decoration-color</tailwind-docs>
         <reset-command>text-decoration-color-res</reset-command>
         <classes className="decoration" include="colors" customValue="true" canExtend="false"/>
     </message>
-    <message dbo_id="200" id="textDecorationStyle">
+    <message dbo_id="201" id="textDecorationStyle">
         <tailwind-docs>https://tailwindcss.com/docs/text-decoration-style</tailwind-docs>
         <reset-command>text-decoration-style-res</reset-command>
         <classes className="decoration" customValue="false" canExtend="false">
@@ -443,7 +443,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="201" id="textDecorationThickness">
+    <message dbo_id="202" id="textDecorationThickness">
         <tailwind-docs>https://tailwindcss.com/docs/text-decoration-thickness</tailwind-docs>
         <reset-command>text-decoration-thickness-res</reset-command>
         <classes className="decoration" customValue="true" canExtend="true">
@@ -477,7 +477,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="202" id="textUnderlineOffset">
+    <message dbo_id="203" id="textUnderlineOffset">
         <tailwind-docs>https://tailwindcss.com/docs/text-underline-offset</tailwind-docs>
         <reset-command>text-underline-offset-res</reset-command>
         <classes className="underline-offset" customValue="true" canExtend="true">
@@ -507,7 +507,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="203" id="textTransform">
+    <message dbo_id="204" id="textTransform">
         <tailwind-docs>https://tailwindcss.com/docs/text-transform</tailwind-docs>
         <reset-command>text-transform-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -529,7 +529,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="204" id="textOverflow">
+    <message dbo_id="205" id="textOverflow">
         <tailwind-docs>https://tailwindcss.com/docs/text-overflow</tailwind-docs>
         <reset-command>text-overflow-res</reset-command>
         <classes className="" customValue="false" canExtend="false">
@@ -547,7 +547,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="205" id="textWrap">
+    <message dbo_id="206" id="textWrap">
         <tailwind-docs>https://tailwindcss.com/docs/text-wrap</tailwind-docs>
         <reset-command>text-wrap-res</reset-command>
         <classes className="text" custom_value="false" canExtend="false">
@@ -569,12 +569,12 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="206" id="textIndent">
+    <message dbo_id="207" id="textIndent">
         <tailwind-docs>https://tailwindcss.com/docs/text-indent</tailwind-docs>
         <reset-command>text-indent-res</reset-command>
         <classes className="indent" include="spacing" customValue="true" canExtend="false"/>
     </message>
-    <message dbo_id="207" id="verticalAlign">
+    <message dbo_id="208" id="verticalAlign">
         <tailwind-docs>https://tailwindcss.com/docs/vertical-align</tailwind-docs>
         <reset-command>vertical-align-res</reset-command>
         <classes className="align" customValue="true" canExtend="false">
@@ -612,7 +612,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="208" id="whitespace">
+    <message dbo_id="209" id="whitespace">
         <tailwind-docs>https://tailwindcss.com/docs/whitespace</tailwind-docs>
         <reset-command>whitespace-res</reset-command>
         <classes className="whitespace" customValue="false" canExtend="false">
@@ -642,7 +642,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="209" id="wordBreak">
+    <message dbo_id="210" id="wordBreak">
         <tailwind-docs>https://tailwindcss.com/docs/word-break</tailwind-docs>
         <reset-command>word-break-res</reset-command>
         <classes className="break" customValue="false" canExtend="false">
@@ -664,7 +664,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="210" id="hyphens">
+    <message dbo_id="211" id="hyphens">
         <tailwind-docs>https://tailwindcss.com/docs/hyphens</tailwind-docs>
         <reset-command>hyphens-res</reset-command>
         <classes className="hyphens" customValue="false" canExtend="false">
@@ -682,7 +682,7 @@
             </class>
         </classes>
     </message>
-    <message dbo_id="211" id="content">
+    <message dbo_id="212" id="content">
         <tailwind-docs>https://tailwindcss.com/docs/content</tailwind-docs>
         <reset-command>content-res</reset-command>
         <classes className="content" customValue="true" canExtend="true">

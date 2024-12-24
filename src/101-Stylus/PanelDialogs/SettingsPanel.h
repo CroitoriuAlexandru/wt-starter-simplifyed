@@ -4,8 +4,11 @@
 
 struct StylusState
 {
-    bool left_active_ = false;
-    bool right_active_ = false;
+    tinyxml2::XMLDocument *settings_xml_doc_;
+    tinyxml2::XMLElement *edditor_xml_node_;
+    tinyxml2::XMLElement *quick_commands_xml_node_;
+    tinyxml2::XMLElement *settings_xml_node_;
+    tinyxml2::XMLElement *copy_node_;
     bool edditor_active_ = false;
     bool quick_commands_active_ = false;
     bool settings_active_ = false;
@@ -38,10 +41,11 @@ public:
     // void toggleStylusActive();
 
     // void toggleRightDialogActive();
-    void toggleLeftDialogActive();
     void toggleEdditorDialogActive();
     void toggleQuickCommandsDialogActive();
     void toggleSettingsDialogActive();
+    void copyNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node);
+    void pasteNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XMLNode *node);
 
     // void togglefilesManagerDialogActive();
     // void togglefilesManagerLeftMenuActive();
@@ -50,11 +54,4 @@ public:
 
 private:
     const char *xml_file_path = "stylus_config.xml";
-
-    tinyxml2::XMLDocument *settings_xml_doc_;
-    tinyxml2::XMLElement *left_xml_node_;
-    // tinyxml2::XMLElement *right_xml_node_;
-    tinyxml2::XMLElement *edditor_xml_node_;
-    tinyxml2::XMLElement *quick_commands_xml_node_;
-    tinyxml2::XMLElement *settings_xml_node_;
 };
