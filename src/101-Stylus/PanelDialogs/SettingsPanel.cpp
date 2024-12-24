@@ -263,7 +263,15 @@ void SettingsPanel::pasteNode(std::shared_ptr<XMLBrain> xml_brain, tinyxml2::XML
 {
     if (!stylus_state_.copy_node_)
         return;
-    auto new_node = stylus_state_.copy_node_->FirstChildElement()->DeepClone(xml_brain->xml_doc_);
+    tinyxml2::XMLNode *new_node = nullptr;
+    if (stylus_state_.copy_node_->FirstChildElement())
+    {
+        new_node = stylus_state_.copy_node_->FirstChildElement()->DeepClone(xml_brain->xml_doc_);
+    }
+    else if (stylus_state_.copy_node_->FirstChild()->ToText())
+    {
+        new_node = xml_brain->xml_doc_->NewText(stylus_state_.copy_node_->FirstChild()->Value());
+    }
     node->InsertFirstChild(new_node);
     stylus_->setXmlBrain(xml_brain);
     xml_brain->saveXmlToDbo();
