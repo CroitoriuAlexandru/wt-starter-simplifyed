@@ -682,6 +682,14 @@ body::-webkit-scrollbar-thumb {
     @apply rounded-md;
 } */
 
+.bg-gradient-dark {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #0f172a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(15 23 42 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #334155 var(--tw-gradient-to-position);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1427,12 +1435,48 @@ video {
   inset-inline-start: 1.75rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-48 {
   top: 12rem;
 }
 
 .top-8 {
   top: 2rem;
+}
+
+.top-\[35px\] {
+  top: 35px;
+}
+
+.top-\[33px\] {
+  top: 33px;
+}
+
+.top-\[30px\] {
+  top: 30px;
+}
+
+.top-\[49px\] {
+  top: 49px;
+}
+
+.top-\[40px\] {
+  top: 40px;
+}
+
+.top-\[38px\] {
+  top: 38px;
+}
+
+.top-\[36px\] {
+  top: 36px;
+}
+
+.top-\[37px\] {
+  top: 37px;
 }
 
 .isolate {
@@ -2833,12 +2877,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-slate-900 {
-  --tw-gradient-from: #0f172a var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(15 23 42 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-15\% {
   --tw-gradient-from-position: 15%;
 }
@@ -2858,10 +2896,6 @@ video {
 
 .to-gray-600 {
   --tw-gradient-to: #4b5563 var(--tw-gradient-to-position);
-}
-
-.to-slate-700 {
-  --tw-gradient-to: #334155 var(--tw-gradient-to-position);
 }
 
 .to-85\% {

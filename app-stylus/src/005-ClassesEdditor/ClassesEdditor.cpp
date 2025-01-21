@@ -10,7 +10,7 @@
 ClassesEdditor::ClassesEdditor(std::shared_ptr<Stylus> stylus)
     : stylus_(stylus)
 {
-    setStyleClass("h-screen max-h-screen overflow-y-auto overflow-x-none bg-gray-800 !min-w-[450px] !max-w-[450px] relative");
+    setStyleClass("h-screen max-h-screen overflow-y-auto overflow-x-none bg-gradient-dark !min-w-[450px] !max-w-[450px] relative");
     setOffsets(0, Wt::Side::Left | Wt::Side::Bottom | Wt::Side::Top);
 
     stylus_->node_selected().connect([=](std::shared_ptr<XMLBrain> xml_brain)

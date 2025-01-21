@@ -8,7 +8,7 @@ BaseDialogPanel::BaseDialogPanel(std::shared_ptr<Stylus> stylus)
     setStyleClass("!border-0 shadow-lg rounded-xl overflow-x-visible");
     titleBar()->hide();
     titleBar()->setStyleClass("p-0 bg-gray-300 flex items-center overflow-x-visible h-[40px]");
-    contents()->setStyleClass("h-full bg-gradient-to-r from-slate-900 to-slate-700 overflow-y-auto overflow-x-visible");
+    contents()->setStyleClass("h-full bg-gradient-dark overflow-y-auto overflow-x-visible");
     setModal(false);
     setResizable(false);
     setMovable(false);

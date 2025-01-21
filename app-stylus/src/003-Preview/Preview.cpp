@@ -8,7 +8,7 @@ Preview::Preview(std::shared_ptr<Stylus> stylus)
     elem_wrapper_ = addWidget(std::make_unique<Wt::WContainerWidget>());
 
     setStyleClass("min-h-screen h-screen max-h-screen relative w-[calc(100vw-450px)] flex");
-    tree_wrapper_->setStyleClass("w-[380px] min-h-screen h-screen max-h-screen overflow-auto! bg-gray-800");
+    tree_wrapper_->setStyleClass("w-[380px] min-h-screen h-screen max-h-screen overflow-auto! bg-gradient-dark");
     elem_wrapper_->setStyleClass("w-full min-h-screen h-screen max-h-screen overflow-y-auto overflow-x-hidden");
 
     stylus_->node_selected().connect([=](std::shared_ptr<XMLBrain> xml_brain)

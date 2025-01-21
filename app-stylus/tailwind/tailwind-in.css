@@ -4,6 +4,7 @@
 
 @import './css/experiment.css';
 @import './css/override-wt.css';
+@import './css/gradients.css';
 
 @tailwind base;
 @tailwind components;

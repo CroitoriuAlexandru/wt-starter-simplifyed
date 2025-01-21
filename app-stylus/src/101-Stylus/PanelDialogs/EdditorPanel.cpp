@@ -30,8 +30,8 @@ EdditorPanel::EdditorPanel(std::shared_ptr<Stylus> stylus)
     // file_content_->setStyleClass("flex flex-col items-start grow h-full p-2 overflow-y-auto");
     content_wrapper_->setStyleClass("flex flex-col items-start grow h-full p-2 overflow-y-auto");
 
-    folders_menu_wrapper_->setStyleClass("flex items-center border-solid border-b border-gray-600");
-    files_menu_wrapper_->setStyleClass("flex items-center border-solid border-b border-gray-600");
+    folders_menu_wrapper_->setStyleClass("flex items-center border-solid border-b bg-gradient-dark sticky top-0 z-[999999]");
+    files_menu_wrapper_->setStyleClass("flex items-center border-solid border-b bg-gradient-dark sticky top-[37px] z-[999999]");
 
     content_wrapper_->setStyleClass("flex flex-col items-start h-[calc(100%-70px)] pt-4");
 
@@ -54,13 +54,11 @@ void EdditorPanel::createFoldersMenu()
         auto folder_btn = folders_menu_wrapper_->addWidget(std::make_unique<Wt::WPushButton>(folder->folder_name));
 
         auto folder_btn_styles = "p-1.5 px-2  "
-                                 "bg-gray-200 "
-                                 "text-sm text-bold text-gray-900 "
-                                 "border-2 border-solid border-gray-600 "
+                                 "text-sm font-bold text-gray-200 "
                                  "peer-checked/a" +
-                                 folder_radio_btn->id() + "z:bg-gray-900 "
+                                 folder_radio_btn->id() + "z:bg-gray-200/10 "
                                                           "peer-checked/a" +
-                                 folder_radio_btn->id() + "z:text-gray-200";
+                                 folder_radio_btn->id() + "z:font-bolder";
 
         folder_radio_btn->setStyleClass("hidden peer/a" + folder_radio_btn->id() + "z ");
         folder_btn->setStyleClass(folder_btn_styles);
@@ -155,13 +153,12 @@ void EdditorPanel::createFilesMenu(int folder_id)
         auto file_btn = files_menu_wrapper_->addWidget(std::make_unique<Wt::WPushButton>(file->file_name));
 
         auto file_btn_styles = "p-1.5 px-2 "
-                               "bg-gray-200 "
-                               "text-sm text-bold text-gray-900 "
-                               "border-2 border-solid border-gray-600 "
+                               "bg-gray-20 "
+                               "text-sm font-bold text-gray-200 "
                                "peer-checked/a" +
-                               file_radio_btn->id() + "z:bg-gray-900 "
+                               file_radio_btn->id() + "z:bg-gray-200/10 "
                                                       "peer-checked/a" +
-                               file_radio_btn->id() + "z:text-gray-200";
+                               file_radio_btn->id() + "z:font-semibold";
 
         file_radio_btn->setStyleClass("hidden peer/a" + file_radio_btn->id() + "z ");
         file_btn->setStyleClass(file_btn_styles);
