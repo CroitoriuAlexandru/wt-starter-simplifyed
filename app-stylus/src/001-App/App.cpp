@@ -20,6 +20,7 @@ App::App(const Wt::WEnvironment &env)
 //   stylus_(session_, appRoot() + "../xml-templates/")
 
 {
+    // class="? ??" // this is for tailwind to compile the two classes
     stylus_ = std::make_shared<Stylus>(session_, appRoot() + "../../xml-templates/");
     stylus_->setXmlBrains(stylus_);
     // stylus_->left_panel_ = root()->addChild(std::make_unique<LeftPanel>(stylus_));
@@ -54,6 +55,8 @@ App::App(const Wt::WEnvironment &env)
     require("https://cdn.tailwindcss.com");
 
     useStyleSheet("static/css/tailwind-out.css");
+    useStyleSheet("static/css/questionmark.css");
+
     // JSs
     require(docRoot() + "/static/js/utils.js");
 
@@ -72,6 +75,7 @@ App::App(const Wt::WEnvironment &env)
         auto selected_template = main_preview->xml_template;
         auto main_display_xml_brain = stylus_->xml_brains_[selected_template->temp_id.toUTF8()];
         tempPreview_new->setXmlBrain(main_display_xml_brain);
+        stylus_->xml_brain_ = main_display_xml_brain;
     }
 
     transaction.commit();

@@ -1,0 +1,10 @@
+@import './css/input-classes.css';
+@import './css/button-classes.css';
+@import './css/scroll-bar.css';
+
+@import './css/experiment.css';
+@import './css/override-wt.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
